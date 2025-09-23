@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta http-equiv="Content-Type"
+		content="text/html; charset=utf-8" />
+		<title>My Webpage</title>
+		<link rel="stylesheet" href="./src/styles.css">
+	</head>
+	
+	<body>
+		<header id="frontCover">
+				<div class="image">
+					<img src="./src/Menu2.jpg"/>
+				</div>
+				
+				<div class="text">
+					<div class="title">
+						<p> HI, MY NAME IS </p>
+						<img src="./src/MenuName.png"/>
+						<p> 2ND YEAR UNDERGRADUATE <br> STUDYING SOFTWARE ENGINEERING</p>
+					</div>
+					
+					<div style=height:10vh;></div>
+					
+				</div>
+	
+		</header>
+		
+		<div id="navbar">
+				<a class="ls" href="#frontCover">LVS</a>
+				<a href="#contact">Say Hello!</a>
+				<a href="#education">Education</a>
+				<a href="#about">About</a>
+			</div>
+		<article id="page2">
+		
+			<div id="about">
+				<div id="title">About Me</div>
+				<hr>
+				<div style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center; align-items: center;">
+					<img src="./src/PhotoPortrait2.jpg", id="photoFrame"/>
+					<div id="description">
+						<p>Hello! I'm a 2nd year student of Software Engineering located at Aberystwyth University, with the goal of working in the industry. I don't have any professional experience however I've had the opportunity of working with a team with the goal of creating a chess tutor game, a student-led game development team using Roblox Studio, and some other personal projects!</p>
+						<p>Here are some of the languages I have worked with:</p>
+						
+						<div style="width: 50%; margin-left: 5%;">
+							<p>C++</p>
+							<div class="skillBar">
+								<div class="skills cpp"></div>
+							</div>
+							<p>Java<p>
+							<div class="skillBar">
+								<div class="skills java"></div>
+							</div>
+							<p>Python</p>
+							<div class="skillBar">
+								<div class="skills python"></div>
+							</div>
+							<p>HTML</p>
+							<div class="skillBar">
+								<div class="skills html"></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			<form id="education">
+				<div id="title">Education</div>
+				<p> Here are some of the modules I've learned at Aberystwyth University: </p>
+				<hr>
+				<div id="moduleContainer">
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Introduction to Computer Infrastructure</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Introduction to Programming</div>
+							<div class="card__face card__face--back">2:2</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Functional Programming (With Haskell)</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Professional and Personal Development</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Problems and Solutions</div>
+							<div class="card__face card__face--back">2:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Web Development Fundamentals</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Information Security</div>
+							<div class="card__face card__face--back">2:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Object-Oriented Programming</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="moduleContainer">
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Algorithm Design & Data Structures</div>
+							<div class="card__face card__face--back">2:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">C & C++</div>
+							<div class="card__face card__face--back">1:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Modelling Persistent Data</div>
+							<div class="card__face card__face--back">2:1</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Software Engineering</div>
+							<div class="card__face card__face--back">N/A</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Robotics and Embedded Systems</div>
+							<div class="card__face card__face--back">N/A</div>
+						</div>
+					</div>
+					<div class="scene scene--card">
+						<div class="card">
+							<div class="card__face card__face--front">Artificial Intelligence</div>
+							<div class="card__face card__face--back">N/A</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			
+			
+			<div id="contact">
+				<div id="title">Say Hello!</div>
+				<form
+				  action="https://formspree.io/f/mbjeoblb"
+				  method="POST"
+				>
+				  <label>
+					Your email:
+					<input type="email" name="email">
+				  </label>
+				  <p></p>
+				  <label>
+					Your message:
+					<textarea name="message"></textarea>
+				  </label>
+				  <!-- your other form fields go here -->
+				  <button type="submit">Send</button>
+				</form>
+			</div>
+			
+		</article>
+		
+		
+		
+		
+		<script>
+		window.onscroll = function() {myFunction()};
+		
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+		
+		var cards = document.querySelectorAll('.card');
+		[...cards].forEach((card)=>{
+			card.addEventListener('click',function() {
+				card.classList.toggle('is-flipped');
+				});
+			});
+		</script>
+		
+	</body>
+</html>
