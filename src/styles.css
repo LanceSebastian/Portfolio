@@ -174,11 +174,6 @@ body {
 		margin:0;
 	}
 	
-	.skillBar {
-		width: 100%;
-		background-color: var(--second-color);
-	}
-	
 	.skills {
 		text-align:right;
 		height: 5px;
