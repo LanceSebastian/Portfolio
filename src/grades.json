@@ -1,95 +1,114 @@
 [
   {
+    "id": 1,
     "name": "Introduction to Computer Infrastructure",
     "percent": 79,
     "description": "Covers basic concepts of computer hardware, software, and networking."
   },
   {
+    "id": 2,
     "name": "Introduction to Programming",
     "percent": 54,
     "description": "An introduction to problem-solving and programming fundamentals."
   },
   {
+    "id": 3,
     "name": "Functional Programming",
     "percent": 78,
     "description": "Explores declarative programming using functions and immutability."
   },
   {
+    "id": 4,
     "name": "Professional and Personal Development",
     "percent": 84,
     "description": "Focuses on teamwork, communication, and professional growth."
   },
   {
+    "id": 5,
     "name": "Problems and Solutions",
     "percent": 61,
     "description": "Develops analytical skills through structured problem solving."
   },
   {
+    "id": 6,
     "name": "Fundamentals of Web Development",
     "percent": 90,
     "description": "Covers HTML, CSS, JavaScript, and modern web technologies."
   },
   {
+    "id": 7,
     "name": "Information Security",
     "percent": 65,
     "description": "Introduces principles of cybersecurity and data protection."
   },
   {
+    "id": 8,
     "name": "Programming Using an Object-Oriented Language",
     "percent": 77,
     "description": "Teaches object-oriented programming concepts such as classes and inheritance."
   },
   {
+    "id": 9,
     "name": "Algorithm Design and Data Structures",
     "percent": 69,
     "description": "Covers common algorithms and efficient data structures."
   },
   {
+    "id": 10,
     "name": "C and C++",
     "percent": 78,
     "description": "Introduces low-level programming with C and C++."
   },
   {
+    "id": 11,
     "name": "Modelling Persistent Data",
     "percent": 64,
     "description": "Focuses on data modeling and persistence techniques using databases."
   },
   {
+    "id": 12,
     "name": "Software Engineering",
     "percent": 82,
     "description": "Covers software development lifecycles, methodologies, and project management."
   },
   {
+    "id": 13,
     "name": "Robotics and Embedded Systems",
     "percent": 63,
     "description": "Introduces robotics concepts and embedded system programming."
   },
   {
+    "id": 14,
     "name": "Artificial Intelligence",
     "percent": 65,
     "description": "Covers search algorithms, knowledge representation, and intelligent systems."
   },
   {
+    "id": 15,
     "name": "Mobile Development with Android",
     "percent": 77,
     "description": "Covers Android application design, development, and deployment."
   },
   {
+    "id": 16,
     "name": "System and Network Services Administration",
     "percent": 62,
     "description": "Focuses on managing operating systems and network services."
   },
   {
+    "id": 17,
     "name": "E-Commerce: Implementation, Management and Security",
     "percent": 64,
     "description": "Covers online commerce, security practices, and business management."
   },
   {
+    "id": 18,
     "name": "Professional Issues in the Computing Industry",
     "percent": 63,
     "description": "Explores ethical, legal, and professional issues in computing."
   },
   {
+    "id": 19,
     "name": "Major Project",
     "percent": 67,
     "description": "A capstone project demonstrating skills in research, design, and implementation."
