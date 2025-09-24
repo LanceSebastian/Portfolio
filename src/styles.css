@@ -174,85 +174,29 @@ body {
 		margin:0;
 	}
 	
-	.skills {
-		text-align:right;
-		height: 5px;
-		background-color:white;
-	}
-	
-	.cpp {width: 80%}
-	.java {width: 70%}
-	.python {width: 60%}
-	.html {width: 60%}
-	
 	#education{
 		/* outline: 2px dotted white; */
-		
 		width: 100vw;
-		min-height: 100vh;
-		margin:auto;
+		height: 100vh;
+		color:white;
 		padding-top:5vh;
 		
 		display: flex;
 		justify-content: center;
-		align-content: center;
+		align-content:start;
 		flex-wrap: wrap;
 	}
-	
-	#moduleContainer{
-		/* outline: 2px dotted white; */
-		width: 40%;
-		height: 80%;
-		
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		flex-wrap: wrap;
+
+	div.scroll-container{
+		background-color: #333;
+		height: 60vh;
+		width: auto;
+		overflow: auto;
+		padding: 10px;
 	}
-	
-	
-	.scene {
-		display: inline-block;
-		width: 200px;
-		height: 200px;
-		perspective: 600px;
-		margin:1px;
-	}
-	
-	.card {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		cursor: pointer;
-		transform-style: preserve-3d;
-		transform-origin: center;
-		transition: transform 1s;
-	}
-	
-	.card.is-flipped {
-		transform: rotateY(-180deg);
-	}
-	
-	.card__face {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		color: white;
-		text-align: center;
-		backface-visibility: hidden;
-		
-		display:flex;
-		align-items: center;
-		justify-content: center
-	}
-	
-	.card__face--front {
-		background: DimGray;
-	}
-	
-	.card__face--back {
-		background: ForestGreen;
-		transform: rotateY(180deg);
+
+	div.scroll-container p{
+		padding: 10px;
 	}
 	
 	
