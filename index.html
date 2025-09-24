@@ -57,15 +57,11 @@
 			<div id="education">
 				<h2> Education </h2>
 				<hr>
-				<!-- TODO: Bro -->
 				<div class="gallery">
-					<div class="mainContent">
-						<!-- TODO -->
+					<div id="courseList">
 					</div>
-					<div id="courseList"></div>
 					
 				</div>
-
 			</div>
 			
 			<div id="contact">
@@ -76,8 +72,23 @@
 			
 		</article>
 		
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<p class="modalContent" id="content">
+		</div>
+
 		<script src = "./scripts/navScroll.js"></script>
 		<script src = "./scripts/courseHandler.js"></script>
+		<script>
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			modal.style.display = "none";
+			}
+		</script>
 
 		
 	</body>
