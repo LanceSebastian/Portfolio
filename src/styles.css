@@ -28,6 +28,33 @@ body {
 	h1 {font-family: customFont; color: var(--second-color); font-size: 5vw; margin-left:15vw; user-select: none;}
 	p {font-family: Arial, sans-serif; color:var(--second-color);}
 	hr {width:95%}
+	button {
+		background-color: #333;
+		width: 100%;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: flex;
+		font-size: 16px;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		transition: transform 0.2s ease;
+	}
+
+	button:hover {
+		background-color: #9b5a3993;
+		transform: scale(1.0);
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	button:active{
+		transform: scale(0.95);
+	} 
+	
 
 	#frontCover {
 		/*border: 2px solid gray;*/
