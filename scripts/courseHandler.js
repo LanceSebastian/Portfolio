@@ -6,8 +6,15 @@ fetch("./src/grades.json")
         const container = document.getElementById("courseList");
 
         courses.forEach(c => {
-            const p = document.createElement("p");
-            p.textContent = c.name;
-            container.appendChild(p);
+            const button = document.createElement("button");
+            button.textContent = c.name;
+            
+            button.setAttribute("data-id", c.id); // include a reference for future
+            
+            button.addEventListener("click", (e) => {
+                alert(`You clicked on: ${c.name} (ID: ${e.target.dataset.id})`);
+            });
+
+            container.appendChild(button);
         });
     }).catch(err => console.error("Error loading JSON:", err));
