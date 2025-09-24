@@ -1,5 +1,4 @@
 [
-    [
   {
     "name": "Introduction to Computer Infrastructure",
     "percent": 79,
@@ -95,6 +94,4 @@
     "percent": 67,
     "description": "A capstone project demonstrating skills in research, design, and implementation."
   }
-]
-
 ]
