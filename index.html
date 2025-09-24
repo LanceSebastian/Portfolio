@@ -62,6 +62,8 @@
 					<div class="mainContent">
 						<!-- TODO -->
 					</div>
+					<div id="courseList"></div>
+					
 				</div>
 
 			</div>
@@ -74,30 +76,9 @@
 			
 		</article>
 		
-		
-		
-		
-		<script>
-		window.onscroll = function() {myFunction()};
-		
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-		
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-		
-		var cards = document.querySelectorAll('.card');
-		[...cards].forEach((card)=>{
-			card.addEventListener('click',function() {
-				card.classList.toggle('is-flipped');
-				});
-			});
-		</script>
+		<script src = "./scripts/navScroll.js"></script>
+		<script src = "./scripts/courseHandler.js"></script>
+
 		
 	</body>
 </html>
