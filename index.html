@@ -6,67 +6,61 @@
 		<title>My Webpage</title>
 		<link rel="stylesheet" href="./src/styles.css">
 	</head>
-	
 	<body>
+		
+		<ul class = "header">
+			<li style = "float: left;"><a href="#frontCover">LVS</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#about">About Me</a></li>
+		</ul>
+
 		<header id="frontCover">
 			<div class = "title">
 				<p> 
-					<br> Lance Vincent M. Sebastian 
-					<br> Computer Science Graduate 
+					<br> Nice to meet you,
+					<br> I'm Lance Sebastian.
+					<br> I build things.
 				</p>
 			</div>
 		</header>
-		
-		<!-- <div id="navbar">
-			<a class="ls" href="#frontCover">LVS</a>
-			<a href="#education">Education</a>
-			<a href="#about">About</a>
-		</div> -->
 
-		<article id="page2">
+		<div id="about" >
+			<h1> About Me </h1>
 		
-			<div id="about">
-				<h2> About </h2>
-				<hr>
-				<div style="display: flex; flex-wrap: wrap; width: 100%; justify-content: center; align-items: center;">
-					<img src="./src/Profile.jpeg", id="photoFrame"/>
-					<div id="description">
-						<p>
-							An Aberystwyth Graduate with Upper Second-Class Honours in Computer Science.
-							I have experience in developing websites, mobile applications, and video games.
-						</p>
-						<p>
-							Outside of work, I enjoy lifting, pilates, volleyball, gaming, and manga.
-							I'm currently interested in travelling, having stayed in Asia for 3 months straight
-							after graduating. 
-						</p>
-						<p>Development Projects I have worked with:</p>
-						
-						<ul>
-							<li>Studying App, Food Lifestyle App (Mobile Dev) with Android Studio</li>
-							<li>Web Development with HTML, CSS, and JS</li>
-							<li>Chess Tutor, Top-down Zombie Shooter (Game Development) with Unity, Roblox Studio, and Jetpack Compose</li>
-						</ul>
-						
-					</div>
-				</div>
-			</div>
-			
-			<div id="education">
-				<h2> Education </h2>
-				<hr>
-				<div class="gallery">
-					<div id="showcase">
-						<img src = "./src/AberystwythUniversityLogo.png" id = "myImg">
-					</div>
-					<div id="courseList">
-						<!-- Add Filter section here -->
-						<p> Modules: </p>
-					</div>
+			<div>
+				<div id="description">
+					<p>
+						An Aberystwyth Graduate with Upper Second-Class Honours in Computer Science.
+						I have experience in developing websites, mobile applications, and video games.
+					</p>
+					<p>
+						Outside of work, I enjoy lifting, pilates, volleyball, gaming, and manga.
+						I'm currently interested in travelling, having stayed in Asia for 3 months straight
+						after graduating. 
+					</p>
+					<p> Development Projects I have worked with:</p>
+					
+					<ul>
+						<li>Studying App, Food Lifestyle App (Mobile Dev) with Android Studio</li>
+						<li>Web Development with HTML, CSS, and JS</li>
+						<li>Chess Tutor, Top-down Zombie Shooter (Game Development) with Unity, Roblox Studio, and Jetpack Compose</li>
+					</ul>
 					
 				</div>
-			</div>	
-		</article>
+			</div>
+		</div>
+		
+		<div id="skills">
+			<h1> Skills </h1>
+			<div class="gallery">
+				
+			</div>
+		</div>	
+
+		<div id = "projects">
+			<h1> Projects </h1>
+		</div>
 
 		<footer>
 			<h2> Footer </h2>
@@ -76,20 +70,6 @@
 			<span class="close">&times;</span>
 			<p class="modalContent" id="content">
 		</div>
-
-		<script src = "./scripts/navScroll.js"></script>
-		<script src = "./scripts/courseHandler.js"></script>
-		<script>
-			
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			modal.style.display = "none";
-			}
-		</script>
-
 		
 	</body>
 </html>
