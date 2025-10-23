@@ -109,7 +109,6 @@ footer {
 		background-color: var(--about-bg-color);
 		width: auto;
 		height: auto;
-		
 	}
 	
 	#title {
@@ -123,16 +122,34 @@ footer {
 
 	}
 	
-	#about {
+	#briefSummary {
 		/* outline: 2px dotted white; */
 		min-height: 100vh;
-		padding-top:5vh;
 		color: white;
+		padding: 10px;
 		
-		display: flex;
-		justify-content: center;
-		align-content: center;
+		display: block;
 		flex-wrap: wrap;
+	}
+
+	.columns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	
+	.description{
+		/* outline: 1px dotted gray; */
+		min-width: 200px;
+		max-width: 300px;
+		width: 30%; 
+	}
+
+	.description div{
+		background-color: rgba(0,0,0,0.3);
+		border-radius: 20px;
+		padding:  5px 20px;
 	}
 	
 	#photoFrame{
@@ -145,14 +162,8 @@ footer {
 		margin:10px;
 	
 	}
-	
-	#description{
-		/* outline: 1px dotted gray; */
-		width: 600px;
-		margin:0;
-	}
-	
-	#skills{
+
+	#mySkills{
 		/* outline: 2px dotted white; */
 		min-height: 100vh;
 		color:white;
@@ -171,12 +182,6 @@ footer {
 		max-height: auto;
 		justify-content: center;
 		align-items: center;
-	}
-
-	#showcase {
-		width: 40%;
-		min-width: 400px;
-		margin-right: 20px;
 	}
 
 	#courseList{
@@ -231,7 +236,7 @@ footer {
 	}
 
 
-	#projects{
+	#myProjects{
 		/* outline: 2px dotted white; */
 		margin:auto;
 		align-items: center;
