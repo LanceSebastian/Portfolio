@@ -63,6 +63,7 @@ footer {
 		background-size: cover;
 		background-blend-mode: multiply;
 		display: flex;
+		height: 75vh;
 		justify-content: center;
 		align-items: center;
 	}
