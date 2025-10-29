@@ -167,21 +167,28 @@ footer {
 		/* outline: 2px dotted white; */
 		min-height: 100vh;
 		color:white;
-		padding-top:10vh;
-		
-		display: flex;
-		justify-content: center;
-		align-content:start;
-		flex-wrap: wrap;
+		padding: 10px;
+		display: block;
 	}
 
 	.gallery {
 		/* outline: dotted; */
+		display: block;
+	}
+
+	.gallery div {
 		display: flex;
 		flex-wrap: wrap;
 		max-height: auto;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.gallery p {
+		background-color: rgb(0,0,0,0.3);
+		padding: 5px 20px;
+		margin: 5px;
+		border-radius: 5px;
+		cursor:default;
 	}
 
 	#courseList{
