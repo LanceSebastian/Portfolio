@@ -57,13 +57,14 @@ footer {
 
 	#frontCover {
 		/*border: 2px solid gray;*/
-		background-image: url("FrontImage.jpg");
-		background-color: #b4b4b4;
+		/*background-image: url("FrontImage.jpg");*/
+		/*background-color: white;*/
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-blend-mode: multiply;
 		display: flex;
 		height: 75vh;
+		width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
