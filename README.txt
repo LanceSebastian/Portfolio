@@ -1,9 +1,12 @@
 To do:
 - starry night front page
 - briefSummary page (focusing on what corporate needs to know)
+    - Past, Present, Future.
+    - just write a good paragraph.
 - mySkills
+    - add interactivity
 - myProjects
-    - Get it ready to display projects
+    - Display projects (bosface, SE chessTutor, mobile dev)
 - About Me (focusing on the human side, displaying hobbies and photos and history maybe)
 
 # Lance Sebastian's Portfolio
