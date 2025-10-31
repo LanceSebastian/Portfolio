@@ -4,17 +4,16 @@ const height = canvas.height;
 const ctx = canvas.getContext("2d");
 const maxStarRadius = 1.5;
 
-function addForeground() {
+function addForeground() {    
     ctx.globalCompositeOperation = "xor";
     ctx.imageSmoothingEnabled = false;
     var image = new Image();
     image.src = "../src/city.png";
     
     image.addEventListener("load", (e) => {
-        ctx.fillStyle = "rgba(0,0,0,1)";
-        ctx.fillRect(0,0,width, height);
         ctx.drawImage(image, 0,0, width, height);
-    });
+    }); 
+
 }
 
 function addStars(width, height, spacing) {
@@ -55,3 +54,4 @@ function render(){
 }
 
 render();
+addForeground();
