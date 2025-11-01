@@ -16,7 +16,7 @@ body {
 	margin:0;
 	font-family: Tahoma, sans-serif;
 	color: black;
-	background-color: burlywood;
+	background-color: rgb(222, 184, 135);
 }
 
 footer {
@@ -63,7 +63,7 @@ footer {
 		background-size: cover;
 		background-blend-mode: multiply;
 		display: flex;
-		height: 75vh;
+		height: 75%;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
