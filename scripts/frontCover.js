@@ -1,7 +1,7 @@
 const canvas = document.getElementById("frontCover");
 
-const width = canvas.width * 2;
-const height = canvas.height * 2;
+const width = canvas.width;
+const height = canvas.height;
 
 const ctx = canvas.getContext("2d");
 const maxStarRadius = 1.5;
@@ -12,15 +12,18 @@ const maxStarOpacity = 0.7;
 var date = new Date();
 let counter = 0;
 
-function addForeground(ctx) {    
-    ctx.globalCompositeOperation = "xor";
-    ctx.imageSmoothingEnabled = false;
-    var image = new Image();
-    image.src = "../src/city.png";
-    
-    image.addEventListener("load", (e) => {
-        ctx.drawImage(image, 0,0, width, height);
-    }); 
+function addForeground() { 
+    var image = document.getElementById("#cityImage");
+
+    ctx.globalCompositeOperation = "destination-out";
+
+    ctx.fillStyle = "rgba(222, 184, 135,0)";
+    ctx.fillRect(0,0,width,height);
+
+    ctx.drawImage(image, 0,0, width, height);    
+
+    ctx.globalCompositeOperation = "source-over";
+
 }
 
 function fillCircle(ctx, x, y, r, fillStyle) {
@@ -32,7 +35,7 @@ function fillCircle(ctx, x, y, r, fillStyle) {
 
 function getOpacity(factor) {
   const opacityIncrement =
-    (maxStarOpacity - minStarOpacity) * (Math.sin(factor/1000));
+    (maxStarOpacity - minStarOpacity) * (Math.sin(factor/2000));
   const opacity = minStarOpacity + opacityIncrement;
   return opacity;
 }
@@ -40,8 +43,8 @@ function getOpacity(factor) {
 function addStars(width, height, spacing) {
     const stars = [];
     
-    for(let x = 0; x < width/2; x += spacing){
-        for(let y = 0; y < height/2; y += spacing){
+    for(let x = 0; x < width; x += spacing){
+        for(let y = 0; y < height; y += spacing){
             const star = {
                 x: x + randomInt(spacing),
                 y: y + randomInt(spacing),
@@ -70,6 +73,8 @@ function render(){
         fillCircle(ctx, x, y, star.r, `rgba(255, 255, 255, ${opacity}`);
 
     });
+
+    addForeground();
 
     counter++;
     requestAnimationFrame(render);
