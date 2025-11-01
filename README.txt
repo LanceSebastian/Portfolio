@@ -8,6 +8,7 @@ To do:
 - myProjects
     - Display projects (bosface, SE chessTutor, mobile dev)
 - About Me (focusing on the human side, displaying hobbies and photos and history maybe)
+- Gallery of html canvas stuff
 
 # Lance Sebastian's Portfolio
 The key objective are to:
