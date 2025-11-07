@@ -20,7 +20,7 @@ function addForeground() {
     ctx.fillStyle = "rgba(222, 184, 135,0)";
     ctx.fillRect(0,0,width,height);
 
-    ctx.drawImage(image, 0,0, width, height);    
+    ctx.drawImage(image, 0,height/2, width, height/2);    
 
     ctx.globalCompositeOperation = "source-over";
 
