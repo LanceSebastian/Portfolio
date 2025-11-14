@@ -1,133 +1,90 @@
-<!DOCTYPE html>
-<html lang = "en">
-	<head>
-		<meta http-equiv="Content-Type"
-		content="text/html; charset=utf-8" />
-		<title>My Webpage</title>
-		<link rel="stylesheet" href="./src/styles.css">
-	</head>
-	<body>
-		<img id="#cityImage" src="../src/city.png" style = "display:none;"></img>
-		<ul class = "header">
-			<li style = "float: left;"><a href="#frontCover">LVS</a></li>
-			<li><a href="#myProjects">myProjects</a></li>
-			<li><a href="#mySkills">mySkills</a></li>
-			<li><a href="#briefSummary">quickSummary</a></li>
-		</ul>
-
-		<canvas id="frontCover">
-			
-		</canvas>
-
-		<div id="briefSummary" >
-			<h1> #briefSummary </h1>
-		
-			<div class = "columns">
-				<div class ="description">
-					<h2> Past </h2>
-					<div>
-						<p>
-							At 14, I started my programming journey with Python which culminated into
-							  various text-based games.
-						</p>
-						<p>
-							Later on, I develop a gamified learning tool using the pygame modules.
-							The game had user progression, statistic tracking, and active feedback.
-						</p>
-						<p>
-							Pursuing CompSci, I went to Aberystwyth Univeristy, experimenting with the
-							different languages, mediums, and modules. 
-						</p>
-					</div>
-				</div>
-
-				<div class ="description">
-					<h2> Present </h2>
-					<div>
-						<p>
-							I graduated with Upper Second-Class Honours in Computer Science, having experienced Web 
-							and Mobile development, Robotics and AI, and Software Engineering.
-						</p>
-						<p>
-							Outside of work, I enjoy training, gaming, and manga.
-							I'm currently interested in travelling, having stayed in Asia for 3 months straight
-							after graduating. 
-						</p>
-					</div>
-				</div>
-
-				<div class="description">
-					<h2> Future </h2>
-					<div>
-						<p>
-							In the future, I see myself working remotely and being able to spend time
-							with family, travelling the world and learning new cultures.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="mySkills">
-			<h1> #skillsSection </h1>
-			<div class="gallery">
-				<h2>languages</h2>
-				<div>
-					<p>HTML</p>
-					<p>CSS</p>
-					<p>JavaScript</p>
-					<p>Java</p>
-					<p>C++</p>
-					<p>Python</p>
-					<p>Kotlin</p>
-					<p>C</p>
-				</div>
-
-				<h2>devTools</h2>
-				<div>
-					<p>Android Studio</p> 
-					<p>Visual Studio</p>
-					<p>Latex</p> 
-					<p>Roblox Studio</p> 
-					<p>IntelliJ</p>
-					<p>CLion</p> 
-					<p>Blender</p> 	
-					<p>Notepad++</p>
-				</div>
-
-				<h2>miscellaneous</h2>
-				<div>
-					<p>PC Assembly</p> 
-					<p>Keyboard Assembly</p>
-					<p>Phone Repair</p> 
-					<p>Microsoft Office</p> 
-					<p>Organisation</p>
-					<p>Teamwork and Management</p> 
-					<p>Communication</p> 	
-					<p>Problem-Solving</p>
-					<p>Adaptability</p>
-					<p>Web Development</p>
-					<p>Video Game Design</p>
-					<p>Cement Work</p>
-				</div>
-			</div>
-		</div>	
-
-		<div id = "projects">
-			<h1> Projects </h1>
-		</div>
-
-		<footer>
-			<h2> Footer </h2>
-		</footer>
-		
-		<div id="myModal" class="modal">
-			<span class="close">&times;</span>
-			<p class="modalContent" id="content">
-		</div>
-
-		<script src = "./scripts/frontCover.js">
-		</script>
-		
-	</body>
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+        content="text/html; charset=utf-8" />
+        <title>My Webpage</title>
+        <link rel="stylesheet" href="./src/styles.css">
+        <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <ul class = "nav-bar">
+            <li><a href="#home">Portfolio</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img class = "banner" src = "./src/winter.jpg" alt = "Winter Image by Gabi from Pixabay"/>
+        <div class = "header" >
+            <h1>Hi, I'm Lance.</h1>
+            <p>I design and build websites</p>
+            <a href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
+                <i class = "fa-brands fa-linkedin"></i>
+            </a>    
+            <a href = "https://github.com/LanceSebastian">
+                <i class = "fa-brands fa-github"></i>
+            </a>
+            <a href = "https://www.instagram.com/lance.sebasstian/#">
+                <i class = "fa-brands fa-instagram"></i>
+            </a>
+            <a href = "https://www.facebook.com/profile.php?id=100011316192612">
+                <i class = "fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        
+        <div class = "brief-summary">
+            <h2>Brief Summary</h2>
+            <p>
+                I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies and improve my skills.
+            </p>
+        </div>
+        <div class = "projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>bosface.com</h3>
+                    <p>Website Development</p>
+                    <ul>
+                        <li> WordPress </li>
+                        <li> E-commerce </li>
+                        <li> Mobile-Friendly </li>
+                    </ul>
+                    <a href="https://bosface.com">Visit Site</a>
+                </li>
+                <li>
+                    <h3>Sous Chef</h3>
+                    <p>Mobile Development</p>
+                    <ul>
+                        <li> Android Studio </li>
+                        <li> Kotlin </li>
+                        <li> Firebase </li>
+                    </ul>
+                    <a href="">GitHub</a>
+                    <a href="">Explore</a>
+                </li>
+                <li>
+                    <h3>Chess Tutor</h3>
+                    <p>Software Engineering</p>
+                    <ul>
+                        <li> IntelliJ </li>
+                        <li> Java </li>
+                        <li> JUnit </li>
+                    </ul>
+                    <a href="">GitHub</a>
+                    <a href="">Explore</a>
+                </li>
+                <li>
+                    <h3>Card Company</h3>
+                    <p>Game Development</p>
+                    <ul>
+                        <li> Python </li>
+                        <li> pygame </li>
+                    </ul>
+                    <a href="">GitHub</a>
+                    <a href="">Explore</a>
+                </li>
+            </ul>
+            <footer>
+                <p>© 2024 Lance Sebastian. All rights reserved.</p>
+            </footer>
+    </body>
 </html>
