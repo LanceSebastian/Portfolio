@@ -1,10 +1,16 @@
 body {
-    margin:0;
+    margin:0 ;
 }
 
 h1 {
     margin: 0;
     padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
 }
 
 p {
@@ -44,4 +50,44 @@ p {
     color: white;
     margin-right: 15px;
     text-decoration: none;
+}
+
+.projects {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projectItem {
+    display: flex;
+    height: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.projectItem img{
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+}
+
+.tags {
+    list-style-type: none;
+    padding: 10px
+}
+
+.tags li {
+    display: inline;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.squeeze {
+    margin: 0 32px;
 }
