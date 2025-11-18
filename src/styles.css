@@ -51,8 +51,8 @@ p {
 
 .header {
     position: absolute;
-    top: 400px;
-    left: 100px;
+    top: 60%;
+    left: 10%;
     color: white;
     font-size: 2em;
     font-weight: bold;
@@ -61,7 +61,7 @@ p {
 
 .header a {
     color: white;
-    margin-right: 15px;
+    margin-right: 16px;
     text-decoration: none;
 }
 
