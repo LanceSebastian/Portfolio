@@ -100,8 +100,16 @@
                 </li>
             </ul>
         </div>
-            <footer>
-                <p>© 2024 Lance Sebastian. All rights reserved.</p>
-            </footer>
+        
+        <footer>
+            <p>This page was last updated:</p>
+            <p id="date"></p>
+            <p>© 2024 Lance Sebastian. All rights reserved.</p>
+        </footer>
+
+        <script>
+            document.getElementById("date").innerHTML = document.lastModified;
+        </script>
+
     </body>
 </html>
