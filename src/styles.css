@@ -89,16 +89,19 @@ p {
 }
 
 .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     list-style-type: none;
-    padding: 10px
+    padding-left: 0px;
 }
 
 .tags li {
     display: inline;
     background-color: #f0f0f0;
-    border-radius: 20px;
-    margin-right: 10px;
-    padding: 5px 10px;
+    border-radius: 16px;
+    margin: 0px 8px 8px 0px;
+    padding: 4px 8px;
 }
 
 .squeeze {
