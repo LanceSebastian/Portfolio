@@ -48,8 +48,9 @@ p {
 
 .banner {
     width: 100%;
-    height: auto;
+    height: 60%;
     display: block;
+    object-fit: cover;
     mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.73), transparent 100%);
 }
 
