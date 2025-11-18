@@ -18,6 +18,10 @@ p {
     padding: 0;
 }
 
+.constructionBody{
+    background-color: #c4daee;
+}
+
 .navBar {
     display:flex;
     justify-content:center;
