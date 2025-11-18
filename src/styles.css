@@ -107,3 +107,24 @@ p {
 .squeeze {
     margin: 0 32px;
 }
+
+.bigButton {
+    display: inline-block;
+    border: #4f3824 solid;
+    margin-top: 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #4f3824;
+    font-size: 1em;
+}
+
+.grow {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
