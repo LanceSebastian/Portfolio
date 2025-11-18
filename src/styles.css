@@ -132,3 +132,8 @@ p {
 .grow:hover {
     transform: scale(1.2);
 }
+
+.down {
+    position: absolute;
+    bottom: 16px;
+}
