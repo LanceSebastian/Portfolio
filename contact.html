@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./src/styles.css">
         <title>Contact Me</title>
     </head>
-    <body>
+    <body class = "contactBody">
         <ul class = "navBar">
             <li class = "navItem grow"><a href="index.html">Portfolio</a></li>
             <li class = "navItem grow"><a href="emptyPage.html">About Me</a></li>
@@ -37,4 +37,16 @@
                 <input class="grow" type="submit" value="Submit">
             </form>
         </div>
+
+        <footer class="down squeeze">
+            <p>This page was last updated:</p>
+            <p id="date"></p>
+            <p>© 2024 Lance Sebastian. All rights reserved.</p>
+        </footer>
+
+        <script>
+            document.getElementById("date").innerHTML = document.lastModified;
+        </script>
+
+    </body>
 </html>
