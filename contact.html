@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/styles.css">
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <ul class = "navBar">
+            <li class = "navItem grow"><a href="index.html">Portfolio</a></li>
+            <li class = "navItem grow"><a href="emptyPage.html">About Me</a></li>
+            <li class = "navItem grow"><a href="emptyPage.html">Contact</a></li>
+        </ul>
+
+        <div class = "squeeze plainHeader">
+            <h1>Contact Me</h1>
+            <p>I'd love to hear from you!</p>
+        </div>
+
+        <div class="squeeze container">
+            <form action = "https://formspree.io/f/manvezdb" method="post">
+                <div class = "formGroup">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="What's your name?">
+                </div>
+
+                <div class = "formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="How I can reach you.">
+                </div>
+
+                <div class = "formGroup">
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="A project, an idea, or even a joke!" style="height:200px"></textarea>
+                </div>
+
+                <input class="grow" type="submit" value="Submit">
+            </form>
+        </div>
+</html>
