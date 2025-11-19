@@ -2,22 +2,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./src/styles.css">
         <title>The Author</title>
     </head>
     <body>
-        <header class="squeeze">
-            <h1>Lance Sebastian</h1>
-            <h2>Contact Me</h2>
-        </header>
-
         <ul class = "navBar">
             <li class = "navItem grow"><a href="index.html">Portfolio</a></li>
-            <li class = "navItem grow"><a href="emptyPage.html">About Me</a></li>
-            <li class = "navItem grow"><a href="emptyPage.html">Contact</a></li>
+            <li class = "navItem grow"><a href="author.html">Author</a></li>
+            <li class = "navItem grow"><a href="contact.html">Contact</a></li>
         </ul>
 
-        <div class="squeeze">
-            <h2>Get in Touch</h2>
-            <p>If you'd like to reach out to me, feel free to send me an email at <a href="mailto:
+        <div class="headerContainer">
+            <img class = "banner" src = "./src/LanceVietnam.jpg" alt = "Author Banner Image"/>
+            <div class = "header">
+                <h1>The Author</h1>
+                <p>Who is Lance Vincent Miguel Sebastian?</p>
+            </div>  
+        </div>
+
+        <footer class="down squeeze">
+            <p>This page was last updated:</p>
+            <p id="date"></p>
+            <p>© 2024 Lance Sebastian. All rights reserved.</p>
+        </footer>
+
+        <script>
+            document.getElementById("date").innerHTML = document.lastModified;
+        </script>
+    </body>
 </html>
