@@ -99,7 +99,8 @@ p {
 
 .projectItem {
     display: flex;
-    height: 350px;
+    flex-wrap: wrap;
+    min-height: 350px;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 16px;
