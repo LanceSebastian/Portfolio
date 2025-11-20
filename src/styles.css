@@ -98,6 +98,7 @@ p {
 }
 
 .projectItem {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     min-height: 350px;
