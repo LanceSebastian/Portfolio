@@ -14,8 +14,9 @@ h3 {
 }
 
 p {
+    text-align:justify;
     margin: 0;
-    margin-bottom: 8px;
+    margin-top: 8px;
     padding: 0;
 }
 
@@ -64,16 +65,38 @@ p {
     font-size: 1.5em;
 }
 
+.belt {
+    max-width: 900px;
+}
+
+.forty {
+    height: 40vh;
+}
+
+.eighty {
+    height: 80vh;
+}
+
 .headerContainer {
+    margin: auto;
     position: relative;
+    display: block;
 }
 
 .banner {
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: block;
     object-fit: cover;
     mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.73), transparent 100%);
+}
+
+.frame {
+    position:absolute;
+    right: 20%;
+    max-width: 400px;
+    max-height: 300px;
+    margin: auto;
 }
 
 .plainHeader {
