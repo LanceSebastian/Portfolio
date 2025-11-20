@@ -1,3 +1,15 @@
+/*
+main elements
+
+page classes
+
+group classes
+
+properties
+*/
+
+/* main elements */
+
 body {
     margin:0 ;
 }
@@ -20,6 +32,8 @@ p {
     padding: 0;
 }
 
+/* page classes */
+
 .constructionBody{
     background-color: #c4daee;
 }
@@ -33,59 +47,7 @@ p {
     color: white;
 }
 
-.topicContainer {
-    display: block;
-    margin: auto;
-    padding: 32px;
-    max-width:800px;
-}
-
-.dentRight {
-    margin-right: 64px;
-}
-
-.dentLeft {
-    margin-left: 64px;
-}  
-
-.white {
-    color: white;
-}
-
-.black {
-    color: black;
-}
-
-.navBar {
-    display:flex;
-    justify-content:center;
-    list-style-type: none;
-    margin: 0;
-    padding: 32px; 
-}
-
-.navItem {
-    display: inline;
-    margin-right: 16px;
-    font: 2em;
-}
-
-.navItem a {
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-.belt {
-    max-width: 900px;
-}
-
-.forty {
-    height: 40vh;
-}
-
-.eighty {
-    height: 80vh;
-}
+/* group classes */
 
 .headerContainer {
     margin: auto;
@@ -149,8 +111,30 @@ p {
     margin-bottom: 16px;
 }
 
-.left {
-    flex-direction: row-reverse;
+.topicContainer {
+    display: block;
+    margin: auto;
+    padding: 32px;
+    max-width:800px;
+}
+
+.navBar {
+    display:flex;
+    justify-content:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 32px; 
+}
+
+.navItem {
+    display: inline;
+    margin-right: 16px;
+    font: 2em;
+}
+
+.navItem a {
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .projectItem img{
@@ -175,10 +159,6 @@ p {
     padding: 4px 8px;
 }
 
-.squeeze {
-    margin: 0 32px;
-}
-
 .bigButton {
     display: inline-block;
     border: #4f3824 solid;
@@ -189,20 +169,6 @@ p {
     text-decoration: none;
     color: #4f3824;
     font-size: 1em;
-}
-
-.grow {
-    display: inline-block;
-    transition: transform .2s;
-}
-
-.grow:hover {
-    transform: scale(1.2);
-}
-
-.down {
-    position: absolute;
-    bottom: 16px;
 }
 
 .formGroup {
@@ -233,4 +199,56 @@ input[type=submit] {
     background-color: #ff754a;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 32px;
+}
+
+/* properties */
+
+.belt {
+    max-width: 900px;
+}
+
+.forty {
+    height: 40vh;
+}
+
+.eighty {
+    height: 80vh;
+}
+
+.dentRight {
+    margin-right: 64px;
+}
+
+.dentLeft {
+    margin-left: 64px;
+}  
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.left { /*TODO: Remame for accuracy*/
+    flex-direction: row-reverse;
+}
+
+.squeeze {
+    margin: 0 32px;
+}
+
+.grow {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+.down {
+    position: absolute;
+    bottom: 16px;
 }
