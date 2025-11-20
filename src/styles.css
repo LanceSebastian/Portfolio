@@ -15,6 +15,7 @@ h3 {
 
 p {
     margin: 0;
+    margin-bottom: 8px;
     padding: 0;
 }
 
@@ -29,6 +30,11 @@ p {
 .authorBody {
     background-color: #4f3824;
     color: white;
+}
+
+.topic {
+    margin:auto;
+    max-width:800px;
 }
 
 .white {
