@@ -107,8 +107,9 @@ p {
     display: flex;
     flex-wrap: wrap;
     min-height: 350px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 64px;
     margin-bottom: 16px;
 }
 
@@ -145,18 +146,16 @@ p {
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 8px;
     list-style-type: none;
     padding-left: 0px;
 }
 
 .tags li {
-    display: inline;
     background-color: #f0f0f0;
     border-radius: 16px;
-    margin: 0px 8px 8px 0px;
     padding: 4px 8px;
 }
 
@@ -205,6 +204,11 @@ input[type=submit] {
 
 /* properties */
 
+.thumbnail {
+    max-width: 250px;
+    max-height: 250px;
+}
+
 .belt {
     max-width: 900px;
 }
@@ -219,6 +223,10 @@ input[type=submit] {
 
 .hundred {
     height: 100vh;
+}
+
+.alignRight, .alignRight *{
+    text-align: end;
 }
 
 .dentRight {
