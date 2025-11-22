@@ -39,7 +39,7 @@ p {
 }
 
 .contactBody{
-    background-image: linear-gradient(to bottom right, #d1603d, #ff8d4a, #ff8d4a, #d1603d);
+    background: linear-gradient(#d1603d, #ff8d4a, #d1603d);
 }
 
 .authorBody {
@@ -195,6 +195,7 @@ input[type=submit] {
 }
 
 .container {
+    display: block;
     border-radius: 16px;
     background-color: #ff754a;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
