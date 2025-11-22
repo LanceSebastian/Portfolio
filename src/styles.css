@@ -86,11 +86,14 @@ hr {
 
 .frame {
     position:absolute;
-    bottom: 100px;
-    right: 20%;
-    max-width: 400px;
-    max-height: 300px;
+    top: calc(60% - 100px);
+    transform: translateY(-50%);
+    right: 0%;
+    max-width: 1000px;
+    width: 80%;
     margin: auto;
+    border-radius: 0px 50% 0px 0px;
+    box-shadow: 16px 32px 16px #0000002f;
 }
 
 .plainHeader {
@@ -102,13 +105,13 @@ hr {
 .header {
     position: absolute;
     margin:auto;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     left: 10%;
     color: white;
     font-size: 2em;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header a {
@@ -269,6 +272,10 @@ input[type=submit] {
 
 .forty {
     height: 40vh;
+}
+
+.sixty {
+    height: 60vh;
 }
 
 .eighty {
