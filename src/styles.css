@@ -146,7 +146,7 @@ p {
 }
 
 .tags {
-    display: grid;
+    display: inline-grid;
     grid-auto-flow: column;
     grid-column-gap: 8px;
     list-style-type: none;
