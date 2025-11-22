@@ -250,7 +250,8 @@ input[type=submit] {
 }
 
 .squeeze {
-    margin: 0 32px;
+    width:1000px;
+    margin: auto;
 }
 
 .grow {
