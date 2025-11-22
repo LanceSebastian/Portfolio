@@ -254,7 +254,7 @@ input[type=submit] {
 }
 
 /* slideshow */
-.slide {
+.photoSlide, .workSlide {
     display: none;
     position: absolute;
     left: 50%;
@@ -264,7 +264,7 @@ input[type=submit] {
 }
 
 /*Make the images 4:3*/
-.slide img {
+.photoSlide img, .workSlide img {
     height: 100%;
     user-select: none;
 }
