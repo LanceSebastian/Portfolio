@@ -82,7 +82,8 @@ p {
 .header {
     position: absolute;
     margin:auto;
-    bottom: 32px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 10%;
     color: white;
     font-size: 2em;
@@ -214,6 +215,10 @@ input[type=submit] {
 
 .eighty {
     height: 80vh;
+}
+
+.hundred {
+    height: 100vh;
 }
 
 .dentRight {
