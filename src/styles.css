@@ -281,6 +281,7 @@ input[type=submit] {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     width: 36px;
     height: 36px;
     padding: 16px;
