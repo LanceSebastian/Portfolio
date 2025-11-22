@@ -19,6 +19,11 @@ h1 {
     padding: 0;
 }
 
+h2 {
+    margin:0;
+    padding: 0;
+}
+
 h3 {
     margin: 0;
     padding: 0;
@@ -30,6 +35,10 @@ p {
     margin: 0;
     margin-top: 8px;
     padding: 0;
+}
+
+hr {
+    width: 90%;
 }
 
 /* page classes */
@@ -48,6 +57,17 @@ p {
 }
 
 /* group classes */
+
+.mediaContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap {
+    gap: 64px;
+}
 
 .headerContainer {
     margin: auto;
@@ -109,7 +129,7 @@ p {
     min-height: 350px;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    gap: 256px;
     margin-bottom: 16px;
 }
 
@@ -159,6 +179,18 @@ p {
     padding: 4px 8px;
 }
 
+.ctaButton{
+    width: 160px;
+    margin: 12px;
+    border: #4f3824 solid;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4f3824;
+    font-size: 2em;
+    text-align: center;
+}
+
 .bigButton {
     display: inline-block;
     border: #4f3824 solid;
@@ -202,11 +234,33 @@ input[type=submit] {
     padding: 32px;
 }
 
+.box {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 500px;
+}
+
 /* properties */
 
+.bigPadding {
+    padding: 128px;
+}
+
 .thumbnail {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.largeThumbnail {
+    border-radius: 16px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.large {
+    font-size: x-large;
 }
 
 .belt {
@@ -260,7 +314,7 @@ input[type=submit] {
 }
 
 .grow:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .down {
