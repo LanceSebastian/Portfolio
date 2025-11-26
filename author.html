@@ -83,17 +83,81 @@
             </p>
         </div>
         <div class = "tab">
-            <button class = "tabLinks active" onClick="openContent(event, 'PhotoGallery')">Photo Gallery</button>
-            <button class = "tabLinks" onClick="openContent(event, 'Inspirations')">Inspirations</button>
+            <button class = "tabLinks active" onClick="openContent(event, 'photoGallery')">Photo Gallery</button>
+            <button class = "tabLinks" onClick="openContent(event, 'inspirations')">Inspirations</button>
         </div>
 
         <!-- Tab Content -->
-         <div id = "PhotoGallery" class = "tabContent" style = "display:block">
+         <div id = "photoGallery" class = "tabContent" style = "display:grid">
             <h2> Photo Gallery </h2>
             <p>Some of my favourite pictures</p>
+            <div class = "gallery">
+                <figure>
+                    <img src="./src/LanceFamily.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/LanceVietnamCROPPED.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/marcusAurelius.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/frierenCover.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/LabiSiffre.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/ChessTutor.png">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./src/BoSfaceLogo.jpg">
+                    <figcaption>
+                        <h3>My Image</h3>
+                        <p>Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+            </div>
          </div>
 
-         <div id = "Inspirations" class = "tabContent">
+         <div id = "inspirations" class = "tabContent">
             <h2> Inspirations </h2>
             <p>Resonated with my soul</p>
          </div>
@@ -123,7 +187,7 @@
                     tabLinks[i].className = tabLinks[i].className.replace("active", "");
                 }
 
-                document.getElementById(contentName).style.display = "block";
+                document.getElementById(contentName).style.display = "grid";
                 evt.currentTarget.className += " active";
             }
         </script>
