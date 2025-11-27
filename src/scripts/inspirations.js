@@ -5,32 +5,37 @@ const inpsoItems = [
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/CardInventoryLogo.png",
+        src: "./src/inspirations/EverythingEverywhereAllAtOnce.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/chef.png",
+        src: "./src/inspirations/LabiSiffre.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/construction.jpg",
+        src: "./src/inspirations/laputa castle in the sky.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/LanceFamily.jpg",
+        src: "./src/inspirations/marcusAurelius.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/LanceVietnamCROPPED.jpg",
+        src: "./src/inspirations/minecraftXBOX.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
-        src: "./src/winter.jpg",
+        src: "./src/inspirations/skyrim.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/yourName.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
