@@ -85,84 +85,42 @@
             </div>
         </div>
         <div class = "tab">
-            <button class = "tabLinks" onClick="openContent(event, 'photoGallery')">Photo Gallery</button>
-            <button class = "tabLinks active" onClick="openContent(event, 'inspirations')">Inspirations</button>
+            <button class = "tabLinks active" onClick="openContent(event, 'photoGallery')">Photo Gallery</button>
+            <button class = "tabLinks" onClick="openContent(event, 'inspirations')">Inspirations</button>
         </div>
 
         <!-- Tab Content -->
-         <div id = "photoGallery" class = "tabContent">
+         <div class = "tabContent" style = "display:grid">
             <h2> Photo Gallery </h2>
             <p>Some of my favourite pictures!</p>
-            <div class = "gallery">
+            <template id="photoGalleryTemplate">
                 <figure>
-                    <img src="./src/LanceFamily.jpg">
+                    <img>
                     <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
+                        <h3></h3>
+                        <p></p>
                     </figcaption>
                 </figure>
+            </template>
 
-                <figure>
-                    <img src="./src/LanceVietnamCROPPED.jpg">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./src/marcusAurelius.jpg">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./src/frierenCover.jpg">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./src/LabiSiffre.jpg">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./src/ChessTutor.png">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./src/BoSfaceLogo.jpg">
-                    <figcaption>
-                        <h3>My Image</h3>
-                        <p>Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit.</p>
-                    </figcaption>
-                </figure>
-            </div>
+            <div id="photoGallery" class = "gallery"></div>
          </div>
 
-         <div id = "inspirations" class = "tabContent" style = "display:grid">
+         <div class = "tabContent">
             <h2> Inspirations </h2>
             <p>Resonated with my soul</p>
             
+            <template id="inspirationsTemplate">
+                <figure>
+                    <img>
+                    <figcaption>
+                        <h3></h3>
+                        <p></p>
+                    </figcaption>
+                </figure>
+            </template>
+
+            <div id="inspirations" class = "gallery"></div>
 
          </div>
 
@@ -184,6 +142,9 @@
 
         <!--Viewer Script-->
         <script src = "./src/scripts/viewerScript.js"></script>
+
+        <!--Gallery Script-->
+        <script src = "./src/scripts/photoGallery.js"></script>
 
     </body>
 </html>
