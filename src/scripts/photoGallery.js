@@ -39,9 +39,6 @@ const items = [
 const template = document.getElementById("photoGalleryTemplate");
 const gallery = document.getElementById("photoGallery");
 
-console.log("templte: ", template);
-console.log("gallery: ", gallery);
-
 items.forEach(item => {
     const clone = template.content.cloneNode(true);
 
