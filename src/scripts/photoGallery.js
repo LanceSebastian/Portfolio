@@ -1,4 +1,4 @@
-const items = [
+const photoItems = [
     {
         src: "./src/BoSfaceLogo.jpg", 
         title: "My Image", 
@@ -36,17 +36,17 @@ const items = [
     }
 ];
 
-const template = document.getElementById("photoGalleryTemplate");
-const gallery = document.getElementById("photoGallery");
+const photoGalleryTemplate = document.getElementById("photoGalleryTemplate");
+const photoGallery = document.getElementById("photoGallery");
 
-items.forEach(item => {
-    const clone = template.content.cloneNode(true);
+photoItems.forEach(item => {
+    const clone = photoGalleryTemplate.content.cloneNode(true);
 
     clone.querySelector("img").src = item.src;
     clone.querySelector("img").alt = item.title;
     clone.querySelector("h3").textContent = item.title;
     clone.querySelector("p").textContent = item.desc;
 
-    gallery.appendChild(clone);
+    photoGallery.appendChild(clone);
 
 })

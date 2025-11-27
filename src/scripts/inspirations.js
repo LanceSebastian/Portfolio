@@ -1,4 +1,4 @@
-const items = [
+const inpsoItems = [
     {
         src: "./src/inspirations/frierenCover.jpg", 
         title: "My Image", 
@@ -36,17 +36,17 @@ const items = [
     }
 ];
 
-const template = document.getElementById("inspirationsTemplate");
-const gallery = document.getElementById("inspirations");
+const inspirationsTemplate = document.getElementById("inspirationsTemplate");
+const inspirationGallery = document.getElementById("inspirations");
 
-items.forEach(item => {
-    const clone = template.content.cloneNode(true);
+inpsoItems.forEach(item => {
+    const clone = inspirationsTemplate.content.cloneNode(true);
 
     clone.querySelector("img").src = item.src;
     clone.querySelector("img").alt = item.title;
     clone.querySelector("h3").textContent = item.title;
     clone.querySelector("p").textContent = item.desc;
 
-    gallery.appendChild(clone);
+    inspirationGallery.appendChild(clone);
 
 })
