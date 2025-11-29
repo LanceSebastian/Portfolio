@@ -353,34 +353,49 @@ input[type=submit] {
 /* TabUtility */
 
 .tab {
+    position: relative;
+    margin-top: 64px;
     overflow: hidden;
-    border: 1px solid black;
+    text-align: center;
 }
 
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+    background-color: #6d4c2f;
+    color: #44301f ;
+    border: #6d4c2f;
+    border-radius: 16px 16px 0px 0px;
     cursor: pointer;
     padding: 14px 16px;
+    transform: translateY(25px);
+    filter:grayscale(0.5);
     transition: 0.5s;
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    transform: translateY(16px);
+    filter:grayscale(0.2);
 }
 
 .tab button.active {
-    background-color:#ccc;
+    color: white;
+    transform: translateY(4px);
+    filter:grayscale(0);
 }
 
 .tabContent {
     display: none;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #6d4c2f;
     grid-column: main;
     padding: 1.25rem;
-    border: 1px solid #ccc;
-    border-top: none;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.tabLinks {
+    font-size: larger;
+    background-color: #6d4c2f;
+    color: white;
 }
 
 .gallery {
@@ -448,7 +463,7 @@ input[type=submit] {
 }
 
 @media (width > 600px) {
-    .gallery figure:nth-child(1) {
+    .gallery figure:nth-child(1){
         grid-area: span 2 / span 2;
     }
 
