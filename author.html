@@ -85,12 +85,12 @@
             </div>
         </div>
         <div class = "tab">
-            <button class = "tabLinks" onClick="openContent(event, 'photoGalleryTab')">Photo Gallery</button>
-            <button class = "tabLinks active" onClick="openContent(event, 'inspirationsTab')">Inspirations</button>
+            <button class = "tabLinks active" onClick="openContent(event, 'photoGalleryTab')">Photo Gallery</button>
+            <button class = "tabLinks" onClick="openContent(event, 'inspirationsTab')">Inspirations</button>
         </div>
 
         <!-- Tab Content -->
-        <div id = "photoGalleryTab" class = "tabContent">
+        <div id = "photoGalleryTab" class = "tabContent" style = "display:grid">
             <h2> Photo Gallery </h2>
             <p>Some of my favourite pictures!</p>
             <template id="photoGalleryTemplate">
@@ -106,7 +106,7 @@
             <div id="photoGallery" class = "gallery"></div>
         </div>
 
-        <div id = "inspirationsTab" class = "tabContent"  style = "display:grid">
+        <div id = "inspirationsTab" class = "tabContent">
             <h2> Inspirations </h2>
             <p>Resonated with my soul</p>
             
@@ -146,7 +146,6 @@
 
         <!--Inspirations Script-->
         <script src = "./src/scripts/inspirations.js"></script>
-
 
     </body>
 </html>

@@ -69,6 +69,36 @@ const inpsoItems = [
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
+    {
+        src: "./src/inspirations/diogenes.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/intoTheSpiderversejpg.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/jackieChan.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/pewdiepie.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/sunTzu.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/terraria.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
 
 ];
 
