@@ -38,7 +38,38 @@ const inpsoItems = [
         src: "./src/inspirations/yourName.jpg",
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    }
+    },
+    {
+        src: "./src/inspirations/castAway.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/darkSouls3.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/Portal2.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/redDeadRedemption2.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/StardewValley.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/theManFromEarth.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
 ];
 
 const inspirationsTemplate = document.getElementById("inspirationsTemplate");
