@@ -401,6 +401,7 @@ input[type=submit] {
 .gallery {
     display: grid;
     margin-top: 32px;
+    max-height: 80vh;
     grid-template-columns: repeat(auto-fit,
     minmax(12.5rem, 1fr));
     grid-auto-rows: 12.5rem;
@@ -463,15 +464,15 @@ input[type=submit] {
 }
 
 @media (width > 600px) {
-    .gallery figure:nth-child(1){
+    .gallery figure:nth-child(1), .gallery figure:nth-child(5n){
         grid-area: span 2 / span 2;
     }
 
-    .gallery figure:nth-child(4n+1) {
+    .gallery figure:nth-child(3n+1) {
         grid-row: span 2;
     }
 
-    .gallery figure:nth-child(4n+2) {
+    .gallery figure:nth-child(3n+2) {
         grid-column: span 2;
     }
 }
@@ -480,6 +481,7 @@ input[type=submit] {
 
 .viewImage {
     display: flex;
+    overflow: hidden;
     position: relative;
     justify-content: center;
     align-items: center;

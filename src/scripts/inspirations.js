@@ -99,6 +99,46 @@ const inpsoItems = [
         title: "My Image", 
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
+    {
+        src: "./src/inspirations/dnd.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/doomEternal.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/hollowKnight.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/howToTrainYourDragon.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/htmmbgd.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/iwteyp.jpg",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/spiderMan.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    {
+        src: "./src/inspirations/vanoss.png",
+        title: "My Image", 
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
 
 ];
 
