@@ -6,8 +6,8 @@
     align-items: center;
 }
 
-.gap {
-    gap: 64px;
+.content {
+    height: 100%;
 }
 
 .headerContainer {
@@ -121,6 +121,26 @@
     background-color: #f0f0f0;
     border-radius: 16px;
     padding: 4px 8px;
+}
+
+.process{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.process li {
+    display: inline;
+    min-width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 64px;
+    padding: auto;
+}
+
+li > p {
+    text-align: center;
 }
 
 .ctaButton{

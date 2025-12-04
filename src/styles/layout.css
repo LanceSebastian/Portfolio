@@ -29,7 +29,7 @@
     height: 60vh;
 }
 
-.eighty {
+.vh-80 {
     height: 80vh;
 }
 
@@ -84,6 +84,31 @@
     bottom: 16px;
 }
 
+.autoMargin{
+    margin:auto;
+}
+
+.autoPadding{
+    padding:auto;
+}
+
 .outline {
     outline: black solid;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.i-64 {
+    font-size: 64px;
+}
+
+.center {
+    display: grid;
+    place-items: center;
 }
