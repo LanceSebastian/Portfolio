@@ -1,24 +1,12 @@
-/*
-main elements
 
-page classes
-
-group classes
-
-properties
-*/
-
-/* main elements */
+/* base elements */
 @import "./styles/base.css";
 
 /* page classes */
-
 @import "./styles/pages.css";
 
-/* group classes */
-
+/* components classes */
 @import "./styles/components.css";
 
-/* properties */
-
+/* layout */
 @import "./styles/layout.css";
