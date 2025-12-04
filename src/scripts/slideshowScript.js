@@ -1,8 +1,7 @@
 
-let slideIndex = [1,1];
-let slideId = ["photoSlide","workSlide"];
+let slideIndex = [1];
+let slideId = ["slide"];
 showSlides(1,0);
-showSlides(1,1);
 
 function plusSlides(n, no) {
     showSlides(slideIndex[no] += n,no);
@@ -16,5 +15,5 @@ function showSlides(n,no) {
     for (i = 0; i < slideshow.length; i++) {
         slideshow[i].style.display = "none";
     }
-    slideshow[slideIndex[no]-1].style.display = "block";
+    slideshow[slideIndex[no]-1].style.display = "flex";
 }

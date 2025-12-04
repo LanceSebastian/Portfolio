@@ -21,11 +21,11 @@
     max-width: 900px;
 }
 
-.forty {
+.vh-40 {
     height: 40vh;
 }
 
-.sixty {
+.vh-60 {
     height: 60vh;
 }
 
@@ -108,7 +108,7 @@
     font-size: 64px;
 }
 
-.center {
+.center{
     display: grid;
     place-items: center;
 }

@@ -35,20 +35,18 @@
         </div>
         
         <div class = "squeeze briefSummary">
-            <div class="mediaContent">
-                <img class = "largeThumbnail" src="./src/LanceFamily.jpg">
+            <div class = "mediaContent">
+                <img src="./src/LancePP.JPG">
                 <div class = "box">
-                    <h2>Brief Summary</h2>
+                    <h2>Who am I?</h2>
                     <p class = "large">
-                        I'm a Freelance Web Developer and recent Computer Science graduate with experience delivering custom
-                        websites for clients. 
+                        I'm a Freelance Web Developer (and a recent Computer Science graduate) 
+                        who builds custom, high-quality websites tailored to your goals.
                     </p>
                     <p class = "large">
-                        Proficient in front-end development (HTML, CSS, JavaScript) with growing expertise
-                        in WordPress and responsive design. Passionate about client collaboration, clean designs, and continuous
-                        learning in full-stack development.
+                        Need a [cool animation here]
                     </p>
-                    <div class = "mediaContent">
+                    <div class = "buttonContainer">
                         <a class = "grow ctaButton" href="https://drive.google.com/file/d/1n95YkIqrxBOR-UgRIbEkv01Z4jjHImW5/view?usp=drive_link">Résumé</a>
                         <a class = "grow ctaButton" href="author.html">About Me</a>
                     </div>
@@ -59,7 +57,7 @@
         <hr>
 
         <!-- What to Expect -->
-         <div class = "center squeeze vh-80 w-100">
+        <div class = "center squeeze vh-60 w-100">
             <h2> What to Expect </h2>
             <div class = "content">
                 <ul class = "process autoMargin autoPadding">
@@ -94,16 +92,15 @@
                     </li>
                 </ul>
             </div>
-         </div>
+        </div>
 
-         <hr>
+        <hr>
 
         <!-- Projects Section -->
-        <div class = "squeeze">
-            <h2>Client Work</h2>
-            <ul class = "projects">
-                <hr>
-                <li class = "projectItem">
+        <div class = "vh-60 center">
+            <div class = "slideshowContainer">
+                <h2 style = "text-align: center;">Projects</h2>
+                <div class = "slide">
                     <div>
                         <p>Website Development</p>
                         <h3>bosface.com</h3>
@@ -120,9 +117,10 @@
                     <a class="grow" href = "./src/BoSfaceLogo.jpg">
                         <img class="thumbnail" src="./src/BoSfaceLogo.jpg" alt="BoSface Logo" />
                     </a>
-                </li>
-                <hr>
-                <li class = "projectItem left">
+                </div>
+
+
+                <div class = "slide">
                     <div class = "alignRight">
                         <p>Mobile Development</p>
                         <h3>Sous Chef</h3>
@@ -139,9 +137,10 @@
                     <a class="grow" href = "./src/chef.png">
                         <img class="thumbnail" src="./src/chef.png" alt="Sous Chef Logo" />
                     </a>
-                </li>
-                <hr>
-                <li class = "projectItem">
+                </div>
+
+
+                <div class = "slide">
                     <div>
                         <p>Software Engineering</p>
                         <h3>Chess Tutor</h3>
@@ -158,9 +157,10 @@
                     <a class="grow" href = "./src/ChessTutor.png">
                         <img class="thumbnail" src="./src/ChessTutor.png" alt="Chess Tutor Image" />
                     </a>
-                </li>
-                <hr>
-                <li class = "projectItem left">
+                </div>
+
+
+                <div class = "slide">
                     <div class = "alignRight">
                         <p>Game Development</p>
                         <h3>Card Company</h3>
@@ -177,15 +177,18 @@
                     <a class="grow" href = "./src/CardInventoryLogo.png">
                         <img class="thumbnail" src="./src/CardInventoryLogo.png" alt="Card Company Image" />
                     </a>
-                </li>
-                <hr>
-            </ul>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
         </div>
 
+        <hr>
         <!-- Client Reviews -->
-         <div>
+        <div class = "center squeeze vh-60 w-100">
             <h2>Client Reviews</h2>
-            <ul>
+            <ul class = "process">
                 <li>
                     <h3>Melinda BoSface</h3>
                     <p>
@@ -223,7 +226,34 @@
                     </p>
                 </li>
             </ul>
-         </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Me -->
+        <div class ="squeeze vh-60">
+            <h2> Contact Me </h2>
+              <div class="contactContainer">
+                <form action = "https://formspree.io/f/manvezdb" method="post">
+                    <div class = "formGroup">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="What's your name?">
+                    </div>
+    
+                    <div class = "formGroup">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="How I can reach you.">
+                    </div>
+    
+                    <div class = "formGroup">
+                        <label for="message">Message</label>
+                        <textarea name="message" placeholder="A project, an idea, or even a joke!" style="height:200px"></textarea>
+                    </div>
+    
+                    <input class="grow" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
 
         <footer class="squeeze">
             <p>This page was last updated:</p>
@@ -234,6 +264,8 @@
         <script>
             document.getElementById("date").innerHTML = document.lastModified;
         </script>
+
+        <script src="./src/scripts/slideshowScript.js"></script>
 
     </body>
 </html>
