@@ -206,10 +206,16 @@ input[type=submit] {
 
 .contactContainer {
     display: block;
+    max-width: 1200px;
+    width: 100%;
     border-radius: 16px;
-    background-color: #ff754a;
+    background-color: #4f3824;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 32px;
+}
+
+.contactContainer > * {
+    color: white;
 }
 
 .box {
