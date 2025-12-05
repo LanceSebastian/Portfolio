@@ -1,8 +1,8 @@
 :root {
     --main-bg-color: #f0f0f0;
     --main-bg-color-2: white;
-    --primary: #4f3824;
+    --primary: #be805e;
     --submit: #04AA6D;
-    --text-light: black;
-    --text-dark: white;
+    --text-light: white;
+    --text-dark: black;
 }
