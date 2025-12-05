@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
     margin:0 ;
+    background-color: var(--main-bg-color);
 }
 
 h1 {
@@ -25,6 +28,18 @@ h3 {
     font-size: 3em;
 }
 
+li > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+li > i {
+    margin-bottom: 16px;
+    width: 75px;
+    height: 75px;
+}
+
 p {
     text-align:justify;
     margin: 0;
@@ -39,5 +54,6 @@ hr {
 
 footer {
     display: block;
-    height: 100px;
+    min-height: 100px;
+    background-color: var(--main-bg-color-2);
 }
