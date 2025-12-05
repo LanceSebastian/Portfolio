@@ -108,16 +108,23 @@
 
 .navBar {
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 32px; 
+    padding: 16px; 
 }
 
 .navItem {
     display: inline;
     margin-right: 16px;
     font: 2em;
+}
+
+.pfp {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .navItem a {
@@ -501,3 +508,4 @@ pre.caret-bar > span {
     border-color: #fff;
   }
 }
+
