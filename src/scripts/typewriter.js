@@ -3,10 +3,10 @@ var iSub = 0;
 var randItems = [];
 const subtitleArray = [
     "I design to your tastes.",
-    "I build to your specifications",
-    "I make it fast for your clients",
-    "I Lorem for your Ipsum",
-    "I maintain for stability"
+    "I build to your specifications.",
+    "I make it fast websites.",
+    "I Lorem for your Ipsum.",
+    "I maintain for stability."
 ];
 
 var txt = "I design and build websites.";

@@ -419,6 +419,7 @@ input[type=submit] {
 /* slideshow */
 .photoSlide, .workSlide, .slide{
     display: none;
+    flex-wrap: wrap-reverse;
     position: absolute;
     left: 0;
     right:0;
