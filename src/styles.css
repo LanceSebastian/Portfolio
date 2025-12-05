@@ -12,3 +12,6 @@
 
 /* layout */
 @import "./styles/layout.css";
+
+/* typography */
+@import "./styles/typography.css"
