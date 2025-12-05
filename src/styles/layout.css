@@ -123,3 +123,8 @@
 .behind {
     z-index: -1;
 }
+
+.lancify {
+    display: inline;
+    color: #be805e;
+}
