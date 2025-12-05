@@ -26,11 +26,11 @@
 }
 
 .vh-60 {
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .vh-80 {
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .hundred {
@@ -111,4 +111,10 @@
 .center{
     display: grid;
     place-items: center;
+}
+
+.scroll {
+    display: block;
+    height: 100%;
+    overflow: auto;
 }

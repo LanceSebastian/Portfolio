@@ -15,10 +15,12 @@
         </ul>
         
         <div class="vh-80 headerContainer">
-            <img class = "banner" src = "./src/winter.jpg" alt = "Winter Image by Gabi from Pixabay"/>
+            <img class = "banner" src = "./src/LanceBg11.JPG" alt = "Winter Image by Gabi from Pixabay"/>
             <div class = "header" >
-                <h1>Hi, I'm Lance.</h1>
-                <p>I design and build websites.</p>
+                <h1>Hi, I'm Lance.</h1> 
+                <pre class="caret-bar"><div id ="typewrite" style="display:inline;"></div><span>&nbsp;</span>
+                </pre>
+                
                 <a class="grow" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
                     <i class = "fa-brands fa-linkedin"></i>
                 </a>    
@@ -72,7 +74,7 @@
                     </li>
                     <li>
                         <i class = "i-64 fa-solid fa-hammer"></i>
-                        <p>3. Build the Website</p>
+                        <p>3. Development</p>
                     </li>
                     <li>
                         <i class="i-64 fa-solid fa-puzzle-piece"></i>
@@ -80,7 +82,7 @@
                     </li>
                     <li>
                         <i class="i-64 fa-solid fa-microscope"></i>
-                        <p>5. Website Test</p>
+                        <p>5. Testing</p>
                     </li>
                     <li>
                         <i class="i-64 fa-solid fa-rocket"></i>
@@ -188,44 +190,46 @@
         <!-- Client Reviews -->
         <div class = "center squeeze vh-60 w-100">
             <h2>Client Reviews</h2>
-            <ul class = "process">
-                <li>
-                    <h3>Melinda BoSface</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </li>
-                <li>
-                    <h3>Lorem Ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </li>
-                <li>
-                    <h3>Lorem Ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </li>
-            </ul>
+            <div class = "scroll">
+                <ul class = "process">
+                    <li>
+                        <h3>Melinda BoSface</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <hr>
@@ -255,17 +259,19 @@
             </div>
         </div>
 
-        <footer class="squeeze">
+        <div>
             <p>This page was last updated:</p>
             <p id="date"></p>
             <p>© 2025 Lance Sebastian. All rights reserved.</p>
-        </footer>
+        </div>
 
         <script>
             document.getElementById("date").innerHTML = document.lastModified;
         </script>
 
         <script src="./src/scripts/slideshowScript.js"></script>
+        <script src="./src/scripts/coolFunctions.js"></script>
+        <script src="./src/scripts/typewriter.js"></script>
 
     </body>
 </html>

@@ -476,3 +476,18 @@ input[type=submit] {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.2);
 }
+
+pre.caret-bar > span {
+  animation: blink 1s step-end infinite;
+  border-left: 2px solid white;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}

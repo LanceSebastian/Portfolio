@@ -36,3 +36,8 @@ hr {
     width: 90%;
     margin: auto;
 }
+
+footer {
+    display: block;
+    height: 100px;
+}
