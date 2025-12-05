@@ -270,7 +270,7 @@ input[type=submit] {
 .tabContent {
     display: none;
     border-radius: 32px 32px 0px 0px;
-    background-color: #6d4c2f;
+    background-color: var(--primary-dark);
     grid-column: main;
     padding: 1.25rem;
     max-width: 2000px;

@@ -126,5 +126,5 @@
 
 .lancify {
     display: inline;
-    color: #be805e;
+    color: var(--primary);
 }
