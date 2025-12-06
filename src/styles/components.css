@@ -163,6 +163,7 @@
     display: inline;
     min-width: 200px;
     max-width: 400px;
+    min-height: 200px;
     text-align: center;
     margin: auto;
     margin-bottom: 64px;
