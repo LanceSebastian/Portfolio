@@ -58,8 +58,6 @@
 
 .squeeze {
     max-width:1400px;
-    margin: auto;
-    padding: 16px;
 }
 
 .scroll {
@@ -78,6 +76,30 @@
 
 
 /* Whitespaces */
+.gap-64 {
+    gap: 64px;
+}
+
+.gap-128 {
+    gap: 128px;
+}
+
+.pad-w-16 {
+    padding:0px 16px ;
+}
+
+.pad-h-128 {
+    padding: 128px 0px;
+}
+
+.pad-32 {
+    padding: 32px;
+}
+
+.pad-64 {
+    padding: 64px;
+}
+
 .bigPadding {
     padding: 128px;
 }
