@@ -161,6 +161,28 @@
     transform: scale(1.1);
 }
 
+.hover, .hover-2 {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.hover a p, .hover-2 a p {
+    transform: translate(105px, 28px);
+    font-size: larger;
+    color: transparent;
+    transition: 0.4s;
+}
+
+.hover:hover a p{
+    transform: translate(110px, 28px);
+    color: black;
+}
+
+.hover-2:hover a p{
+    transform: translate(110px, 28px);
+    color: white;
+}
+
 .down {
     position: absolute;
     bottom: 16px;
