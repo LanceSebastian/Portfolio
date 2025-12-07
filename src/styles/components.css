@@ -71,8 +71,6 @@
     transform: translateY(-50%);
     left: 10%;
     color: white;
-    font-size: 3vw;
-    font-weight: bold;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -80,6 +78,10 @@
     color: white;
     margin-right: 16px;
     text-decoration: none;
+}
+
+.header pre {
+    font-size: 3rem;
 }
 
 .projects {
@@ -443,7 +445,7 @@ input[type=submit] {
     height: 450px;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 0px 32px;
 }
 
 .workSlide {
@@ -508,3 +510,9 @@ pre.caret-bar > span {
   }
 }
 
+.iconContainer {
+    display: flex;
+    color: black;
+    gap: 0px 100px;
+    text-decoration: none;
+}

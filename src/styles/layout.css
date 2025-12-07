@@ -74,8 +74,27 @@
     width: 100%;
 }
 
+.col-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.col-2 > div {
+    flex: 49%;
+    min-width: 600px;
+}
+
 
 /* Whitespaces */
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
 .gap-64 {
     gap: 64px;
 }
@@ -86,6 +105,10 @@
 
 .pad-w-16 {
     padding:0px 16px ;
+}
+
+.pad-w-32 {
+    padding:0px 32px ;
 }
 
 .pad-h-128 {
