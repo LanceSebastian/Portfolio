@@ -40,4 +40,6 @@ function typeWriter(){
     } 
 }
 
-window.onload = getSentence;
+window.addEventListener("load", () => {
+    getSentence();
+});
