@@ -25,6 +25,10 @@
     height: 40vh;
 }
 
+.vh-45 {
+    min-height: 45vh;
+}
+
 .min-vh-60 {
     min-height: 60vh;
 }
@@ -111,7 +115,6 @@
 .center{
     display: grid;
     place-items: center;
-    padding: 64px 0px;
 }
 
 .scroll {

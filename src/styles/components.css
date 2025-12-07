@@ -29,7 +29,6 @@
 
 .content {
     height: 100%;
-    padding: 64px;
 }
 
 .headerContainer {
@@ -166,7 +165,6 @@
     min-height: 200px;
     text-align: center;
     margin: auto;
-    margin-bottom: 64px;
     padding: auto;
 }
 
