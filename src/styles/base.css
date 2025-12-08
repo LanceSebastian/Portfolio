@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+th{
+    text-align: left;
+    font-weight: normal;
+}
+
 body {
     margin:0 ;
     background-color: var(--main-bg-color);

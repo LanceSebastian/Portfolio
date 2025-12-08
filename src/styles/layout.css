@@ -149,7 +149,11 @@
 
 /*Other*/
 .left { /*TODO: Remame for accuracy*/
-    flex-direction: row-reverse;
+    float: left;
+}
+
+.right {
+    text-align: end;
 }
 
 .grow {

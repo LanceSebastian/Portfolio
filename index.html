@@ -54,12 +54,30 @@
                         I'm a Freelance Web Developer and recent Computer Science graduate,
                         who builds custom, high-quality websites tailored to your goals.
                     </p>
-                    <div>
-                        <p class = "large">Nationality: British-Filipino</p>
-                        <p class = "large">Age: 22</p>
-                        <p class = "large">Likes: Computers, Photography, and Games.</p>
-                        <p class = "large">Dislikes: Bugs, Errors, and Glitches</p>
-                    </div>
+                    <table class = "myTable">
+                        <tr>
+                            <th class = "field">Email:</th>
+                            <th class = "deets">lsebastian.webdev@gmail.com</th>
+                        </tr>
+                        <tr>
+                            <th class = "field">Nationality:</th>
+                            <th class = "deets">British-Filipino</th>
+                        </tr>
+                        <tr>
+                            <th class = "field">Age:</th>
+                            <th class = "deets">22</th>
+                        </tr>
+                        <tr>
+                            <th class = "field">Likes:</th>
+                            <th class = "deets">Computers, Photography, and Games.</th>
+                        </tr>
+                        <tr>
+                            <th class = "field">Dislikes:</th>
+                            <th class = "deets">Bugs, Errors, and Glitches.</th>
+                        </tr>
+
+                    </table>
+                    
                     <div class = "buttonContainer">
                         <a class = "grow ctaButton" href="https://drive.google.com/file/d/1n95YkIqrxBOR-UgRIbEkv01Z4jjHImW5/view?usp=drive_link">Résumé</a>
                         <a class = "grow ctaButton" href="author.html">Read More...</a>
@@ -147,11 +165,11 @@
 
         <!-- Projects Section -->
         <div id="projects" class = "col-2 pad-w-16 pad-h-128 gap-16">
-            <div class = "outline col-2-1" style = "display: inline; text-align: center;">
+            <div class = " col-2-1" style = "display: inline; text-align: center;">
                 <h2 class = "boldTitle">Projects</h2>
                 <p class = "boldSubtitle"> Both professional and personal. </p>
             </div>
-            <div class = "outline slideshowContainer">
+            <div class = " slideshowContainer">
                 <div class = "pad-w-32 slide">
                     <div>
                         <p>Website Development</p>
@@ -233,91 +251,45 @@
         </div>
 
         <hr>
-        <!-- Client Reviews -->
-        <div id="testimonials">
-            <div class = "center pad-w-16 squeeze min-vh-60 w-100">
-                <h2>Testimonials</h2>
-                <div class = "scroll">
-                    <ul class = "process">
-                        <li>
-                            <h3>Melinda BoSface</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Lorem Ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Lorem Ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <hr>
 
         <!-- Contact Me -->
-        <div id="contactSection" class ="autoMargin squeeze pad-h-128 pad-w-16 gap-16 center">
-            <h3> Contact Me! </h3>
-            <div class = "iconContainer">
-                <a class="black grow i-64" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
-                    <i class = "fa-brands fa-linkedin"></i>
-                </a>    
-                <a class="black grow i-64" href = "https://github.com/LanceSebastian">
-                    <i class = "fa-brands fa-github"></i>
-                </a>
-                <a class="black grow i-64" href = "https://www.instagram.com/lance.sebasstian/#">
-                    <i class = "fa-brands fa-instagram"></i>
-                </a>
-                <a class="black grow i-64" href = "https://www.facebook.com/profile.php?id=100011316192612">
-                    <i class = "fa-brands fa-facebook"></i>
-                </a>
-            </div>
-            <div class="contactContainer">
-                <form action = "https://formspree.io/f/manvezdb" method="post">
-                    <div class = "formGroup">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="What's your name?">
-                    </div>
-    
-                    <div class = "formGroup">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="How I can reach you.">
-                    </div>
-    
-                    <div class = "formGroup">
-                        <label for="message">Message</label>
-                        <textarea name="message" placeholder="A project, an idea, or even a joke!" style="height:200px"></textarea>
-                    </div>
-    
-                    <input class="grow" type="submit" value="Submit">
-                </form>
+        <div id="contactSection">
+            <div class ="autoMargin squeeze pad-h-128 pad-w-16 gap-16 center">
+                <h3> Contact Me! </h3>
+                <div class="contactContainer">
+                    <form action = "https://formspree.io/f/manvezdb" method="post">
+                        <div class = "formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="What's your name?">
+                        </div>
+        
+                        <div class = "formGroup">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="How I can reach you.">
+                        </div>
+        
+                        <div class = "formGroup">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="A project, an idea, or even a joke!" style="height:200px"></textarea>
+                        </div>
+        
+                        <input class="grow" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class = "iconContainer">
+                    <a class="black grow i-64" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
+                        <i class = "fa-brands fa-linkedin"></i>
+                    </a>    
+                    <a class="black grow i-64" href = "https://github.com/LanceSebastian">
+                        <i class = "fa-brands fa-github"></i>
+                    </a>
+                    <a class="black grow i-64" href = "https://www.instagram.com/lance.sebasstian/#">
+                        <i class = "fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="black grow i-64" href = "https://www.facebook.com/profile.php?id=100011316192612">
+                        <i class = "fa-brands fa-facebook"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
