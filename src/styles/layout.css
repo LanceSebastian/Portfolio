@@ -77,12 +77,12 @@
 .col-2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
-.col-2 > div {
-    flex: 49%;
-    min-width: 600px;
+
+.col-2-1 {
+    max-width: 1000px;
 }
 
 
