@@ -2,11 +2,7 @@ var letter = 0;
 var iSub = 0;
 var randItems = [];
 const subtitleArray = [
-    "I design to your tastes.",
-    "I build to your specifications.",
-    "I make it fast websites.",
-    "I Lorem for your Ipsum.",
-    "I maintain for stability."
+    "I design and build websites."
 ];
 
 var txt = "I design and build websites.";
@@ -18,14 +14,6 @@ function getSentence(){
     txt = randItems[i];
     typeWriter();
 
-}
-
-function backspace(){
-    if (letter <= txt.length){
-        document.getElementById("typewrite").innerHTML = txt.slice(0,-letter);
-        letter++;
-        setTimeout(backspace, maxSpeed * Math.random())
-    } 
 }
 
 function typeWriter(){
