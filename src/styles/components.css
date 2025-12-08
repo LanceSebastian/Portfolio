@@ -149,7 +149,7 @@
 }
 
 .header pre {
-    font-size: 3rem;
+    font-size: clamp(8px, 5vw, 50px);
 }
 
 pre.caret-bar {

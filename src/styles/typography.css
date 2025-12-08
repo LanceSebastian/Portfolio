@@ -33,3 +33,7 @@ body {
 .boldSubtitle {
   font-size: clamp(30px, 2.5vw, 100px);
 }
+
+.clamp {
+  font-size: clamp();
+}
