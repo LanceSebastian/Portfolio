@@ -16,3 +16,24 @@ function shuffle(array) {
 
   return array;
 }
+
+let isCopying = false
+
+/* Copy Function */
+function copyText(str) {
+  if (isCopying) return;
+  isCopying = true;
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(str);
+  
+  const reply = document.querySelectorAll(".tooltiptext");
+  reply.forEach(tip => {
+    tip.innerHTML = "Copied!";
+
+
+    setTimeout(() => {
+      tip.innerHTML = "Copy Text.";
+      isCopying = false;
+    }, 1000);
+  });
+}

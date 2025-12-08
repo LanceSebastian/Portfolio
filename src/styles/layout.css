@@ -165,6 +165,15 @@
     transform: scale(1.1);
 }
 
+.grow-2 {
+    transform-origin: top;
+    transition: transform .2s ease;
+}
+
+.row:hover td {
+    transform: scale(1.1);
+}
+
 .hover, .hover-2 {
     display: inline-block;
     transition: transform .2s;
