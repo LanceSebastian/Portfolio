@@ -37,3 +37,7 @@ body {
 .clamp {
   font-size: clamp();
 }
+
+.readable > p{
+  font-size: clamp(16px, 2.5vw, 20px);
+}
