@@ -67,11 +67,16 @@
 .header {
     position: absolute;
     margin:auto;
+    min-width: fit-content;
     top: 60%;
     transform: translateY(-50%);
     left: 10%;
     color: white;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header > *{
+    font-size: clamp(16px, 10vw, 100px);
 }
 
 .header a {
@@ -82,6 +87,20 @@
 
 .header pre {
     font-size: 3rem;
+}
+
+pre.caret-bar {
+    word-wrap: break-word;
+    min-width: 100px;
+}
+
+pre.caret-bar > span {
+  animation: blink 1s step-end infinite;
+  border-left: 2px solid white;
+}
+
+pre.caret-bar > div {
+    font-size: clamp(8px, 5vw, 60px);
 }
 
 .projects {
@@ -495,11 +514,6 @@ input[type=submit] {
     background-color: rgba(0,0,0,0.2);
 }
 
-pre.caret-bar > span {
-  animation: blink 1s step-end infinite;
-  border-left: 2px solid white;
-}
-
 @keyframes blink {
   from,
   to {
@@ -512,7 +526,8 @@ pre.caret-bar > span {
 
 .iconContainer {
     display: flex;
+    width: 80vw;
     color: black;
-    gap: 0px 100px;
+    justify-content: space-between;
     text-decoration: none;
 }
