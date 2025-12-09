@@ -235,8 +235,8 @@ footer {
 
 	.close {
 		position: absolute;
-		top: 15px;
-		right: 35px;
+		top: 35px;
+		right: 45px;
 		color: white;
 		font-size: 40px;
 		font-weight: bold;
