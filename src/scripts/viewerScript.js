@@ -14,12 +14,10 @@ document.addEventListener("click", e => {
     modal.className = "modalContent";
     modal.id = "modalContent";
     modal.innerHTML = `
-    <div class="viewImage">
-        <img src="${imgSrc}">
-        <div class = "caption">
-            <h3>${title}</h3>
-            <p>${caption}</p>
-        </div>
+    <img src="${imgSrc}">
+    <div class = "caption">
+        <h3>${title}</h3>
+        <p>${caption}</p>
     </div>
     `;
 
