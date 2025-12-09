@@ -479,13 +479,12 @@ input[type=submit] {
     padding: 20px;
     border-radius: 32px;
     width: 80%;
-    animation: flickerIn 0.2s ease-in forwards;
-    
+    animation: flickerIn 0.5s ease forwards;
 }
 
 @keyframes flickerIn {
-    from {transform: scaleY(0) translateY(-50%); opacity: 0.4;}
-    to {transform: scaleY(1) translateY(-50%); opacity: 1;}
+    from {transform: translateY(-100%); opacity: 0;}
+    to {transform: translateY(-50%); opacity: 1;}
 }
 
 @keyframes fadeIn {
