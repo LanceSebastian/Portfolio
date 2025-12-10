@@ -11,6 +11,31 @@
     background-color: white;
 }
 
+.footerLinks, .footerLinks-2 {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: end;
+    padding: 0;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.footerLinks-2 a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.footerLinks a:hover, .footerLinks-2 a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 .tooltip {
     position: relative;
     display: block;
@@ -612,7 +637,7 @@ input[type=submit] {
 
 .iconContainer {
     display: flex;
-    width: 80vw;
+    width: 100%;
     max-width: 800px;
     color: black;
     justify-content: space-around;

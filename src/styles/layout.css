@@ -74,11 +74,18 @@
     width: 100%;
 }
 
+.align-start {
+    align-items: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .col-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 .col-2-1 {
