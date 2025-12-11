@@ -489,7 +489,7 @@ input[type=submit] {
     width: 100%;
     height: 100%;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
     animation: fadeIn 0.3s ease forwards;
 }
 
@@ -511,7 +511,7 @@ input[type=submit] {
     max-width: 1400px;
     width: 80%;
 
-    background-color: grey;
+    background-color: #4f3824;
     padding: 32px;
     border-radius: 32px;
     animation: flickerIn 0.5s ease forwards;
