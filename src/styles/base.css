@@ -8,6 +8,7 @@
 
 table {
     border-collapse:collapse;
+    color: var(--text);
 }
 
 tr {
@@ -22,7 +23,8 @@ th{
 
 body {
     margin:0 ;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 h1 {
@@ -71,8 +73,18 @@ hr {
     margin: auto;
 }
 
+a {
+    color: inherit;
+}
+
 footer {
     padding-top: 16px;
     display: block;
     min-height: 100px;
+}
+
+input, textarea {
+    background-color: var(--bg-2);
+    border: 1px solid var(--text);
+    color: var(--text);
 }
