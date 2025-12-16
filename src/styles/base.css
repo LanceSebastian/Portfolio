@@ -84,7 +84,7 @@ footer {
 }
 
 input, textarea {
-    background-color: var(--bg-2);
+    background-color: var(--bg-dark);
     border: 1px solid var(--text);
     color: var(--text);
 }
