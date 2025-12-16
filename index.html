@@ -11,25 +11,30 @@
         <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <ul class = "navBar">
-            <li class = "navItem grow hover">
-                <a style = "position: relative;" href="index.html">
-                    <p style = "position: absolute;" >Home</p>
-                    <img src = "./src/LanceVietnamPP111.jpg" class="pfp">
-                </a>
-            </li>
-            <div>
-                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-                <li class = "navItem grow"><a class="black" href="author.html">Author</a></li>
-                <li class = "navItem grow"><a class="black" href="#contactSection">Contact</a></li>
-            </div>
-        </ul>
+        <div>
+            <ul class = "navBar">
+                <li class = "navItem grow hover">
+                    <a style = "position: relative;" href="index.html">
+                        <p style = "position: absolute; color: var(--text);" >Home</p>
+                        <img src = "./src/LanceVietnamPP111.jpg" class="pfp">
+                    </a>
+                </li>
+                <div style = "display: flex; align-items: center;">
+                    <li class = "navItem grow"><a href="author.html">Author</a></li>
+                    <li class = "navItem grow"><a href="#contactSection">Contact</a></li>
+                    <button onclick="toggleDarkMode()" class = "toggle">
+                        <i id = "sun" class="i-24 fa-regular fa-sun"></i>
+                        <i id = "moon" class="i-24 fa-regular fa-moon"></i>
+                    </button>
+                </div>
+            </ul>
+        </div>
         
         <div class="vh-100 headerContainer">
             <img class = "banner" src = "./src/LanceBg11.JPG" alt = "Winter Image by Gabi from Pixabay"/>
             <div class = "header" >
                 <h1>Hi, I'm <div class = "lancify">Lance</div>.</h1> 
-                <pre class = "caret-bar"><div id ="typewrite" style="display:inline;"></div><span>&nbsp;</span></pre>
+                <pre class = "caret-bar"><div id ="typewrite" style="display:inline;"></div><span style = "color: var(--text);">&nbsp;</span></pre>
                 
                 <a class="grow i-64" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
                     <i class = "fa-brands fa-linkedin"></i>
