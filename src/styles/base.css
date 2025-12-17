@@ -17,6 +17,7 @@ tr {
 }
 
 th{
+    color: var(--text-muted);
     text-align: left;
     font-weight: normal;
 }
@@ -72,6 +73,7 @@ p {
 hr {
     width: 90%;
     margin: auto;
+    color: var(--text-muted);
 }
 
 a {
@@ -87,5 +89,4 @@ footer {
 input, textarea {
     background-color: var(--bg-dark);
     border: 1px solid var(--text);
-    color: var(--text);
 }
