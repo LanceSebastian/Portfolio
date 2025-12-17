@@ -195,7 +195,7 @@
 
 .hover:hover a p{
     transform: translate(110px, 28px);
-    color: black;
+    color: var(--text);
 }
 
 .hover-2:hover a p{
