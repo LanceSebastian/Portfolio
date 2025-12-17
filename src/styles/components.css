@@ -675,7 +675,11 @@ input[type=submit] {
     display: flex;
     width: 100%;
     max-width: 800px;
-    color: var(--text-muted);
+    color: var(--primary);
     justify-content: space-around;
     text-decoration: none;
+}
+
+.shadow {
+    text-shadow: 2px 4px 4px black;
 }
