@@ -161,8 +161,9 @@ const photoGallery = document.getElementById("photoGallery");
 
 randPhotos = shuffle(photoItems);
 
-randPhotos.forEach(item => {
+for (let i = 0; i < 20; i++) {
     const clone = photoGalleryTemplate.content.cloneNode(true);
+    const item = randPhotos[i];
 
     clone.querySelector("img").src = item.src;
     clone.querySelector("img").alt = item.title;
@@ -170,5 +171,4 @@ randPhotos.forEach(item => {
     clone.querySelector("p").textContent = item.desc;
 
     photoGallery.appendChild(clone);
-
-})
+}
