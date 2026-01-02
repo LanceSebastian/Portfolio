@@ -7,22 +7,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>        
+        <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>
+        <script type = "text/javascript" src="./src/scripts/darkmode.js" defer></script>
         <title>The Author</title>
     </head>
-    <body class = "authorBody dark">
+    <body>
         <ul class = "navBar">
-            <li class = "navItem grow hover-2">
-                <a style = "position: relative;" href="index.html">
-                    <p style = "position: absolute;" >Home</p>
-                    <img src = "./src/LanceVietnamPP111.jpg" class="pfp">
-                </a>
-            </li>
-            <div>
-                <li class = "navItem grow"><a class="white" href="author.html">Author</a></li>
-                <li class = "navItem grow"><a class="white" href="index.html#contactSection">Contact</a></li>
-            </div>
-        </ul>
+                <li class = "navItem grow hover">
+                    <a style = "position: relative;" href="index.html">
+                        <p style = "position: absolute;" >Home</p>
+                        <img src = "./src/LanceVietnamPP111.jpg" class="pfp">
+                    </a>
+                </li>
+                <div style = "display: flex; align-items: center;">
+                    <li class = "navItem grow"><a href="#contactSection">Contact</a></li>
+                    <button id="darkModeToggle" class = "toggle">
+                        <i class="i-24 fa-regular fa-sun"></i>
+                        <i class="i-24 fa-regular fa-moon"></i>
+                    </button>
+                </div>
+            </ul>
 
         <div class="behind min-vh-60 belt headerContainer">
             <img class = "frame" src = "./src/LanceVietnamCROPPED.jpg" alt = "Author Banner Image"/>
@@ -96,50 +100,8 @@
                 </p>
             </div>
         </div>
-        <div class = "tab">
-            <button class = "tabLinks active" onClick="openContent(event, 'photoGalleryTab')">Photo Gallery</button>
-            <button class = "tabLinks" onClick="openContent(event, 'inspirationsTab')">Inspirations</button>
-        </div>
-
-        <!-- Tab Content -->
-        <div id = "photoGalleryTab" class = "tabContent" style = "display:grid">
-            <h2> Photo Gallery </h2>
-            <p>Some of my favourite pictures!</p>
-            
-            <template id="photoGalleryTemplate">
-                <figure>
-                    <img>
-                    <figcaption>
-                        <h3></h3>
-                        <p></p>
-                    </figcaption>
-                </figure>
-            </template>
-
-            <div id="photoGallery" class = "gallery"></div>
-        </div>
-
-        <div id = "inspirationsTab" class = "tabContent">
-            <h2> Inspirations </h2>
-            <p>Resonated with my soul</p>
-            
-            <template id="inspirationsTemplate">
-                <figure>
-                    <img>
-                    <figcaption>
-                        <h3></h3>
-                        <p></p>
-                    </figcaption>
-                </figure>
-            </template>
-
-            <div id="inspirations" class = "gallery"></div>
-        </div>
-
-        <div id="modalTarget" class = "modal">
-            <div class = "modal-bg" onclick="closeView()"></div>
-            <span class = "close" onclick="closeView()">&times;</span>
-        </div>
+        
+        
 
         <footer>
             <div class = "col-2 align-start">
