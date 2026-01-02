@@ -16,7 +16,7 @@
 }
 
 .outline {
-    outline: black solid;
+    outline: red solid;
 }
 
 
@@ -64,6 +64,10 @@
     display: block;
     height: 100%;
     overflow: auto;
+}
+
+.h-128 {
+    height: 128px;
 }
 
 .w-80 {
@@ -118,8 +122,16 @@
     padding:0px 32px ;
 }
 
+.pad-h-16 {
+    padding: 16px 0px;
+}
+
 .pad-h-128 {
     padding: 128px 0px;
+}
+
+.pad-h-t-128 {
+    padding: 128px 0px 0px 0px;
 }
 
 .pad-32 {
