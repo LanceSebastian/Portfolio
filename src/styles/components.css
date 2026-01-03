@@ -42,7 +42,7 @@
     display: block;
 }
 
-.footerLinks, .footerLinks-2 {
+.footerLinks{
     list-style-type: none;
     text-decoration: none;
     text-align: end;
@@ -57,12 +57,7 @@
     color: var(--text);
 }
 
-.footerLinks-2 a {
-    text-decoration: none;
-    color: var(--text);
-}
-
-.footerLinks a:hover, .footerLinks-2 a:hover {
+.footerLinks a:hover{
     color: var(--primary);
     text-decoration: underline;
 }
