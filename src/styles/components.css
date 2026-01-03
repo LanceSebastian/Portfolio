@@ -144,11 +144,16 @@
 
 .mediaContent > img {
     width: 400px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 40%;
 }
 
 .content {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
 }
 
 .headerContainer {
