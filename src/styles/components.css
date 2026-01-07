@@ -365,7 +365,7 @@ input[type=submit] {
 
 .contactContainer {
     display: block;
-    max-width: 1200px;
+    max-width: 600px;
     width: 100%;
     border: var(--border-muted) solid 2px;
     border-top: var(--highlight) solid 2px;
@@ -676,7 +676,7 @@ input[type=submit] {
 .iconContainer {
     display: flex;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     color: var(--primary);
     justify-content: space-around;
     text-decoration: none;
