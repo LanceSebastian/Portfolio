@@ -14,6 +14,55 @@
     background-color: var(--bg-dark);
 }
 
+.share {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.faqContainer {
+    width: 600px;
+}
+
+.questionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all .2s;
+}
+
+.questionContainer:hover {
+    background-color: var(--secondary);
+}
+
+.questionContainer:hover p{
+    color: var(--bg-light);
+}
+
+.question {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.question > p {
+    font-size: larger;
+}
+
+.number {
+    display: flex;
+    background-color: var(--primary);
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--bg-light);
+}
+
 .toggle {
     display: flex;
     justify-content: space-evenly;
