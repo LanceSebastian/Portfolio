@@ -14,20 +14,21 @@
     background-color: var(--bg-dark);
 }
 
-.share {
+.faqContainer {
     display: flex;
     flex-wrap: wrap;
-    
-}
-
-.faqContainer {
-    width: 600px;
+    width: 100%;
+    min-width: 600px;
+    justify-content:space-around;
 }
 
 .questionContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-width: 600px;
+    width: 40vw;
+    max-width: 1000px;
     padding: 8px;
     cursor: pointer;
     border-radius: 16px;
@@ -36,6 +37,7 @@
 
 .questionContainer:hover {
     background-color: var(--secondary);
+    color: var(--bg-light);
 }
 
 .questionContainer:hover p{
@@ -403,6 +405,10 @@ input[type="text"], input[type="email"], textarea {
     font-size: 1em;
 }
 
+textarea{
+    height: 200px;
+}
+
 input[type=submit] {
   background-color: var(--primary);
   color: var(--bg-light);
@@ -414,7 +420,7 @@ input[type=submit] {
 
 .contactContainer {
     display: block;
-    max-width: 600px;
+    max-width: 1200px;
     width: 100%;
     border: var(--border-muted) solid 2px;
     border-top: var(--highlight) solid 2px;
