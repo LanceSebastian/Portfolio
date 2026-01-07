@@ -38,3 +38,9 @@ function copyText(str) {
   });
 }
 
+/* FAQ Function */
+function toggleAnswer(i) {
+  let answer = `faq-${i}`;
+  let element = document.getElementById(answer).classList;
+  element.toggle("active");
+}
