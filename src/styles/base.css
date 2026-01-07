@@ -47,6 +47,10 @@ h3 {
     font-size: clamp(1rem, 4vw, 3em);
 }
 
+h4 {
+    margin: 16px 0px;
+}
+
 li > h3 {
     margin: 0;
     padding: 0;
@@ -72,7 +76,7 @@ p {
 }
 
 hr {
-    width: 90%;
+    width: 94%;
     margin: auto;
     color: var(--text-muted);
 }
