@@ -22,12 +22,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-width: 450px;
+    min-width: 400px;
     justify-content:space-around;
 }
 
 .faqContainer > p {
-    min-width: 450px;
+    min-width: 400px;
     width: 40vw;
     max-width: 1000px;
 }
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 450px;
+    min-width: 400px;
     width: 40vw;
     max-width: 1000px;
     padding: 8px;
@@ -65,7 +65,7 @@
 }
 
 .answer {
-    min-width: 450px;
+    min-width: 400px;
     width: 40vw;
     max-width: 1000px;
     font-size: large;
