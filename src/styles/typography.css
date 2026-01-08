@@ -29,9 +29,14 @@ body {
   text-align: end;
 }
 
+.i-4 {
+  font-size: clamp(2rem, 6vw ,4rem);
+}
+
 .i-24 {
   font-size: 24px;
 }
+
 
 .i-64 {
   font-size: 64px;
