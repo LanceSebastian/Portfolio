@@ -377,25 +377,49 @@ pre.caret-bar > div {
     padding: 4px 8px;
 }
 
-.process{
+.processContainer{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
 }
 
-.process li {
+.processContainer li {
     display: inline;
     min-width: 200px;
-    max-width: 400px;
-    min-height: 200px;
+    max-width: 500px;
     text-align: center;
-    margin: auto;
+    margin: 32px;
     padding: auto;
 }
 
-li > p {
+.process {
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .processContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .processContainer li{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin: 8px;
+    }
+
+    .processContainer i {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        margin: 16px;
+    }
+
+    .process {
+        text-align: start;
+    }
 }
 
 .ctaButton{
