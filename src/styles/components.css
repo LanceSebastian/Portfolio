@@ -188,7 +188,7 @@
 
 .deets {
     overflow: visible;
-    font-size:x-large;
+    font-size:larger;
     transition: all .2s;
     border-radius: 8px;
     padding: 0px 8px;
@@ -201,9 +201,9 @@
 }
 
 .field {
-    font-size: medium;
+    font-size: small;
     padding-right: 8px;
-    color:var(--text);
+    color:var(--text-muted);
 }
 
 .buttonContainer {
@@ -502,8 +502,14 @@ input[type=submit] {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 600px;
+    min-width: 400px;
+    max-width: 600px;
     height: 500px;
+}
+
+.myTable {
+    min-width: 400px;
+    max-width: 600px;
 }
 
 /* TabUtility */
