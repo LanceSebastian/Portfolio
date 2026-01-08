@@ -397,6 +397,7 @@ pre.caret-bar > div {
 
 .processContainer{
     display: flex;
+    max-width: 1800px;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: center;
