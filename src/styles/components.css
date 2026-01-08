@@ -222,10 +222,8 @@
     align-items: center;
 }
 
-.mediaContent > img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+.media {
+    object-fit: cover;    
     border-radius: 40%;
 }
 

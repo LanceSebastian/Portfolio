@@ -32,7 +32,16 @@
         </div>
 
         <div class="vh-100 headerContainer" id="homeSection">
-            <img class="banner" src="./src/LanceBg11.JPG" alt="Winter Image by Gabi from Pixabay" />
+            <picture>
+                <source type="image/avif" srcset="./src/images/hero.avif">
+                <source type="image/webp" srcset="./src/images/hero.webp">
+                <img 
+                class = "banner" 
+                src="./src/images/hero.JPG" 
+                alt = "Hero Image"
+                decoding="async"
+                >
+            </picture>
             <div class="white header">
                 <h1>Hi, I'm <div class="lancify">Lance</div>.</h1>
                 <pre
@@ -59,7 +68,19 @@
 
         <div id="aboutMe" class="pad-w-16 pad-h-128 autoMargin squeeze vh-45 briefSummary">
             <div class=" mediaContent">
-                <img src="./src/LancePP.JPG">
+                <picture>
+                    <source type="image/avif" srcset="./src/images/pfp.avif">
+                    <source type="image/webp" srcset="./src/images/pfp.webp">
+                    <img
+                    class="media"
+                    src="./src/images/pfp.JPG"
+                    alt="My Profile"
+                    width="400"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                    >
+                </picture>
                 <div class="box">
                     <h2>About Me</h2>
                     <p class="large">
