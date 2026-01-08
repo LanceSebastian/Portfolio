@@ -395,6 +395,7 @@ pre.caret-bar > div {
 
 .process {
     text-align: center;
+    font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
