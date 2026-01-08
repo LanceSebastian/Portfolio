@@ -28,7 +28,17 @@
             </ul>
 
         <div class="behind min-vh-60 belt headerContainer">
-            <img class = "frame" src = "./src/LanceVietnamCROPPED.jpg" alt = "Author Banner Image"/>
+            <picture>
+                <source type="image/avif" srcset="./src/images/author.avif">
+                <source type="image/webp" srcset="./src/images/author.webp">
+
+                <img 
+                class = "frame" 
+                src = "./src/images/author.jpg" 
+                alt = "Author Hero Image"
+                decoding="asyn"
+                />
+            </picture>
             <div class = "white header">
                 <h1>The <div class = "lancify">Author</div></h1>
                 <pre>Who is <div class = "lancify">Lance</div> Vincent Sebastian?</pre>
