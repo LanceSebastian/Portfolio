@@ -208,6 +208,7 @@
 
 .buttonContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .buttonContainer > * {
