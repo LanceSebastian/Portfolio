@@ -444,14 +444,28 @@ pre.caret-bar > div {
     max-width:800px;
 }
 
+.navBarContainer {
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg);
+}
+
 .navBar {
     display:flex;
-    width: 100%;
+    padding: 8px 32px;
+    width: 80%;
     justify-content:space-between;
     align-items: center;
     list-style-type: none;
-    margin: 0;
-    padding: 32px; 
+}
+
+.navItem.selected {
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary);
 }
 
 .navItem {

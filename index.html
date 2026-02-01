@@ -16,25 +16,30 @@
     </head>
 
     <body>
-        <div>
+        <div class="navBarContainer">
             <ul class="navBar">
                 <li class="navItem grow hover">
-                    <a style="position: relative;" href="index.html">
-                        <p style="position: absolute;">Home</p>
-                        <img src="./src/LanceVietnamPP111.jpg" class="pfp">
+                    <a href="index.html">
+                        <img style="width:60px;" src="./src/LanceVietnamPP111.jpg" class="pfp">
                     </a>
                 </li>
-                <div style="display: flex; align-items: center;">
-                    <li class="navItem grow"><a href="#contactSection">Contact</a></li>
+                <div class="links" style="display: flex; align-items: center;">
+                    <li class="navItem selected grow" data-link="homeSection"><a href="#homeSection">Home</a></li>
+                    <li class="navItem grow" data-link="aboutMe"><a href="#aboutMe">About Me</a></li>
+                    <li class="navItem grow" data-link="wid"><a href="#wid">What I Do</a></li>
+                    <li class="navItem grow" data-link="projects"><a href="#projects">Projects</a></li>
+                    <li class="navItem grow" data-link="pricing"><a href="#pricing">Prices</a></li>
+                    <li class="navItem grow" data-link="faq"><a href="#faq">FAQ</a></li>
+                    <li class="navItem grow" data-link="contactSection"><a href="#contactSection">Contact</a></li>
                     <button id="darkModeToggle" class="toggle">
-                        <i class="i-24 fa-regular fa-sun"></i>
                         <i class="i-24 fa-regular fa-moon"></i>
+                        <i class="i-24 fa-regular fa-sun"></i>
                     </button>
                 </div>
             </ul>
         </div>
 
-        <div class="vh-100 headerContainer" id="homeSection">
+        <section class="vh-100 headerContainer" id="homeSection">
             <picture>
                 <source type="image/avif" srcset="./src/images/hero.avif">
                 <source type="image/webp" srcset="./src/images/hero.webp">
@@ -69,9 +74,9 @@
                 <p>Scroll Down</p>
                 <i class="i-24 fa-solid fa-angle-down"></i>
             </div>
-        </div>
+        </section>
 
-        <div id="aboutMe" class="pad-w-16 pad-h-128 autoMargin squeeze vh-45">
+        <section id="aboutMe" class="pad-w-16 pad-h-128 autoMargin squeeze vh-45">
             <div class=" mediaContent">
                 <picture>
                     <source type="image/avif" srcset="./src/images/pfp.avif">
@@ -134,16 +139,16 @@
                     <div class="buttonContainer">
                         <a class="grow ctaButton"
                             href="https://drive.google.com/file/d/14KOcSzsOp2CGoHTBoIHWDZUTqAuMDiAM/view?usp=sharing">Résumé</a>
-                        <a class="grow ctaButton" href="author.html">Read More...</a>
+                        <a class="grow ctaButton" href="/Author">Read More...</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <hr>
 
         <!-- What I can do for you -->
-        <div id="wid">
+        <section id="wid">
             <div class="autoMargin center pad-w-64 pad-h-128 w-100 gap-64">
                 <div class="center">
                     <pre class="displaySize">Need a<div id="coolAnimation" style="display:inline;"></div></pre>
@@ -226,12 +231,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
         <hr>
 
         <!-- Projects Section -->
-        <div id="projects" class="col-2 align-center pad-w-16 pad-h-128 gap-16">
+        <section id="projects" class="col-2 align-center pad-w-16 pad-h-128 gap-16">
             <div class=" col-2-1" style="display: inline; text-align: center;">
                 <h2 class="boldTitle">Projects</h2>
                 <p class="boldSubtitle"> Both professional and personal. </p>
@@ -315,11 +320,11 @@
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
-        </div>
+        </section>
 
         <hr>
 
-        <div id="pricing">
+        <section id="pricing">
             <div class="autoMargin pad-h-128 pad-w-16 gap-16 center">
                 <h2>Pricing</h2>
                 <div class="pricingContainer">
@@ -372,11 +377,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <hr>
         <!-- FAQ -->
-        <div>
+        <section id="faq">
             <div class="autoMargin pad-h-128 pad-w-16 gap-16 center">
                 <h3> Common Questions</h3>
                 <div class = "faqContainer">
@@ -606,12 +611,12 @@
                 </div>
             </div>
             
-        </div>
+        </section>
 
         <hr>
         <!-- Contact Me -->
 
-        <div id="contactSection" >
+        <section id="contactSection" >
             <div class="autoMargin squeeze pad-h-t-128 pad-w-16 gap-16 center">
                 
                 <h3> Contact Me! </h3>
@@ -647,7 +652,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
         <div id="return-to-top" class="autoMargin h-128 pad-w-16 center">
             <a class="autoMargin grow ctaButton" href="#homeSection">Return to Top <i
                     class="fa-solid fa-arrow-up"></i></a>
@@ -697,6 +702,7 @@
         <script src="./src/scripts/coolFunctions.js"></script>
         <script src="./src/scripts/typewriter.js"></script>
         <script src="./src/scripts/typePrototype.js"></script>
+        <script src="./src/scripts/navigation.js"></script>
 
 
     </body>
