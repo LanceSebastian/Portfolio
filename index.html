@@ -16,14 +16,20 @@
     </head>
 
     <body>
-        <div class="navBarContainer">
-            <ul class="navBar">
-                <li class="navItem grow hover">
+        <nav class="navBarContainer">
+            <div class="navBar">
+                <div class="navItem grow hover">
                     <a href="index.html">
                         <img style="width:60px;" src="./src/LanceVietnamPP111.jpg" class="pfp">
                     </a>
-                </li>
-                <div class="links" style="display: flex; align-items: center;">
+                </div>
+                
+                <input type="checkbox" id="check">
+
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
                     <li class="navItem selected grow" data-link="homeSection"><a href="#homeSection">Home</a></li>
                     <li class="navItem grow" data-link="aboutMe"><a href="#aboutMe">About Me</a></li>
                     <li class="navItem grow" data-link="wid"><a href="#wid">What I Do</a></li>
@@ -35,9 +41,9 @@
                         <i class="i-24 fa-regular fa-moon"></i>
                         <i class="i-24 fa-regular fa-sun"></i>
                     </button>
-                </div>
-            </ul>
-        </div>
+                </ul>
+            </div>
+        </nav>
 
         <section class="vh-100 headerContainer" id="homeSection">
             <picture>
