@@ -66,6 +66,12 @@
     color: var(--secondary);
 }
 
+.dark .recommend {
+    background-color: var(--bg);
+    border: white solid 2px;
+    box-shadow: 1px 1px 8px 3px var(--secondary);
+}
+
 .recommend .offers li::after {
     content: "✓";
     margin-left: 1rem;
