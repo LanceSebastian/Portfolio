@@ -26,9 +26,6 @@
                 
                 <input type="checkbox" id="check">
 
-                <label for="check" class="checkbtn">
-                    <i class="fa fa-bars"></i>
-                </label>
                 <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
                     <li class="navItem selected grow" data-link="homeSection"><a href="#homeSection">Home</a></li>
                     <li class="navItem grow" data-link="aboutMe"><a href="#aboutMe">About Me</a></li>
@@ -37,11 +34,18 @@
                     <li class="navItem grow" data-link="pricing"><a href="#pricing">Prices</a></li>
                     <li class="navItem grow" data-link="faq"><a href="#faq">FAQ</a></li>
                     <li class="navItem grow" data-link="contactSection"><a href="#contactSection">Contact</a></li>
+                </ul>
+                
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <a class="grow ctaButton" href="#contactSection">Get Started</a>
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-bars"></i>
+                    </label>
                     <button id="darkModeToggle" class="toggle">
                         <i class="i-24 fa-regular fa-moon"></i>
                         <i class="i-24 fa-regular fa-sun"></i>
                     </button>
-                </ul>
+                </div>
             </div>
         </nav>
 

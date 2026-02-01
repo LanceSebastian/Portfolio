@@ -26,6 +26,7 @@
     display: block;
 }
 
+
 .package{
     display: grid;
     min-width: 400px;
@@ -394,6 +395,9 @@
 }
 
 @media (max-width: 900px) {
+    nav .ctaButton {
+        display: none;
+    }
   .menu-btn {
     display: block;
   }
@@ -534,6 +538,10 @@ color: var(--primary);
 }
 
 @media (max-width: 900px) {
+    .navBar{
+        width: 100%;
+    }
+
     .checkbtn {
       display: block;
       order: 1;
