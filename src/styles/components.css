@@ -518,7 +518,7 @@ color: var(--primary);
 
 .checkbtn {
     font-size: 30px;
-    color: white;
+    color: var(--text);
     cursor: pointer;
     display: none;
   }
