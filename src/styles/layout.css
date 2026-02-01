@@ -246,3 +246,15 @@
     display: inline;
     color: var(--primary);
 }
+
+.icon-lancify {
+    display: grid;
+    margin: auto;
+
+    border-radius: 16px;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary);
+    color: var(--bg-light);
+}

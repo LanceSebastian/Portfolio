@@ -2,7 +2,7 @@
     background-color: var(--bg);
 }
 
-#wicdfy{
+#wid{
     background-color: var(--bg-dark);
 }
 
@@ -10,12 +10,100 @@
     background-color: var(--bg);
 }
 
-#contactSection {
+#pricing{
+    background-color: var(--bg-dark);
+}
+
+#contactSection{
+    background-color: var(--bg-dark);
+}
+
+#return-to-top{
     background-color: var(--bg-dark);
 }
 
 .active {
     display: block;
+}
+
+.package{
+    display: grid;
+    min-width: 400px;
+    min-height: 500px;
+    background-color: var(--bg);
+    padding: 32px;
+    border-radius: 32px;
+}
+
+.package .bottom {
+    align-self: end;
+}
+
+.price{
+    font-size: xxx-large;
+    font-weight: 700;
+}
+
+.price > span {
+    font-size: medium;
+    font-weight:400;
+    color: var(--text-muted)
+}
+
+.offers{
+    list-style: none;
+}
+
+.offers li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers li::after {
+    content: "✓";
+    margin-left: 1rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.recommend .offers li::after {
+    content: "✓";
+    margin-left: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.offers li.loss::after {
+    content: "✗";
+    margin-left: 1rem;
+    color: var(--text-muted)
+}
+
+.loss {
+    color: var(--text-muted);
+}
+
+.recommend{
+    background-color: var(--primary);
+    color: white;
+}
+
+.recommend .price *{
+    color: white;
+}
+
+.recommend .bigButton{
+    color: white;
+    border: white solid
+}
+
+
+.pricingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
 }
 
 .faqContainer {
@@ -416,8 +504,10 @@ pre.caret-bar > div {
     min-width: 200px;
     max-width: 500px;
     text-align: center;
-    margin: 32px;
-    padding: auto;
+    margin: 32px 16px;
+    padding: 32px;
+    border-radius: 32px;
+    background-color: var(--bg-light);
 }
 
 .process {
