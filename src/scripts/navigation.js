@@ -17,7 +17,8 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.6, // % of section visible
+    threshold: 0,
+    rootMargin: "-40% 0px -60% 0px",
   }
 );
 
