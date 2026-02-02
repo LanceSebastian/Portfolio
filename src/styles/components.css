@@ -481,7 +481,7 @@ pre.caret-bar > div {
 .navItem {
     display: inline;
     margin-right: 16px;
-    font: 2em;
+    font-size: 0.8rem;
 }
 
 .pfp {
