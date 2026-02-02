@@ -10,15 +10,7 @@
     background-color: var(--bg);
 }
 
-#pricing{
-    background-color: var(--bg-dark);
-}
-
-#contactSection{
-    background-color: var(--bg-dark);
-}
-
-#return-to-top{
+#pricing, #faq{
     background-color: var(--bg-dark);
 }
 
