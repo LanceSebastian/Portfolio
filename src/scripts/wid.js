@@ -1,45 +1,52 @@
-const steps = [
-  {
-    icon: "fa-handshake",
-    title: "1. Plans & Discussions",
-    text: "We discuss your goals and purposes, and outline the features of the website."
-  },
+const content = [
   {
     icon: "fa-paintbrush",
-    title: "2. Design the Look",
-    text: "We review initial designs, including the layout, colours, and stylistic choices."
+    title: "Web Design",
+    text: `Modern, clean website designs focused on usability, branding, 
+    and first impressions. Every layout is carefully crafted to look great 
+    and guide visitors toward action.`
   },
   {
     icon: "fa-hammer",
-    title: "3. Development",
-    text: "Your ideas come to life as a fully functional, user-friendly website."
+    title: "Web Development",
+    text: `Custom-built websites using reliable, modern code. No bloated 
+    templates — just fast, secure, and scalable sites built to work smoothly 
+    across all browsers.`
   },
   {
-    icon: "fa-puzzle-piece",
-    title: "4. Add your Content",
-    text: "Once the structure is ready, your images, videos, and written materials are added on to the site."
+    icon: "fa-money-bill-wave",
+    title: "Budget Friendly",
+    text: `High-quality websites at fair, transparent prices. Perfect 
+    for small businesses and startups who want a professional online 
+    presence without unnecessary extras.`
   },
   {
-    icon: "fa-microscope",
-    title: "5. Testing",
-    text: "A thorough testing process ensures that the website works as intended across multiple devices."
+    icon: "fa-mobile-screen",
+    title: "Fully Responsive",
+    text: `Your website will adapt seamlessly to all screen sizes, from 
+    mobile phones to large desktop displays, ensuring a consistent 
+    experience for every visitor.`
   },
   {
     icon: "fa-rocket",
-    title: "6. Launch Day",
-    text: "I fully handle the setup, launching a finished product that runs smoothly and connects to necessary services, before handing it over to you."
+    title: "Optimised Page Speed",
+    text: `Designed for quick load times to keep users engaged and 
+    reduce bounce rates. Faster websites mean better user experience 
+    and improved performance.`
   },
   {
-    icon: "fa-screwdriver-wrench",
-    title: "7. Ongoing Help",
-    text: "I can provide optional administrative services for updates, maintenance, and support, as your goals and needs continue to change and grow."
-  }
+    icon: "fa-magnifying-glass",
+    title: "SEO Services",
+    text: `Built with search engines in mind from the start. Clean 
+    structure, proper metadata, and performance optimisations help your 
+    site rank better and get found online.`
+  },
 ];
 
 const servicesTemplate = document.getElementById("servicesTemplate");
 const services = document.getElementById("services");
 
-steps.forEach(step => {
+content.forEach(step => {
   const tpl = servicesTemplate.content.cloneNode(true);
   tpl.querySelector("i").classList.add(step.icon);
   tpl.querySelector("h4").textContent = step.title;
