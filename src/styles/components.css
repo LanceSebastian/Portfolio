@@ -22,18 +22,35 @@
     display: block;
 }
 
+.packageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+}
+
 
 .package{
+    flex: 1 1 300px;
+    max-width: 360px;
+    height: 450px;
     display: grid;
-    min-width: 400px;
-    min-height: 500px;
     background-color: var(--bg);
     padding: 32px;
     border-radius: 32px;
 }
 
+@media (max-width: 600px){
+    .package {
+        height: 350px;
+    }
+}
+
 .package .bottom {
-    align-self: end;
+    margin-top: auto;
 }
 
 .price{
@@ -41,7 +58,7 @@
     font-weight: 700;
 }
 
-.price > span {
+.price > span, .dark .price > span {
     font-size: medium;
     font-weight:400;
     color: var(--text-muted)
@@ -63,11 +80,26 @@
     color: var(--secondary);
 }
 
+.recommend{
+    background-color: var(--primary);
+    color: white;
+}
+
 .dark .recommend {
     background-color: var(--bg);
     border: white solid 2px;
     box-shadow: 1px 1px 8px 3px var(--secondary);
 }
+
+.recommend .price *{
+    color: white;
+}
+
+body:not(.dark) .recommend .bigButton{
+    color: white;
+    border: white solid
+}
+
 
 .recommend .offers li::after {
     content: "✓";
@@ -84,29 +116,6 @@
 
 .loss {
     color: var(--text-muted);
-}
-
-.recommend{
-    background-color: var(--primary);
-    color: white;
-}
-
-.recommend .price *{
-    color: white;
-}
-
-.recommend .bigButton{
-    color: white;
-    border: white solid
-}
-
-
-.pricingContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 16px;
-    justify-content: center;
 }
 
 .faqContainer {
