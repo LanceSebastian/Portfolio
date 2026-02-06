@@ -592,23 +592,18 @@ color: var(--primary);
     padding: 4px 8px;
 }
 
-.processContainer{
-    display: flex;
-    max-width: 1800px;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: center;
+.service {
+    text-align: center;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--bg-light);
 }
 
-.processContainer li {
-    display: inline;
-    min-width: 200px;
-    max-width: 500px;
-    text-align: center;
-    margin: 32px 16px;
-    padding: 32px;
-    border-radius: 32px;
-    background-color: var(--bg-light);
+.servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5rem;
 }
 
 .process {
