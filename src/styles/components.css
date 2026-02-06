@@ -6,6 +6,10 @@
     background-color: var(--bg-dark);
 }
 
+#contactSection, #aboutMe, #wid, #projects, #pricing, #faq {
+    scroll-margin-top: 90px;
+}
+
 #projects{
     background-color: var(--bg);
 }
