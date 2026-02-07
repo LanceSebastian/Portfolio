@@ -117,7 +117,7 @@ body:not(.dark) .recommend .bigButton{
 }
 
 
-.recommend .offers li::after {
+body:not(.dark) .recommend .offers li::after {
     content: "✓";
     margin-left: 1rem;
     font-weight: 700;
