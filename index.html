@@ -190,88 +190,50 @@
 
         <!-- Projects Section -->
         <section id="projects" class="col-2 align-center pad-w-16 pad-h-32 gap-16">
-            <div class=" col-2-1" style="display: inline; text-align: center;">
+            <div class="titlebox">
                 <h2 class="boldTitle">Projects</h2>
                 <p class="boldSubtitle"> Both professional and personal. </p>
+                
+                <div class="textbox muted">
+                    <p>
+                        I'm in the early stages of my freelancing journey, focused on building modern, responsive websites
+                        that meet real business needs while continuously refining my craft.
+                    </p>
+                    <p>
+                        I work best with small businesses, startups, and individuals who want a clean, professional website
+                        without having to deal with the technical complexities.
+                    </p>
+                </div>
             </div>
-            <div class="slideshowContainer">
-                <div class="pad-w-16 slide">
-                    <div>
-                        <p>Website Development</p>
-                        <h3>bosface.com</h3>
-                        <div>
-                            <ul class="tags">
-                                <li> WordPress </li>
-                                <li> E-commerce </li>
-                                <li> Beauty & Wellness </li>
-                            </ul>
-                        </div>
-                        <a class="grow bigButton" href="https://bosface.com">Visit Site</a>
-                    </div>
-                    <a class="grow" href="./src/BoSfaceLogo.jpg">
-                        <img class="thumbnail" src="./src/BoSfaceLogo.jpg" alt="BoSface Logo" />
+            <div class="projectContainer">
+                <div class="pad-w-16 project">
+                    <a class="grow-s" href="./src/images/bosface.png">
+                        <img class="thumbnail" src="./src/images/bosface.png" alt="BoSface Project" />
                     </a>
-                </div>
-
-
-                <div class="pad-w-32 slide">
-                    <div>
-                        <p>Mobile Development</p>
-                        <h3>Sous Chef</h3>
-                        <div>
-                            <ul class="tags">
-                                <li> Android Studio </li>
-                                <li> Kotlin </li>
-                                <li> Firebase </li>
-                            </ul>
-                        </div>
-                        <a class="grow bigButton" href="https://github.com/LanceSebastian/MajorProject-SousChef">GitHub</a>
+                    <div class="muted">
+                        <h3>BoSface</h3>
+                        <p>
+                            Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio 
+                            specialising in personalised facial and massage treatments.
+                        </p>
+                        <a class="bigButton" href="https://bosface.com">Visit Website</a>
                     </div>
-                    <a class="grow" href="./src/chef.png">
-                        <img class="thumbnail" style = "background-color: oklch(0.6 0 45); padding: 16px; border-radius: 16px;" src="./src/chef.png" alt="Sous Chef Logo" />
-                    </a>
                 </div>
+                <div class="pad-w-16 project">
+                    <a class="grow-s" href="./src/images/southcentralbarbershop.png">
+                        <img class="thumbnail" src="./src/images/southcentralbarbershop.png" alt="South Central Barbershop Project" />
+                    </a>
+                    <div class="muted">
+                        <h3>South Central</h3>
+                        <p>
+                            A personal concept website designed to explore branding, layout,
+                            and responsive design for a modern barbershop. This project is 
+                            independent and created for portfolio purposes.
+                        </p>
 
-
-                <div class="pad-w-32 slide">
-                    <div>
-                        <p>Software Engineering</p>
-                        <h3>Chess Tutor</h3>
-                        <div>
-                            <ul class="tags">
-                                <li> IntelliJ </li>
-                                <li> Kotlin </li>
-                                <li> Firebase </li>
-                            </ul>
-                        </div>
-                        <a class="grow bigButton" href="https://github.com/LanceSebastian/chesstutor">GitHub</a>
+                        <a class="bigButton" href="https://orchid-deer-358398.hostingersite.com">Visit Website</a>
                     </div>
-                    <a class="grow" href="./src/ChessTutor.png">
-                        <img class="thumbnail" src="./src/ChessTutor.png" alt="Chess Tutor Image" />
-                    </a>
                 </div>
-
-
-                <div class="pad-w-32 slide">
-                    <div>
-                        <p>Game Development</p>
-                        <h3>Card Company</h3>
-                        <div>
-                            <ul class="tags">
-                                <li> Python </li>
-                                <li> pygame </li>
-                                <li> Object-Oriented Programming</li>
-                            </ul>
-                        </div>
-                        <a class="grow bigButton" href="">GitHub</a>
-                    </div>
-                    <a class="grow" href="./src/CardInventoryLogo.png">
-                        <img class="thumbnail" src="./src/CardInventoryLogo.png" style = "background-color: oklch(0.6 0 45); padding: 16px; border-radius: 16px;" alt="Card Company Image" />
-                    </a>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
         </section>
 
@@ -649,8 +611,6 @@
         <script>
             document.getElementById("date").innerHTML = document.lastModified;
         </script>
-
-        <script src="./src/scripts/slideshowScript.js"></script>
         <script src="./src/scripts/coolFunctions.js"></script>
         <script src="./src/scripts/typewriter.js"></script>
         <script src="./src/scripts/typePrototype.js"></script>
