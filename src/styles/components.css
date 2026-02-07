@@ -301,7 +301,7 @@ body:not(.dark) .recommend .bigButton{
 
 .deets {
     overflow: visible;
-    font-size: minmax(medium,1rem,x-large);
+    font-size: x-large;
     transition: all .2s;
     border-radius: 8px;
     padding: 0px 8px;
@@ -311,6 +311,18 @@ body:not(.dark) .recommend .bigButton{
     background-color: var(--primary);
     color: var(--bg);
     border-radius: 8px;
+}
+
+@media (max-width: 600px){
+    .deets {
+        font-size: large;
+    }
+}
+
+@media (max-width: 400px){
+    .deets {
+        font-size: medium;
+    }
 }
 
 .field {
