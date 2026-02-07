@@ -630,6 +630,7 @@ color: var(--primary);
 }
 
 .service {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     aspect-ratio: 3/4;
@@ -639,6 +640,44 @@ color: var(--primary);
     padding: 16px;
     border-radius: 16px;
     background-color: var(--bg-light);
+    transition: all 0.2s ease;
+}
+
+.service * {
+    transition: all 0.2s ease;
+}
+
+.dark .service:hover{
+    border: white solid 2px;
+    box-shadow: 1px 1px 8px 3px var(--secondary);
+}
+
+body:not(.dark) .service:hover{
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 8px 3px var(--text-muted);
+}
+
+.service:hover p{
+    color: var(--text);
+}
+
+.service:hover h4, .service:hover i{
+    transform: scale(1.2);
+}
+
+.service:hover i{
+    animation: wiggle 0.5s ease-in-out;
+}
+
+.service:hover h4{
+    color: var(--primary);
+}
+
+@keyframes wiggle {
+    0% {rotate: 0deg;}
+    25% {rotate: -10deg;}
+    75% {rotate: 10deg;}
+    100% {rotate: 0deg;}
 }
 
 @media (max-width: 800px) {
