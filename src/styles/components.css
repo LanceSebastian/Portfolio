@@ -14,7 +14,7 @@
     background-color: var(--bg);
 }
 
-#pricing, #faq{
+#pricing, #faqSection{
     background-color: var(--bg-dark);
 }
 
@@ -369,6 +369,7 @@ body:not(.dark) .recommend .offers li::after {
 
 .headerContainer {
     margin: auto;
+    padding-top: 100px;
     min-height: 400px;
     position: relative;
     display: block;
