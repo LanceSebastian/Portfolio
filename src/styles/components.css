@@ -22,6 +22,22 @@
     display: block;
 }
 
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    max-width: 600px;
+    text-align: start;
+}
+
+.muted > p{
+    color: var(--text-muted);
+}
+
 .packageContainer {
     display: flex;
     flex-wrap: wrap;
@@ -639,7 +655,7 @@ color: var(--primary);
     min-width: 200px;
     margin: 12px;
     border: var(--primary) solid;
-    border-radius: 8px;
+    border-radius: 100px;
     padding: 8px 16px;
     text-decoration: none;
     color: var(--primary);
@@ -652,11 +668,18 @@ color: var(--primary);
     border: var(--primary) solid;
     margin-top: 8px;
     margin-right: 4px;
-    border-radius: 4px;
-    padding: 4px 8px;
+    border-radius: 100px;
+    padding: 8px 16px;
     text-decoration: none;
     color: var(--primary);
-    font-size: 1em;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+}
+
+.bigButton:hover:not(.grow) {
+    box-shadow:0 0 12px 0 rgba(255, 255, 255, 0.6);
+    background-color: var(--primary); 
+    color: var(--bg);
 }
 
 .formGroup {
@@ -934,64 +957,23 @@ input[type=submit] {
 }
 
 /* slideshow */
-.photoSlide, .workSlide, .slide{
-    display: none;
-    flex-wrap: wrap-reverse;
-    position: absolute;
-    left: 0;
-    right:0;
+.project{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
     margin-inline:auto;
-    width: fit-content;
-    height: 450px;
-    justify-content: center;
+    width: 400px;
+    justify-content:space-evenly;
     align-items: center;
     gap: 0px 32px;
 }
 
-.workSlide {
-    cursor: pointer;
-}
-
-.photoSlide img, .workSlide img {
-    height: 100%;
-    user-select: none;
-}
-
-.slideshowContainer {
-    display: block;
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1100px;
     width: 100%;
-    height: 450px;
     position: relative;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 64px;
-    height: 64px;
-    color: var(--text);
-    font-weight: bold;
-    font-size: 32px;
-    text-align: center;
-    line-height: 64px;
-    border-radius: 50%;
-    transition: 0.6s ease;
-    user-select: none;
-}
-
-.next {
-    right: 32px;
-}
-
-.prev {
-    left: 32px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.2);
 }
 
 @keyframes blink {
