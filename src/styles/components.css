@@ -137,7 +137,8 @@ body:not(.dark) .recommend .offers li::after {
 .faqContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    max-width: 800px;
     justify-content:center;
     border: var(--primary) solid 2px;
     cursor: pointer;
@@ -151,7 +152,6 @@ body:not(.dark) .recommend .offers li::after {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 700px;
 }
 
 .questionContainer i{
@@ -170,7 +170,6 @@ body:not(.dark) .recommend .offers li::after {
 
 .answer {
     width: 100%;
-    max-width: 600px;
     font-size: large;
     max-height: 0px;
     overflow: hidden;
