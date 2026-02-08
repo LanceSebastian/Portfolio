@@ -36,7 +36,7 @@ const content = [
   },
   {
     icon: "fa-magnifying-glass",
-    title: "SEO Services",
+    title: "SEO Integrated",
     text: `Built with search engines in mind from the start. Clean 
     structure, proper metadata, and performance optimisations help your 
     site rank better and get found online.`
