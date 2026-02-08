@@ -6,7 +6,7 @@
     background-color: var(--bg-dark);
 }
 
-#contactSection, #aboutMe, #wid, #projects, #pricing, #faq {
+#contactMe, #aboutMe, #wid, #projects, #pricing, #faq {
     scroll-margin-top: 90px;
 }
 
@@ -14,7 +14,7 @@
     background-color: var(--bg);
 }
 
-#pricing, #faqSection{
+#pricing, #faq{
     background-color: var(--bg-dark);
 }
 
