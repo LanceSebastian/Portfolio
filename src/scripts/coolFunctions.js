@@ -38,10 +38,3 @@ function copyText(str) {
   });
 }
 
-/* FAQ Function */
-
-document.querySelectorAll(`.faqContainer`).forEach(faq => {
-  faq.addEventListener('click', () => {
-    faq.classList.toggle("active");
-  })
-});
