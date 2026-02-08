@@ -189,7 +189,8 @@ body:not(.dark) .recommend .offers li::after {
 }
 
 .answer p {
-    color: var(--text-muted);
+    color: var(--text);
+    font-weight: 300;
 }
 
 .answer.active {
