@@ -1,4 +1,4 @@
-function openContent(evt, contentName){
+function openfaq(evt, contentName){
     var i, tabContent, tabLinks;
 
     tabContent = document.getElementsByClassName("tabContent");
