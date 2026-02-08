@@ -168,3 +168,10 @@ faqSEO.forEach(faq => {
     clone.querySelector(".answer").textContent = faq.answer;
     seofaq.appendChild(clone);
 });
+
+/* FAQ Function */
+document.querySelectorAll(`.faqContainer`).forEach(faq => {
+  faq.addEventListener('click', () => {
+    faq.classList.toggle("active");
+  })
+});
