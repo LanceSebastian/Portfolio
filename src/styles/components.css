@@ -258,11 +258,13 @@ body:not(.dark) .recommend .offers li::after {
 .footerLinks{
     list-style-type: none;
     text-decoration: none;
-    text-align: end;
     padding: 0;
     justify-content: center;
     gap: 16px;
-    
+}
+
+.footerLinks.end{
+    text-align: end;
 }
 
 .footerLinks a {
