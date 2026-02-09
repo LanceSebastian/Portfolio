@@ -97,6 +97,7 @@ footer {
     padding-top: 32px;
     display: block;
     min-height: 100px;
+    background-color: var(--bg-dark);
 }
 
 input, textarea {
