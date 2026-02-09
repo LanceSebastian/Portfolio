@@ -2,8 +2,8 @@
     background-color: var(--bg);
 }
 
-#wid{
-    background-color: var(--bg-dark);
+#pricing, #wid{
+    background-color: var(--bg);
 }
 
 #contactMe, #aboutMe, #wid, #projects, #pricing, #faq {
@@ -11,10 +11,18 @@
 }
 
 #projects{
+    background-color: var(--bg-dark);
+}
+
+ #faq{
     background-color: var(--bg);
 }
 
-#pricing, #faq{
+#contactMe {
+    background-color: var(--bg-dark);
+}
+
+#return-to-top{
     background-color: var(--bg-dark);
 }
 
@@ -71,7 +79,7 @@
     max-width: 360px;
     height: 450px;
     display: grid;
-    background-color: var(--bg);
+    background-color: var(--bg-dark);
     padding: 32px;
     border-radius: 32px;
 }
@@ -119,7 +127,7 @@
 }
 
 .dark .recommend {
-    background-color: var(--bg);
+    background-color: var(--bg-dark);
     border: white solid 2px;
     box-shadow: 1px 1px 8px 3px var(--secondary);
 }
@@ -635,7 +643,7 @@ color: var(--primary);
     padding: 16px;
     border-radius: 16px;
     border: var(--bg-light) solid 2px;
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
     transition: all 0.2s ease;
 }
 
@@ -809,7 +817,7 @@ input[type=submit] {
     padding: 14px 32px;
     transition: all 0.2s ease-in-out;
     font-size: x-large;
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
     border-radius: 16px;
     border: var(--primary) solid 2px;
     color: var(--text);
