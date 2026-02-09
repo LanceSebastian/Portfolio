@@ -794,6 +794,7 @@ input[type=submit] {
 .tab {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     position: relative;
     text-align: center;
     gap: 8px;
