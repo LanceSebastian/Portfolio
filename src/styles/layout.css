@@ -262,3 +262,17 @@
     background-color: var(--primary);
     color: var(--bg-light);
 }
+
+.flex-wrap-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.align-start {
+    align-items: start;
+}

@@ -27,11 +27,25 @@
 
 .textbox {
     max-width: 600px;
+    font-size: 1.25rem;
     text-align: start;
 }
 
-.muted > p{
+.muted{
     color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.project:hover .muted {
+    color: var(--text);
+}
+
+.detailContainer:hover .muted {
+    color: var(--text);
+}
+
+.muted:hover {
+    color: var(--text);
 }
 
 .packageContainer {
@@ -724,9 +738,10 @@ input[type="text"], input[type="email"], textarea {
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid var(--border);
-    background-color: white;
+    background-color: var(--bg-light);
     border-radius: 4px;
     font-size: 1em;
+    color: var(--text)
 }
 
 textarea{
@@ -744,13 +759,13 @@ input[type=submit] {
 
 .contactContainer {
     display: block;
-    max-width: 1200px;
+    max-width: 600px;
     width: 100%;
     border: var(--border-muted) solid 2px;
     border-top: var(--highlight) solid 2px;
     border-left: var(--highlight) solid 2px;
     border-radius: 16px;
-    background-color: var(--bg);
+    background-color: var(--bg-dark);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 32px;
 }
@@ -1018,13 +1033,67 @@ input[type=submit] {
 
 .iconContainer {
     display: flex;
-    width: 100vw;
+    width: 100%;
     max-width: 600px;
     color: var(--primary);
-    justify-content: space-around;
+    gap: 16px;
     text-decoration: none;
+    margin: auto;
 }
 
 .shadow {
     text-shadow: 2px 4px 4px black;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detailContainer {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.detailContainer:hover .icon{
+    color: var(--bg);
+    background-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.dark .detailContainer:hover .icon{ 
+    border: white solid 2px;
+    box-shadow: 1px 1px 8px 3px var(--secondary);
+}
+
+.detailContainer .icon {
+    display: flex;
+    aspect-ratio: 1;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    padding: 12px;
+    border: solid 2px var(--primary);
+    border-radius: 50%;;
+    transition: all 0.2s ease;
+}
+
+.detailContainer .detail {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    transform: translateY(-8px);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
