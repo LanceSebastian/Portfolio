@@ -141,6 +141,11 @@ body:not(.dark) .recommend .bigButton{
     border: white solid
 }
 
+body:not(.dark) .recommend .bigButton:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
 
 body:not(.dark) .recommend .offers li::after {
     content: "✓";
@@ -337,6 +342,14 @@ body:not(.dark) .recommend .offers li::after {
     color:var(--text-muted);
 }
 
+.buttons {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    max-width: 600px;
+     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0); /* remove text shadow */
+}
+
 .buttonContainer {
     display: flex;
     flex-wrap: wrap;
@@ -412,18 +425,11 @@ body:not(.dark) .recommend .offers li::after {
     top: 60%;
     transform: translateY(-50%);
     left: 10%;
-    color: var(--text);
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header > *{
     font-size: clamp(16px, 10vw, 100px);
-}
-
-.header a {
-    color: var(--text);
-    margin-right: 16px;
-    text-decoration: none;
 }
 
 .header pre {
@@ -714,8 +720,31 @@ body:not(.dark) .service:hover{
     padding: 8px 16px;
     text-decoration: none;
     color: var(--primary);
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
+    transition: all 0.2s ease;
+}
+
+.ctaButton.reverse{
+    min-width: 200px;
+    margin: 12px;
+    border: var(--primary) solid;
+    border-radius: 100px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--bg-light);
+    background-color: var(--primary);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.dark .ctaButton:hover:not(.grow) {
+    box-shadow:0 0 24px 0 var(--secondary);
+}
+
+.ctaButton:hover:not(.grow) {
+    background-color: var(--primary); 
+    color: var(--bg);
 }
 
 .bigButton {
