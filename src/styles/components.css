@@ -634,6 +634,7 @@ color: var(--primary);
     text-align: center;
     padding: 16px;
     border-radius: 16px;
+    border: var(--bg-light) solid 2px;
     background-color: var(--bg-light);
     transition: all 0.2s ease;
 }
