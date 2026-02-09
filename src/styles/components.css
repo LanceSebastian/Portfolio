@@ -18,6 +18,13 @@
     background-color: var(--bg-dark);
 }
 
+.about-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .titlebox {
     display: flex;
     flex-direction: column;
@@ -340,14 +347,10 @@ body:not(.dark) .recommend .offers li::after {
 }
 
 .media {
-    min-width: 300px;
-    width: 20vw;
-    max-width: 400px;
-    min-height: 300px;
-    height: 20vw;
-    max-height: 400px;
+    aspect-ratio: 4/3;
+    max-width: 300px;
     object-fit: cover;    
-    border-radius: 40%;
+    border-radius: 32px;
 }
 
 .content {
@@ -779,8 +782,8 @@ input[type=submit] {
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
+    gap: 16px;
     max-width: 600px;
-    height: 500px;
     padding: 0px 8px; 
 }
 
