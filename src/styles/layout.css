@@ -118,6 +118,10 @@
     gap: 128px;
 }
 
+.p-8{
+    padding: 8px;
+}
+
 .pad-w-16 {
     padding:0px 16px ;
 }
