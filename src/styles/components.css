@@ -26,6 +26,10 @@
     background-color: var(--bg-dark);
 }
 
+.echo {
+    box-shadow: -124px -32px 0px 0px var(--bg-dark);
+}
+
 .about-media {
     display: flex;
     flex-direction: column;
