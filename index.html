@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://challenges.cloudflare.com">
         <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./src/scripts/darkmode.js" defer></script>
     </head>
@@ -173,9 +174,9 @@
                     <template id="servicesTemplate">
                         <div class="service">
                             <i class="lancify i-64 fa-solid"></i>
-                            <div class = "process muted">
+                            <div class = "process">
                                 <h4></h4>
-                                <p></p>
+                                <p class="muted"></p>
                             </div>
                         </div>
                     </template>
@@ -192,12 +193,12 @@
                 <h2 class="boldTitle">Projects</h2>
                 <p class="boldSubtitle"> Both professional and personal. </p>
                 
-                <div class="textbox muted">
-                    <p>
+                <div class="textbox">
+                    <p class="muted">
                         I'm in the early stages of my freelancing journey, focused on building modern, responsive websites
                         that meet real business needs while continuously refining my craft.
                     </p>
-                    <p>
+                    <p class="muted">
                         I work best with small businesses, startups, and individuals who want a clean, professional website
                         without having to deal with the technical complexities.
                     </p>
@@ -208,9 +209,9 @@
                     <a class="grow-s" href="./src/images/bosface.png">
                         <img class="thumbnail" src="./src/images/bosface.png" alt="BoSface Project" />
                     </a>
-                    <div class="muted">
+                    <div>
                         <h3>BoSface</h3>
-                        <p>
+                        <p class="muted">
                             Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio 
                             specialising in personalised facial and massage treatments.
                         </p>
@@ -221,9 +222,9 @@
                     <a class="grow-s" href="./src/images/southcentralbarbershop.png">
                         <img class="thumbnail" src="./src/images/southcentralbarbershop.png" alt="South Central Barbershop Project" />
                     </a>
-                    <div class="muted">
+                    <div>
                         <h3>South Central</h3>
-                        <p>
+                        <p class="muted">
                             A personal concept website designed to explore branding, layout,
                             and responsive design for a modern barbershop. This project is 
                             independent and created for portfolio purposes.
@@ -329,39 +330,72 @@
         <!-- Contact Me --> 
 
         <section id="contactMe">
-            <div class="autoMargin squeeze pad-h-t-32 pad-w-16 gap-16 center">
-                
-                <h3> Contact Me! </h3>
+            <div class="autoMargin flex-wrap-row justify-even align-start squeeze pad-h-t-32 pad-w-16 gap-16 center ">
+                <div class="contactDetails">
+                    <h2> Contact Me </h2>
+                    <p class="textbox">Send me an email if you've got any questions, ideas, or a website project! I respond to
+                        everyone within 24 hours of contacting me. Or give me a call and reach me immediately for a chat.
+                        If i'm unavailable, I will call back on the same day.
+                    </p>
+                    <div class="iconContainer">
+                        <a class="grow i-32" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
+                            <i class="muted shadow fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="grow i-32" href="https://github.com/LanceSebastian">
+                            <i class="muted shadow fa-brands fa-github"></i>
+                        </a>
+                        <a class="grow i-32" href="https://www.instagram.com/lance.sebasstian/#">
+                            <i class="muted shadow fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="grow i-32" href="https://www.facebook.com/profile.php?id=100011316192612">
+                            <i class="muted shadow fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="detailContainer">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="detail">
+                            <h4>Email</h4>
+                            <a class="link muted" href="mailto:lancesebastian.webdev@gmail.com">Click to Email</a>
+                        </div>
+                    </div>
+                    <div class="detailContainer">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="detail">
+                            <h4>Phone</h4>
+                            <a class="link muted" href="tel:+447472632095">+44 7472 632095</a>
+                        </div>
+                    </div>
+                    <div class="detailContainer">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="detail">
+                            <h4>Location</h4>
+                            <a class="link muted" href="https://www.google.com/maps/place/Somerset/@51.0674082,-4.3610889,8z/">Somerset, UK</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
                 <div class="contactContainer">
                     <form action="https://formspree.io/f/manvezdb" method="post">
                         <div class="formGroup">
-                            <label for="name">Name</label>
+                            <label for="name">Name*</label>
                             <input type="text" name="name" placeholder="What's your name?">
                         </div>
                         <div class="formGroup">
-                            <label for="email">Email</label>
+                            <label for="email">Email*</label>
                             <input type="email" name="email" placeholder="How I can reach you.">
                         </div>
                         <div class="formGroup">
-                            <label for="message">Message</label>
+                            <label for="phone">Phone</label>
+                            <input type="text" name="text" placeholder="Optional">
+                        </div>
+                        <div class="formGroup">
+                            <label for="message">Message*</label>
                             <textarea name="message" placeholder="A project, an idea, or even a joke!"></textarea>
                         </div>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACZXiM89N8sO15Rm"></div>
                         <input class="grow" type="submit" value="Submit">
                     </form>
-                </div>
-                <div class="iconContainer">
-                    <a class="grow i-64" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
-                        <i class="white shadow fa-brands fa-linkedin"></i>
-                    </a>
-                    <a class="grow i-64" href="https://github.com/LanceSebastian">
-                        <i class="white shadow fa-brands fa-github"></i>
-                    </a>
-                    <a class="grow i-64" href="https://www.instagram.com/lance.sebasstian/#">
-                        <i class="white shadow fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="grow i-64" href="https://www.facebook.com/profile.php?id=100011316192612">
-                        <i class="white shadow fa-brands fa-facebook"></i>
-                    </a>
                 </div>
             </div>
         </section>
@@ -416,6 +450,7 @@
         <script src="./src/scripts/faq.js"></script>
         <script src="./src/scripts/tabScript.js"></script>
         <script src="./src/scripts/navigation.js"></script>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     </body>
 
