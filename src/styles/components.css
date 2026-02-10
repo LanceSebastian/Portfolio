@@ -350,10 +350,10 @@ body:not(.dark) .recommend .offers li::after {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     gap: 8px;
-    max-width: 600px;
-     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0); /* remove text shadow */
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0); /* remove text shadow */
 }
 
 .buttonContainer {
