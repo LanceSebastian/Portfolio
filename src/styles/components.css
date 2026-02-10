@@ -260,11 +260,26 @@ body:not(.dark) .recommend .offers li::after {
     text-decoration: none;
     padding: 0;
     justify-content: center;
-    gap: 16px;
 }
 
 .footerLinks.end{
     text-align: end;
+}
+
+@media (max-width: 600px){
+
+    .footerLinks li {
+        margin-top: 8px;;
+    }
+    footer .col-2 {
+        gap: 8px;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footerLinks.end {
+        text-align: start;
+    }
 }
 
 .footerLinks a {
