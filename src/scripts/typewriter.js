@@ -1,15 +1,15 @@
-var letter = 0;
-var iSub = 0;
-var randItems = [];
+let letter = 0;
+let iSub = 0;
+let randItems = [];
 const subtitleArray = [
     "I design and build websites."
 ];
 
-var txt = "I design and build websites.";
-var maxSpeed = 100;
+let txt = "I design and build websites.";
+const maxSpeed = 100;
 
 function getSentence(){
-    var i = iSub % subtitleArray.length;
+    const i = iSub % subtitleArray.length;
     if (i == 0){ randItems = shuffle(subtitleArray);}
     txt = randItems[i];
     typeWriter();
