@@ -692,7 +692,11 @@ body:not(.dark) .service:hover{
     color: var(--text);
 }
 
-.service:hover h4, .service:hover i{
+.small-h3{
+    font-size: 1.5rem;
+}
+
+.service:hover .small-h3, .service:hover i{
     transform: scale(1.2);
 }
 
@@ -700,7 +704,7 @@ body:not(.dark) .service:hover{
     animation: wiggle 0.5s ease-in-out;
 }
 
-.service:hover h4{
+.service:hover .small-h3{
     color: var(--primary);
 }
 

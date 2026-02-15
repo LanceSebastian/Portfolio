@@ -49,7 +49,7 @@ const services = document.getElementById("services");
 content.forEach(step => {
   const tpl = servicesTemplate.content.cloneNode(true);
   tpl.querySelector("i").classList.add(step.icon);
-  tpl.querySelector("h4").textContent = step.title;
+  tpl.querySelector("h3").textContent = step.title;
   tpl.querySelector("p").textContent = step.text;
   services.appendChild(tpl);
 });
