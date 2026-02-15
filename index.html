@@ -26,12 +26,12 @@
         <nav class="navBarContainer">
             <div class="navBar">
                 <div class="navItem grow hover">
-                    <a href="/">
-                        <img style="width:60px;" src="./src/LanceVietnamPP111.jpg" class="pfp" alt="Home Icon">
+                    <a href="/" aria-label="Home">
+                        <img style="width:60px;" src="./src/LanceVietnamPP111.jpg" class="pfp" alt="Lance Sebastian profile picture">
                     </a>
                 </div>
                 
-                <input type="checkbox" id="check">
+                <input type="checkbox" id="check" aria-label="Toggle mobile menu">
 
                 <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
                     <li class="navItem selected grow" data-link="home"><a href="#home">Home</a></li>
@@ -42,13 +42,13 @@
                     <li class="navItem grow" data-link="faq"><a href="#faq">FAQ</a></li>
                     <li class="navItem grow" data-link="contactMe"><a href="#contactMe">Contact</a></li>
                 </ul>
-                
+
                 <div style="display: flex; align-items: center; gap: 16px;">
                     <a class="ctaButton" href="#contactMe">Get Started</a>
-                    <label for="check" class="checkbtn">
+                    <label for="check" class="checkbtn" aria-label="Open navigation menu">
                         <i class="fa fa-bars"></i>
                     </label>
-                    <button id="darkModeToggle" class="toggle">
+                    <button id="darkModeToggle" class="toggle" aria-label="Toggle dark mode">
                         <i class="i-24 fa-regular fa-moon"></i>
                         <i class="i-24 fa-regular fa-sun"></i>
                     </button>
@@ -344,16 +344,16 @@
                         If i'm unavailable, I will call back on the same day.
                     </p>
                     <div class="iconContainer">
-                        <a class="grow i-32" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
+                        <a class="grow i-32" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="Visit my LinkedIn profile">
                             <i class="muted fa-brands fa-linkedin"></i>
                         </a>
-                        <a class="grow i-32" href="https://github.com/LanceSebastian">
+                        <a class="grow i-32" href="https://github.com/LanceSebastian" aria-label="Visit my GitHub profile">
                             <i class="muted fa-brands fa-github"></i>
                         </a>
-                        <a class="grow i-32" href="https://www.instagram.com/lance.sebasstian/#">
+                        <a class="grow i-32" href="https://www.instagram.com/lance.sebasstian/#" aria-label="Visit my Instagram profile">
                             <i class="muted fa-brands fa-instagram"></i>
                         </a>
-                        <a class="grow i-32" href="https://www.facebook.com/profile.php?id=100011316192612">
+                        <a class="grow i-32" href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Visit my Facebook profile">
                             <i class="muted fa-brands fa-facebook"></i>
                         </a>
                     </div>
@@ -392,19 +392,19 @@
                     <form action="https://formspree.io/f/manvezdb" method="post">
                         <div class="formGroup">
                             <label for="name">Name*</label>
-                            <input type="text" name="name" placeholder="What's your name?">
+                            <input type="text" id="name" name="name" placeholder="What's your name?" required>
                         </div>
                         <div class="formGroup">
                             <label for="email">Email*</label>
-                            <input type="email" name="email" placeholder="How I can reach you.">
+                            <input type="email" id="email" name="email" placeholder="How I can reach you." required>
                         </div>
                         <div class="formGroup">
                             <label for="phone">Phone</label>
-                            <input type="text" name="text" placeholder="Optional">
+                            <input type="text" id="phone" name="phone" placeholder="Optional">
                         </div>
                         <div class="formGroup">
                             <label for="message">Message*</label>
-                            <textarea name="message" placeholder="A project, an idea, or even a joke!"></textarea>
+                            <textarea id="message" name="message" placeholder="A project, an idea, or even a joke!" required></textarea>
                         </div>
                         <div class="cf-turnstile" data-sitekey="0x4AAAAAACZXiM89N8sO15Rm"></div>
                         <input class="grow" type="submit" value="Submit">
@@ -424,16 +424,16 @@
                         <h2>Lance Sebastian</h2>
                         <p class="x-large">I design and build websites.</p>
                     </div>
-                    <a class="grow i-24" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b">
+                    <a class="grow i-24" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a class="grow i-24" href="https://github.com/LanceSebastian">
+                    <a class="grow i-24" href="https://github.com/LanceSebastian" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a class="grow i-24" href="https://www.instagram.com/lance.sebasstian/#">
+                    <a class="grow i-24" href="https://www.instagram.com/lance.sebasstian/#" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a class="grow i-24" href="https://www.facebook.com/profile.php?id=100011316192612">
+                    <a class="grow i-24" href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </div>
