@@ -30,6 +30,19 @@
     box-shadow: -124px -32px 0px 0px var(--bg-dark);
 }
 
+.projectLibrary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px;
+}
+
+.projectLibrary .project {
+    width: 100%;
+}
+
 .about-media {
     display: flex;
     flex-direction: column;
