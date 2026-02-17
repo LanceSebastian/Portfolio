@@ -466,7 +466,7 @@ body:not(.dark) .recommend .offers li::after {
     font-size: clamp(16px, 10vw, 100px);
 }
 
-.header pre {
+.subheader {
     font-size: clamp(8px, 5vw, 50px);
 }
 
