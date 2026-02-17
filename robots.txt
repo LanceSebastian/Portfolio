@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lancesebastian.co.uk/sitemap.xml
