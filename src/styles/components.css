@@ -24,6 +24,24 @@
     background-color: var(--bg-dark);
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.contact-grid > div {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
 #return-to-top{
     background-color: var(--bg-dark);
 }
@@ -880,7 +898,7 @@ input[type=submit] {
 
 .detailContainer {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     color: var(--text);
     gap: 16px;
     margin-bottom: 8px;
@@ -900,7 +918,7 @@ input[type=submit] {
 .detailContainer .icon {
     display: flex;
     aspect-ratio: 1;
-    font-size: 1.7rem;
+    font-size: 1.25rem;
     justify-content: center;
     align-items: center;
     color: var(--primary);
