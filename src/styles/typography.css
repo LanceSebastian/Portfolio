@@ -26,7 +26,7 @@ body {
 }
 
 .x-large {
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .alignRight, .alignRight *{
@@ -59,9 +59,6 @@ body {
   font-size: clamp(1rem, 2.5vw, 100px);
 }
 
-.clamp {
-  font-size: clamp();
-}
 
 .readable > p{
   font-size: clamp(16px, 2.5vw, 20px);

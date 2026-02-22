@@ -105,12 +105,12 @@
 }
 
 .price{
-    font-size: xxx-large;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 .price > span, .dark .price > span {
-    font-size: medium;
+    font-size: 1rem;
     font-weight:400;
     color: var(--text-muted)
 }
@@ -205,12 +205,12 @@ body:not(.dark) .recommend .offers li::after {
 }
 
 .question {
-    font-size: x-large;
+    font-size: 1.5rem;
 }
 
 .answer {
     width: 100%;
-    font-size: large;
+    font-size: 1.125rem;
     max-height: 0px;
     overflow: hidden;
     opacity: 0;
@@ -339,7 +339,7 @@ body:not(.dark) .recommend .offers li::after {
 
 .deets {
     overflow: visible;
-    font-size: x-large;
+    font-size: 1.5rem;
     transition: all .2s;
     border-radius: 8px;
     padding: 0px 8px;
@@ -353,18 +353,18 @@ body:not(.dark) .recommend .offers li::after {
 
 @media (max-width: 600px){
     .deets {
-        font-size: large;
+        font-size: 1.125rem;
     }
 }
 
 @media (max-width: 400px){
     .deets {
-        font-size: medium;
+        font-size: 1rem;
     }
 }
 
 .field {
-    font-size: small;
+    font-size: 0.875rem;
     padding-right: 8px;
     color:var(--text-muted);
 }
@@ -657,7 +657,7 @@ body:not(.dark) .service:hover{
 
 .process {
     text-align: center;
-    font-size: larger;
+    font-size: 1.125rem;
 }
 
 .ctaButton{
@@ -793,7 +793,7 @@ input[type=submit] {
     cursor: pointer;
     padding: 14px 32px;
     transition: all 0.2s ease-in-out;
-    font-size: x-large;
+    font-size: 1.5rem;
     background-color: var(--bg);
     border-radius: 16px;
     border: var(--primary) solid 2px;
@@ -907,7 +907,7 @@ input[type=submit] {
 .detailContainer .detail {
     display: flex;
     flex-direction: column;
-    font-size: larger;
+    font-size: 1.125rem;
     transform: translateY(-8px);
 }
 
