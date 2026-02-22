@@ -685,29 +685,26 @@ body:not(.dark) .service:hover{
 }
 
 .ctaButton{
-    min-width: 200px;
-    margin: 12px;
+    min-width: fit-content;
     border: var(--primary) solid;
     border-radius: 100px;
     padding: 8px 16px;
     text-decoration: none;
     color: var(--primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: all 0.2s ease;
 }
 
-.ctaButton.reverse{
-    min-width: 200px;
-    margin: 12px;
-    border: var(--primary) solid;
-    border-radius: 100px;
-    padding: 8px 16px;
-    text-decoration: none;
+.ctaButton.inverse{
     color: var(--bg-light);
     background-color: var(--primary);
-    font-size: 2rem;
-    text-align: center;
+}
+
+@media  (max-width:900px) {
+    .ctaButton {
+        font-size: 1rem;
+    }
 }
 
 .dark .ctaButton:hover:not(.grow) {
