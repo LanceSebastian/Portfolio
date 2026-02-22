@@ -64,367 +64,369 @@
             </div>
         </nav>
 
-        <section class="vh-100 headerContainer" id="home">
-            <picture>
-                <source type="image/avif" srcset="./src/images/hero.avif">
-                <source type="image/webp" srcset="./src/images/hero.webp">
-                <img 
-                class = "banner" 
-                src="./src/images/hero.JPG" 
-                alt = "Hero Image"
-                decoding="async"
-                >
-            </picture>
-            <div class="white header">
-                <h1>Hi, I'm <div class="lancify">Lance</div>.</h1>
-                <pre class="caret-bar subheader">
-                    <div id ="typewrite" style="display:inline;"></div><span style = "color: var(--text);">&nbsp;</span>
-                </pre>
-                
-                <div class="buttons">
-                    <a class="reverse ctaButton" href="#contactMe">Get Started</a>
-                    <a class="ctaButton" href="#projects">View Projects</a>
-                </div>
-            </div>
-            <div class="center" style="position: absolute; bottom: 16px; width: 100%;">
-                <p>Scroll Down</p>
-                <i class="i-24 fa-solid fa-angle-down"></i>
-            </div>
-        </section>   
-
-        <!-- What I can do for you -->
-        <section id="wid">
-            <div class="autoMargin center pad-w-64 pad-h-32">
-                <div class="center">
-                    <pre class="displaySize">Need a<div id="coolAnimation" style="display:inline;"></div></pre>
-                    <h2>What I do</h2>
-                </div>
-                <div>
-                    <template id="servicesTemplate">
-                        <div class="service">
-                            <i class="lancify i-64 fa-solid"></i>
-                            <div class = "process">
-                                <h3 class="small-h3"></h3>
-                                <p class="muted"></p>
-                            </div>
-                        </div>
-                    </template>
-                    <div id="services" class="servicesContainer"></div>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!-- Projects Section -->
-        <section id="projects" class="col-2 align-center pad-w-16 pad-h-32 gap-16">
-            <div class="titlebox">
-                <h2 class="boldTitle">Projects</h2>
-                <p class="boldSubtitle"> Both professional and personal. </p>
-                
-                <div class="textbox p-8">
-                    <p class="muted">
-                        I'm in the early stages of my freelancing journey, focused on building modern, responsive websites
-                        that meet real business needs while continuously refining my craft.
-                    </p>
-                </div>
-
-                <a class="bigButton" href="/Projects">View All Projects</a>
-            </div>
-            <div class="projectContainer">
-                <div class="pad-w-16 project">
-                    <a class="grow-s" href="./src/images/bosface.png">
-                        <picture>
-                            <source type="image/webp" srcset="./src/images/bosface.webp">
-                            <img
-                            class="thumbnail"
-                            src="./src/images/bosface.png"
-                            alt="BoSface Project"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
-                    </a>
-                    <div>
-                        <h3>BoSface</h3>
-                        <p class="muted">
-                            Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio 
-                            specialising in personalised facial and massage treatments.
-                        </p>
-                        <a class="bigButton" href="https://bosface.com">Visit Website</a>
-                    </div>
-                </div>
-                <div class="pad-w-16 project">
-                    <a class="grow-s" href="./src/images/southcentralbarbershop.png">
-                        <picture>
-                            <source type="image/webp" srcset="./src/images/southcentralbarbershop.webp">
-                            <img
-                            class="thumbnail"
-                            src="./src/images/southcentralbarbershop.png"
-                            alt="South Central Barbershop Project"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
-                    </a>
-                    <div>
-                        <h3>South Central</h3>
-                        <p class="muted">
-                            A personal concept website designed to explore branding, layout,
-                            and responsive design for a modern barbershop. This project is 
-                            independent and created for portfolio purposes.
-                        </p>
-
-                        <a class="bigButton" href="https://orchid-deer-358398.hostingersite.com">Visit Website</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="aboutMe" class="pad-w-16 pad-h-32 autoMargin squeeze">
-            <div class="mediaContent">
+        <main>
+            <section class="vh-100 headerContainer" id="home">
                 <picture>
-                    <source type="image/avif" srcset="./src/images/pfp.avif">
-                    <source type="image/webp" srcset="./src/images/pfp.webp">
-                    <img
-                    class="echo media"
-                    src="./src/images/pfp.jpeg"
-                    alt="My Profile"
-                    width="400"
-                    height="500"
-                    loading="lazy"
+                    <source type="image/avif" srcset="./src/images/hero.avif">
+                    <source type="image/webp" srcset="./src/images/hero.webp">
+                    <img 
+                    class = "banner" 
+                    src="./src/images/hero.JPG" 
+                    alt = "Hero Image"
                     decoding="async"
                     >
                 </picture>
-                <div class="box">
-                    <h2>About Me</h2>
-                    <p class="large">
-                        I’m a freelance web developer fresh out of University who builds clean, reliable websites for small businesses. My goal is to offer simple, affordable solutions so you can get your business online without stress or big upfront costs.
-                    </p>
-                    <p class="large">
-                        Whether you’re starting fresh or updating an old site, I’ll make the process smooth and simple. I take care of the technical details so you can focus on your business, and I’m always here to help if you need support.
-                    </p>
-                    <table class="myTable">
-                        <tr onclick="copyText(`lsebastian.webdev@gmail.com`)">
-                            <th class="field">Email:</th>
-                            <td class="deets tooltip">
-                                <span class="tooltiptext">Copy Text.</span>
-                                lsebastian.webdev@gmail.com
-                            </td>
-                        </tr>
-                        <tr onclick="copyText(`22`)">
-                            <th class="field">Education:</th>
-                            <td class="deets tooltip">
-                                <span class="tooltiptext">Copy Text.</span>
-                                BSc (Hons) Computer Science
-                            </td>
-                        </tr>
-                        <tr onclick="copyText(`British-Filipino`)">
-                            <th class="field">Nationality:</th>
-                            <td class="deets tooltip">
-                                <span class="tooltiptext">Copy Text.</span>
-                                British-Filipino
-                            </td>
-                        </tr>
-                        <tr onclick="copyText(`Computers, Photography, and Games.`)">
-                            <th class="field">Likes:</th>
-                            <td class="deets tooltip">
-                                <span class="tooltiptext">Copy Text.</span>
-                                Computers, Photography, and Games.
-                            </td>
-                        </tr>
-                        <tr onclick="copyText(`Bugs, Errors, and Glitches.`)">
-                            <th class="field">Dislikes:</th>
-                            <td class="deets tooltip">
-                                <span class="tooltiptext">Copy Text.</span>
-                                Bugs, Errors, and Glitches.
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="buttonContainer">
-                        <a class="grow ctaButton"
-                            href="https://drive.google.com/file/d/14KOcSzsOp2CGoHTBoIHWDZUTqAuMDiAM/view?usp=sharing">Résumé</a>
-                        <a class="grow ctaButton" href="/Author">Read More...</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing">
-            <div class="autoMargin pad-h-32 pad-w-16 gap-16 center">
-                <h2>Pricing</h2>
-                <div class="packageContainer">
-                    <div class="package">
-                        <h3>Lump Sum</h3>
-                        <ul class="offers">
-                            <li>Design & Development</li>
-                            <li>£10/mo Hosting</li>
-                            <li>£50 fee Per Page after 5</li>
-                            <li>+£20/mo Unlimited Edits Add-on</li>
-                            <li>+£200 Blog Integration</li>
-                            <li class="loss">24/7 Support</li>
-                            <li class="loss">Lifetime Updates</li>
-                        </ul>
-                        <div class="bottom">
-                            <div class="price">£400<span class=""> +£10/mo Hosting</span></div>
-                            <a class=" bigButton" href="#contactMe">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="recommend package">
-                        <h3>Monthly</h3>
-                        <ul class="offers">
-                            <li>Design & Development</li>
-                            <li>Includes Hosting</li>
-                            <li>£50 fee Per Page after 5</li>
-                            <li>+£200 Blog Integration</li>
-                            <li>Unlimited Edits</li>
-                            <li>24/7 Support</li>
-                            <li>Lifetime Updates</li>
-                        </ul>
-                        <div class="bottom">
-                            <div class="price">£50<span class=""> Per Month</span></div>
-                            <a class=" bigButton" href="#contactMe">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="package">
-                        <h3>ECommerce</h3>
-                        <ul class="offers">
-                            <li>Woocommerce Store</li>
-                            <li>Integrated Basic Shipping</li>
-                            <li>Fully Editable In WordPress CMS</li>
-                            <li>+£200 Blog Integration</li>
-                            <li class="loss">Unlimited Edits</li>
-                            <li class="loss">24/7 Support</li>    
-                        </ul>
-                        <div class="bottom">
-                            <div class="price">£1200<span class=""> Starting</span></div>
-                            <a class=" bigButton" href="#contactMe">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- FAQ -->
-        <section id="faq">
-            <div class="autoMargin pad-h-32 pad-w-16 gap-16 center">
-                <h2> Common Questions</h2>
-
-                <div class="tab">
-                    <button class="tabLinks active" onclick="openfaq(event,'websitesfaq')">Websites</button>
-                    <button class="tabLinks" onclick="openfaq(event,'pricingfaq')">Pricing</button>
-                    <button class="tabLinks" onclick="openfaq(event,'plansfaq')">Plans</button>
-                    <button class="tabLinks" onclick="openfaq(event,'seofaq')">SEO</button>
-                </div>
-
-                <template id="faqTemplate">
-                    <div class="faqContainer">
-                        <div class="questionContainer">
-                            <span class="question"></span>
-                            <i class="i-24 fa-solid fa-angle-down"></i>
-                        </div>
-                    <div class="answer"></div>
-                </template>
-
-                <div id="websitesfaq" class="tabContent" style="display:grid;"></div>
-
-                <div id="pricingfaq" class="tabContent"></div>
-
-                <div id="plansfaq" class="tabContent"></div>
-
-                <div id="seofaq" class="tabContent"></div>
-
-            </div>
-            
-        </section>
-
-        <!-- Contact Me --> 
-
-        <section id="contactMe">
-            <div class="autoMargin flex-wrap-row justify-even align-start squeeze pad-h-t-32 pad-w-16 gap-16 center ">
-                <div class="contactDetails">
-                    <h2> Contact Me </h2>
-                    <p class="textbox">Send me an email if you've got any questions, ideas, or a website project! I respond to
-                        everyone within 24 hours of contacting me. Or give me a call and reach me immediately for a chat.
-                        If i'm unavailable, I will call back on the same day.
-                    </p>
-                    <div class="iconContainer">
-                        <a class="grow i-32" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="Visit my LinkedIn profile">
-                            <i class="muted fa-brands fa-linkedin"></i>
-                        </a>
-                        <a class="grow i-32" href="https://github.com/LanceSebastian" aria-label="Visit my GitHub profile">
-                            <i class="muted fa-brands fa-github"></i>
-                        </a>
-                        <a class="grow i-32" href="https://www.instagram.com/lance.sebasstian/#" aria-label="Visit my Instagram profile">
-                            <i class="muted fa-brands fa-instagram"></i>
-                        </a>
-                        <a class="grow i-32" href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Visit my Facebook profile">
-                            <i class="muted fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="detailContainer">
-                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="detail">
-                            <h3 class="small-h3">Email</h3>
-                            <a class="link muted" href="mailto:lancesebastian.webdev@gmail.com">Click to Email</a>
-                        </div>
-                    </div>
-                    <div class="detailContainer">
-                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="detail">
-                            <h3 class="small-h3">Phone</h3>
-                            <a class="link muted" href="tel:+447472632095">+44 7472 632095</a>
-                        </div>
-                    </div>
-                    <div class="detailContainer">
-                        <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
-                        <div class="detail">
-                            <h3 class="small-h3">WhatsApp</h3>
-                            <a class="link muted" href="https://wa.me/447472632095?text=Hi%20Lance!%20I%20found%20your%20website%20and%20wanted%20to%20get%20in%20touch.">Click to Chat</a>
-                        </div>
-                    </div>
-                    <div class="detailContainer">
-                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="detail">
-                            <h3 class="small-h3">Location</h3>
-                            <a class="link muted" href="https://www.google.com/maps/place/Somerset/@51.0674082,-4.3610889,8z/">Somerset, UK</a>
-                        </div>
-                    </div>
+                <div class="white header">
+                    <h1>Hi, I'm <div class="lancify">Lance</div>.</h1>
+                    <pre class="caret-bar subheader">
+                        <div id ="typewrite" style="display:inline;"></div><span style = "color: var(--text);">&nbsp;</span>
+                    </pre>
                     
+                    <div class="buttons">
+                        <a class="reverse ctaButton" href="#contactMe">Get Started</a>
+                        <a class="ctaButton" href="#projects">View Projects</a>
+                    </div>
                 </div>
-
-                <div class="contactContainer">
-                    <form action="https://formspree.io/f/manvezdb" method="post">
-                        <div class="formGroup">
-                            <label for="name">Name*</label>
-                            <input type="text" id="name" name="name" placeholder="What's your name?" required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" placeholder="How I can reach you." required>
-                        </div>
-                        <div class="formGroup">
-                            <label for="phone">Phone</label>
-                            <input type="text" id="phone" name="phone" placeholder="Optional">
-                        </div>
-                        <div class="formGroup">
-                            <label for="message">Message*</label>
-                            <textarea id="message" name="message" placeholder="A project, an idea, or even a joke!" required></textarea>
-                        </div>
-                        <div class="cf-turnstile"
-                        data-sitekey="0x4AAAAAACZXiM89N8sO15Rm"
-                        data-appearance="interaction-only"
-                        data-execution="render"></div>
-                        <input class="grow" type="submit" value="Submit">
-                    </form>
+                <div class="center" style="position: absolute; bottom: 16px; width: 100%;">
+                    <p>Scroll Down</p>
+                    <i class="i-24 fa-solid fa-angle-down"></i>
                 </div>
+            </section>   
+    
+            <!-- What I can do for you -->
+            <section id="wid">
+                <div class="autoMargin center pad-w-64 pad-h-32">
+                    <div class="center">
+                        <pre class="displaySize">Need a<div id="coolAnimation" style="display:inline;"></div></pre>
+                        <h2>What I do</h2>
+                    </div>
+                    <div>
+                        <template id="servicesTemplate">
+                            <div class="service">
+                                <i class="lancify i-64 fa-solid"></i>
+                                <div class = "process">
+                                    <h3 class="small-h3"></h3>
+                                    <p class="muted"></p>
+                                </div>
+                            </div>
+                        </template>
+                        <div id="services" class="servicesContainer"></div>
+                    </div>
+                </div>
+            </section>
+    
+            
+    
+            <!-- Projects Section -->
+            <section id="projects" class="col-2 align-center pad-w-16 pad-h-32 gap-16">
+                <div class="titlebox">
+                    <h2 class="boldTitle">Projects</h2>
+                    <p class="boldSubtitle"> Both professional and personal. </p>
+                    
+                    <div class="textbox p-8">
+                        <p class="muted">
+                            I'm in the early stages of my freelancing journey, focused on building modern, responsive websites
+                            that meet real business needs while continuously refining my craft.
+                        </p>
+                    </div>
+    
+                    <a class="bigButton" href="/Projects">View All Projects</a>
+                </div>
+                <div class="projectContainer">
+                    <div class="pad-w-16 project">
+                        <a class="grow-s" href="./src/images/bosface.png">
+                            <picture>
+                                <source type="image/webp" srcset="./src/images/bosface.webp">
+                                <img
+                                class="thumbnail"
+                                src="./src/images/bosface.png"
+                                alt="BoSface Project"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </picture>
+                        </a>
+                        <div>
+                            <h3>BoSface</h3>
+                            <p class="muted">
+                                Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio 
+                                specialising in personalised facial and massage treatments.
+                            </p>
+                            <a class="bigButton" href="https://bosface.com">Visit Website</a>
+                        </div>
+                    </div>
+                    <div class="pad-w-16 project">
+                        <a class="grow-s" href="./src/images/southcentralbarbershop.png">
+                            <picture>
+                                <source type="image/webp" srcset="./src/images/southcentralbarbershop.webp">
+                                <img
+                                class="thumbnail"
+                                src="./src/images/southcentralbarbershop.png"
+                                alt="South Central Barbershop Project"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </picture>
+                        </a>
+                        <div>
+                            <h3>South Central</h3>
+                            <p class="muted">
+                                A personal concept website designed to explore branding, layout,
+                                and responsive design for a modern barbershop. This project is 
+                                independent and created for portfolio purposes.
+                            </p>
+    
+                            <a class="bigButton" href="https://orchid-deer-358398.hostingersite.com">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="aboutMe" class="pad-w-16 pad-h-32 autoMargin squeeze">
+                <div class="mediaContent">
+                    <picture>
+                        <source type="image/avif" srcset="./src/images/pfp.avif">
+                        <source type="image/webp" srcset="./src/images/pfp.webp">
+                        <img
+                        class="echo media"
+                        src="./src/images/pfp.jpeg"
+                        alt="My Profile"
+                        width="400"
+                        height="500"
+                        loading="lazy"
+                        decoding="async"
+                        >
+                    </picture>
+                    <div class="box">
+                        <h2>About Me</h2>
+                        <p class="large">
+                            I’m a freelance web developer fresh out of University who builds clean, reliable websites for small businesses. My goal is to offer simple, affordable solutions so you can get your business online without stress or big upfront costs.
+                        </p>
+                        <p class="large">
+                            Whether you’re starting fresh or updating an old site, I’ll make the process smooth and simple. I take care of the technical details so you can focus on your business, and I’m always here to help if you need support.
+                        </p>
+                        <table class="myTable">
+                            <tr onclick="copyText(`lsebastian.webdev@gmail.com`)">
+                                <th class="field">Email:</th>
+                                <td class="deets tooltip">
+                                    <span class="tooltiptext">Copy Text.</span>
+                                    lsebastian.webdev@gmail.com
+                                </td>
+                            </tr>
+                            <tr onclick="copyText(`22`)">
+                                <th class="field">Education:</th>
+                                <td class="deets tooltip">
+                                    <span class="tooltiptext">Copy Text.</span>
+                                    BSc (Hons) Computer Science
+                                </td>
+                            </tr>
+                            <tr onclick="copyText(`British-Filipino`)">
+                                <th class="field">Nationality:</th>
+                                <td class="deets tooltip">
+                                    <span class="tooltiptext">Copy Text.</span>
+                                    British-Filipino
+                                </td>
+                            </tr>
+                            <tr onclick="copyText(`Computers, Photography, and Games.`)">
+                                <th class="field">Likes:</th>
+                                <td class="deets tooltip">
+                                    <span class="tooltiptext">Copy Text.</span>
+                                    Computers, Photography, and Games.
+                                </td>
+                            </tr>
+                            <tr onclick="copyText(`Bugs, Errors, and Glitches.`)">
+                                <th class="field">Dislikes:</th>
+                                <td class="deets tooltip">
+                                    <span class="tooltiptext">Copy Text.</span>
+                                    Bugs, Errors, and Glitches.
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="buttonContainer">
+                            <a class="grow ctaButton"
+                                href="https://drive.google.com/file/d/14KOcSzsOp2CGoHTBoIHWDZUTqAuMDiAM/view?usp=sharing">Résumé</a>
+                            <a class="grow ctaButton" href="/Author">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="pricing">
+                <div class="autoMargin pad-h-32 pad-w-16 gap-16 center">
+                    <h2>Pricing</h2>
+                    <div class="packageContainer">
+                        <div class="package">
+                            <h3>Lump Sum</h3>
+                            <ul class="offers">
+                                <li>Design & Development</li>
+                                <li>£10/mo Hosting</li>
+                                <li>£50 fee Per Page after 5</li>
+                                <li>+£20/mo Unlimited Edits Add-on</li>
+                                <li>+£200 Blog Integration</li>
+                                <li class="loss">24/7 Support</li>
+                                <li class="loss">Lifetime Updates</li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£400<span class=""> +£10/mo Hosting</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="recommend package">
+                            <h3>Monthly</h3>
+                            <ul class="offers">
+                                <li>Design & Development</li>
+                                <li>Includes Hosting</li>
+                                <li>£50 fee Per Page after 5</li>
+                                <li>+£200 Blog Integration</li>
+                                <li>Unlimited Edits</li>
+                                <li>24/7 Support</li>
+                                <li>Lifetime Updates</li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£50<span class=""> Per Month</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <h3>ECommerce</h3>
+                            <ul class="offers">
+                                <li>Woocommerce Store</li>
+                                <li>Integrated Basic Shipping</li>
+                                <li>Fully Editable In WordPress CMS</li>
+                                <li>+£200 Blog Integration</li>
+                                <li class="loss">Unlimited Edits</li>
+                                <li class="loss">24/7 Support</li>    
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£1200<span class=""> Starting</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            
+            <!-- FAQ -->
+            <section id="faq">
+                <div class="autoMargin pad-h-32 pad-w-16 gap-16 center">
+                    <h2> Common Questions</h2>
+    
+                    <div class="tab">
+                        <button class="tabLinks active" onclick="openfaq(event,'websitesfaq')">Websites</button>
+                        <button class="tabLinks" onclick="openfaq(event,'pricingfaq')">Pricing</button>
+                        <button class="tabLinks" onclick="openfaq(event,'plansfaq')">Plans</button>
+                        <button class="tabLinks" onclick="openfaq(event,'seofaq')">SEO</button>
+                    </div>
+    
+                    <template id="faqTemplate">
+                        <div class="faqContainer">
+                            <div class="questionContainer">
+                                <span class="question"></span>
+                                <i class="i-24 fa-solid fa-angle-down"></i>
+                            </div>
+                        <div class="answer"></div>
+                    </template>
+    
+                    <div id="websitesfaq" class="tabContent" style="display:grid;"></div>
+    
+                    <div id="pricingfaq" class="tabContent"></div>
+    
+                    <div id="plansfaq" class="tabContent"></div>
+    
+                    <div id="seofaq" class="tabContent"></div>
+    
+                </div>
+                
+            </section>
+    
+            <!-- Contact Me --> 
+    
+            <section id="contactMe">
+                <div class="autoMargin flex-wrap-row justify-even align-start squeeze pad-h-t-32 pad-w-16 gap-16 center ">
+                    <div class="contactDetails">
+                        <h2> Contact Me </h2>
+                        <p class="textbox">Send me an email if you've got any questions, ideas, or a website project! I respond to
+                            everyone within 24 hours of contacting me. Or give me a call and reach me immediately for a chat.
+                            If i'm unavailable, I will call back on the same day.
+                        </p>
+                        <div class="iconContainer">
+                            <a class="grow i-32" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="Visit my LinkedIn profile">
+                                <i class="muted fa-brands fa-linkedin"></i>
+                            </a>
+                            <a class="grow i-32" href="https://github.com/LanceSebastian" aria-label="Visit my GitHub profile">
+                                <i class="muted fa-brands fa-github"></i>
+                            </a>
+                            <a class="grow i-32" href="https://www.instagram.com/lance.sebasstian/#" aria-label="Visit my Instagram profile">
+                                <i class="muted fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="grow i-32" href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Visit my Facebook profile">
+                                <i class="muted fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="detail">
+                                <h3 class="small-h3">Email</h3>
+                                <a class="link muted" href="mailto:lancesebastian.webdev@gmail.com">Click to Email</a>
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="detail">
+                                <h3 class="small-h3">Phone</h3>
+                                <a class="link muted" href="tel:+447472632095">+44 7472 632095</a>
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="detail">
+                                <h3 class="small-h3">WhatsApp</h3>
+                                <a class="link muted" href="https://wa.me/447472632095?text=Hi%20Lance!%20I%20found%20your%20website%20and%20wanted%20to%20get%20in%20touch.">Click to Chat</a>
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="detail">
+                                <h3 class="small-h3">Location</h3>
+                                <a class="link muted" href="https://www.google.com/maps/place/Somerset/@51.0674082,-4.3610889,8z/">Somerset, UK</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="contactContainer">
+                        <form action="https://formspree.io/f/manvezdb" method="post">
+                            <div class="formGroup">
+                                <label for="name">Name*</label>
+                                <input type="text" id="name" name="name" placeholder="What's your name?" required>
+                            </div>
+                            <div class="formGroup">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="How I can reach you." required>
+                            </div>
+                            <div class="formGroup">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" name="phone" placeholder="Optional">
+                            </div>
+                            <div class="formGroup">
+                                <label for="message">Message*</label>
+                                <textarea id="message" name="message" placeholder="A project, an idea, or even a joke!" required></textarea>
+                            </div>
+                            <div class="cf-turnstile"
+                            data-sitekey="0x4AAAAAACZXiM89N8sO15Rm"
+                            data-appearance="interaction-only"
+                            data-execution="render"></div>
+                            <input class="grow" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div id="return-to-top" class="autoMargin h-128 pad-w-16 center">
+                <a class="autoMargin grow ctaButton" href="#home">Return to Top <i
+                        class="fa-solid fa-arrow-up"></i></a>
             </div>
-        </section>
-        <div id="return-to-top" class="autoMargin h-128 pad-w-16 center">
-            <a class="autoMargin grow ctaButton" href="#home">Return to Top <i
-                    class="fa-solid fa-arrow-up"></i></a>
-        </div>
+        </main>
 
         <footer>
             <div class="col-2 align-start">
