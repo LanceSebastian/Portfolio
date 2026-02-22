@@ -8,7 +8,7 @@
     --primary: oklch(0.4 0.11 45);
     --secondary: oklch(0.4 0.11 225);
     --text: oklch(0.18 0 0);
-    --text-muted: oklch(0.63 0 89.9);
+    --text-muted: oklch(0.45 0 0);
 }
 
 .dark {
@@ -21,5 +21,5 @@
     --primary: oklch(0.76 0.11 45);
     --secondary: oklch(0.76 0.11 225);
     --text: oklch(0.97 0 0);   
-    --text-muted: oklch(0.53 0 158);
+    --text-muted: oklch(0.70 0 0);
 }

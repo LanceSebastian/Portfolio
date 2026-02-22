@@ -63,3 +63,14 @@ body {
 .readable > p{
   font-size: clamp(16px, 2.5vw, 20px);
 }
+
+.eyebrow {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
