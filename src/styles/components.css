@@ -417,6 +417,10 @@ body:not(.dark) .recommend .offers li::after {
     mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.73), transparent 100%);
 }
 
+.dark .banner {
+    filter: brightness(0.7);
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -426,7 +430,6 @@ body:not(.dark) .recommend .offers li::after {
     top: 60%;
     transform: translateY(-50%);
     left: 10%;
-    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header > *{
