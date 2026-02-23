@@ -690,6 +690,39 @@ body:not(.dark) .service:hover{
     font-size: 1.125rem;
 }
 
+.processList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    margin-top: 32px;
+    gap: 8px;
+}
+
+.processStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    background-color: var(--bg-dark);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+}
+
+.processNum {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--bg-light);
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
 .ctaButton{
     min-width: fit-content;
     border: var(--primary) solid;

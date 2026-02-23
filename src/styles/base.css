@@ -59,7 +59,7 @@ h2 {
 h3 {
     margin: 0;
     padding: 0;
-    font-size: clamp(2rem, 4vw, 3em);
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
 }
 
 h4 {
