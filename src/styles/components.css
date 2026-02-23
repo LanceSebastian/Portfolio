@@ -462,18 +462,27 @@ body:not(.dark) .recommend .offers li::after {
     flex-direction: column;
     position: absolute;
     margin:auto;
-    min-width: fit-content;
+    max-width: 800px;
     top: 60%;
     transform: translateY(-50%);
     left: 10%;
 }
 
-.header > *{
-    font-size: clamp(16px, 10vw, 100px);
+.header h1 .lancify {
+    display: block;
+}
+
+/* .header * {
+    outline: red solid 1px;
+} */
+
+.header .buttons {
+    margin-top: 32px;
+    margin-left: 0;
 }
 
 .subheader {
-    font-size: clamp(8px, 5vw, 50px);
+    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 @media (max-width: 900px) {
@@ -482,19 +491,20 @@ body:not(.dark) .recommend .offers li::after {
     }
 }
 
-pre.caret-bar {
-    display: flex;
+.block {
+    display: block;
+}
+
+.caret-bar {
     word-wrap: break-word;
     min-width: 100px;
+    line-height: 1;
+    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
-pre.caret-bar > span {
+.caret {
   animation: blink 1s step-end infinite;
   border-left: 2px solid var(--text);
-}
-
-pre.caret-bar > div {
-    font-size: clamp(8px, 5vw, 60px);
 }
 
 .navBarContainer {
