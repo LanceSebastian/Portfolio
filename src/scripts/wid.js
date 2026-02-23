@@ -1,24 +1,10 @@
 const content = [
   {
     icon: "fa-paintbrush",
-    title: "Web Design",
-    text: `Modern, clean website designs focused on usability, branding, 
-    and first impressions. Every layout is carefully crafted to look great 
-    and guide visitors toward action.`
-  },
-  {
-    icon: "fa-hammer",
-    title: "Web Development",
-    text: `Custom-built websites using reliable, modern code. No bloated 
-    templates — just fast, secure, and scalable sites built to work smoothly 
-    across all browsers.`
-  },
-  {
-    icon: "fa-money-bill-wave",
-    title: "Budget Friendly",
-    text: `High-quality websites at fair, transparent prices. Perfect 
-    for small businesses and startups who want a professional online 
-    presence without unnecessary extras.`
+    title: "Custom Websites",
+    text: `Hand-coded from scratch, tailored to your brand. No page
+    builders, no generic templates. Just a site built specifically
+    for your business and your customers.`
   },
   {
     icon: "fa-mobile-screen",
@@ -26,13 +12,6 @@ const content = [
     text: `Your website will adapt seamlessly to all screen sizes, from 
     mobile phones to large desktop displays, ensuring a consistent 
     experience for every visitor.`
-  },
-  {
-    icon: "fa-rocket",
-    title: "Optimised Page Speed",
-    text: `Designed for quick load times to keep users engaged and 
-    reduce bounce rates. Faster websites mean better user experience 
-    and improved performance.`
   },
   {
     icon: "fa-magnifying-glass",
