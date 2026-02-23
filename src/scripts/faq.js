@@ -2,7 +2,7 @@ const faqWebsites = [
     {
         question: "How long does it take the website to go from start to launch?",
         answer:
-        "Most websites take 2–4 weeks, depending on complexity and the speed of content delivery."
+        "Most websites take 2–3 weeks, depending on complexity and the speed of content delivery."
     },
     {
         question: "Who owns the domain and hosting?",
