@@ -482,12 +482,24 @@ body:not(.dark) .recommend .offers li::after {
 }
 
 .subheader {
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1.4rem, 4vw, 3rem);
 }
 
 @media (max-width: 900px) {
     nav .ctaButton {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 100%;
+        top: 55%;
+        align-items: center;
+        text-align: center;
     }
 }
 
