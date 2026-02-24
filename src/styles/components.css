@@ -755,6 +755,52 @@ body:not(.dark) .service:hover{
     flex-shrink: 0;
 }
 
+.testimonialsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.testimonialCard {
+    flex: 1 1 280px;
+    max-width: 400px;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.testimonialQuote {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.testimonialText {
+    flex: 1;
+    font-size: 1rem;
+    color: var(--text);
+    margin: 0;
+}
+
+.testimonialAuthor {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.testimonialName {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.testimonialBusiness {
+    font-size: 0.875rem;
+}
+
 .addons {
     margin-top: 32px;
     width: 100%;
