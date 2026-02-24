@@ -474,7 +474,7 @@ body:not(.dark) .recommend .offers li::after {
     flex-direction: column;
     position: absolute;
     margin:auto;
-    max-width: 800px;
+    max-width: 900px;
     top: 60%;
     transform: translateY(-50%);
     left: 10%;
@@ -565,10 +565,15 @@ body:not(.dark) .recommend .offers li::after {
 }
 
 .pfp {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
+    width: auto;
+    height: 50px;
+    margin: 1rem 8px;
 }
+
+.dark .pfp {
+    filter: brightness(0) invert(1);
+}
+
 
 .navItem a {
     text-decoration: none;
