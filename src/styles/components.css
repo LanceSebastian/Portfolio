@@ -468,7 +468,7 @@ body:not(.dark) .recommend .offers li::after {
     left: 10%;
 }
 
-.header h1 .lancify {
+#header h1 .lancify {
     display: block;
 }
 
