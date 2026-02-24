@@ -1,8 +1,10 @@
 const testimonials = [
     {
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        name: "Client Name",
-        business: "Business Name"
+        text: `I had a great experience working with Lance. He was accommodating with every request, 
+        clearly explained the pros and cons of each option, and never pressured me into decisions. 
+        The service offers excellent value for money while delivering high-quality work.`,
+        name: "Melinda",
+        business: "BoSface"
     }
 ];
 
