@@ -781,8 +781,37 @@ body:not(.dark) .service:hover{
     text-align: center;
     gap: 12px;
     background-color: var(--bg-dark);
-    padding: 1rem 2rem 2rem ;
+    padding: 1rem 2rem 2rem;
     border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.processStep * {
+    transition: all 0.2s ease;
+}
+
+.dark .processStep:hover {
+    border: white solid 2px;
+    box-shadow: 1px 1px 8px 3px var(--secondary);
+}
+
+body:not(.dark) .processStep:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 8px 3px var(--text-muted);
+}
+
+.processStep:hover h3 {
+    color: var(--primary);
+    transform: scale(1.2);
+}
+
+.processStep:hover p {
+    color: var(--text);
+}
+
+.processStep:hover .processNum {
+    animation: wiggle 0.5s ease-in-out;
 }
 
 .processNum {
