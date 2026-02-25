@@ -805,6 +805,14 @@ body:not(.dark) .service:hover{
     font-size: 1.5rem;
 }
 
+.testimonialStars {
+    display: flex;
+    gap: 4px;
+    color: gold;
+    font-size: 1rem;
+    align-items: center;
+}
+
 .testimonialText {
     flex: 1;
     font-size: 1rem;
@@ -814,8 +822,9 @@ body:not(.dark) .service:hover{
 
 .testimonialAuthor {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .testimonialName {
