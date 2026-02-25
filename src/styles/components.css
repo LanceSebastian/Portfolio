@@ -714,7 +714,7 @@ color: var(--primary);
 
 body:not(.dark) .service:hover{
     transform: translate(-8px, -8px);
-    box-shadow: 8px 8px 8px 3px var(--text-muted);
+    box-shadow: 12px 12px 20px -12px var(--text-muted);
 }
 
 .service:hover p{
@@ -792,13 +792,13 @@ body:not(.dark) .service:hover{
 }
 
 .dark .processStep:hover {
-    border: white solid 2px;
+    border: white solid 1px;
     box-shadow: 1px 1px 8px 3px var(--secondary);
 }
 
 body:not(.dark) .processStep:hover {
     transform: translate(-8px, -8px);
-    box-shadow: 8px 8px 8px 3px var(--text-muted);
+    box-shadow: 12px 12px 20px -12px var(--text-muted);
 }
 
 .processStep:hover h3 {
