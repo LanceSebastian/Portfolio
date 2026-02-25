@@ -787,6 +787,7 @@ body:not(.dark) .service:hover{
     justify-content: center;
     gap: 32px;
     margin-top: 32px;
+    width: 100%;
 }
 
 .testimonialCard {
@@ -798,6 +799,15 @@ body:not(.dark) .service:hover{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.testimonialGhost {
+    border: none;
+    background-color: var(--text-muted);
+    opacity: 0.15;
+    filter: blur(2px);
+    pointer-events: none;
+    min-height: 200px;
 }
 
 .testimonialQuote {
