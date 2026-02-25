@@ -134,7 +134,7 @@
 .price > span, .dark .price > span {
     font-size: 1rem;
     font-weight:400;
-    color: var(--text-muted)
+    color: var(--text-muted);
 }
 
 .offers{
@@ -170,7 +170,7 @@
 
 body:not(.dark) .recommend .bigButton{
     color: white;
-    border: white solid
+    border: white solid;
 }
 
 body:not(.dark) .recommend .bigButton:hover {
@@ -189,7 +189,7 @@ body:not(.dark) .recommend .offers li::after {
 .offers li.loss::after {
     content: "✗";
     margin-left: 1rem;
-    color: var(--text-muted)
+    color: var(--text-muted);
 }
 
 .loss {
@@ -956,7 +956,7 @@ input[type="text"], input[type="email"], textarea {
     background-color: var(--bg-light);
     border-radius: 4px;
     font-size: 1em;
-    color: var(--text)
+    color: var(--text);
 }
 
 textarea{
