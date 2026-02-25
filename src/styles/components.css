@@ -273,14 +273,26 @@ body:not(.dark) .recommend .offers li::after {
     align-items: center;
     width: 48px;
     height: 48px;
-    background-color: var(--bg-light);
+    background-color: transparent;
     border-radius: 16px;
+    color: var(--text);
     cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+body:not(.dark) .toggle:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.dark .toggle:hover {
+    box-shadow: 1px 1px 8px 3px var(--secondary);
 }
 
 .toggle i {
     font-size: 24px;
-    color: var(--text);
+    color: inherit;
 }
 
 .toggle i:last-child {
@@ -451,7 +463,6 @@ body:not(.dark) .recommend .offers li::after {
 
 .headerContainer {
     margin: auto;
-    padding-top: 100px;
     min-height: 400px;
     position: relative;
     display: block;
@@ -538,7 +549,18 @@ body:not(.dark) .recommend .offers li::after {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--bg);
+    animation: navSolidify linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 200px;
+}
+
+@keyframes navSolidify {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: var(--bg);
+    }
 }
 
 .navBar {
