@@ -199,7 +199,7 @@ body:not(.dark) .recommend .offers li::after {
 .faqContainer {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     max-width: 800px;
     justify-content:center;
     border: var(--primary) solid 2px;
@@ -735,11 +735,10 @@ body:not(.dark) .service:hover{
 }
 
 .servicesContainer {
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     display: grid;
     padding: 32px;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
@@ -993,14 +992,14 @@ input[type=submit] {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     gap: 16px;
     max-width: 600px;
     padding: 0px 8px;
 }
 
 .myTable {
-    width: 100vw;
+    width: 100%;
     max-width: 600px;
 }
 
