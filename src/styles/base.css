@@ -16,10 +16,6 @@ body {
   box-sizing: border-box;
 }
 
-section {
-    padding: 8px;
-}
-
 table {
     border-collapse:collapse;
     color: var(--text);

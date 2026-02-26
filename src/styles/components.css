@@ -2,6 +2,25 @@
     scroll-margin-top: 100px;
 }
 
+@keyframes blurIn {
+    from {
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
+    }
+}
+
+.heroWord {
+    display: inline-block;
+    opacity: 0;
+    animation: blurIn 0.7s ease forwards;
+}
+
 @keyframes reveal {
     from {
         opacity: 0;
@@ -16,7 +35,14 @@
 section {
     animation: reveal linear both;
     animation-timeline: view();
-    animation-range: entry 25% entry 75%;
+    animation-range: entry 0% entry 75%;
+}
+
+@supports not (animation-timeline: view()) {
+    section {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 #projects{
@@ -536,6 +562,7 @@ body:not(.dark) .toggle:hover {
 }
 
 .caret-bar {
+
     word-wrap: break-word;
     min-width: 100px;
     line-height: 1;
@@ -752,7 +779,7 @@ body:not(.dark) .service:hover{
 }
 
 .servicesContainer {
-    width: 100%;
+    width: 100vw;
     max-width: 1200px;
     display: grid;
     padding: 32px;
@@ -768,8 +795,9 @@ body:not(.dark) .service:hover{
 .processList {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
+    margin: 0 8px;
     margin-top: 32px;
     gap: 8px;
 }
@@ -854,6 +882,12 @@ body:not(.dark) .processStep:hover {
     filter: blur(2px);
     pointer-events: none;
     min-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .testimonialGhost {
+        display: none;
+    }
 }
 
 .testimonialQuote {
