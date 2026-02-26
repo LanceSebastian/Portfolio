@@ -5,7 +5,7 @@ function splitWords(el, startDelay) {
 
     nodes.forEach(node => {
         if (node.nodeType === Node.TEXT_NODE) {
-            node.textContent.split(' ').filter(w => w).forEach(word => {
+            node.textContent.trim().split(/\s+/).forEach(word => {
                 const span = document.createElement('span');
                 span.textContent = word + ' ';
                 span.classList.add('heroWord');
