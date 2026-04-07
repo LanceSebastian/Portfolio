@@ -8,6 +8,10 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    margin:0 ;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.4s; 
 }
 
 * {
@@ -30,13 +34,6 @@ th{
     color: var(--text-muted);
     text-align: left;
     font-weight: normal;
-}
-
-body {
-    margin:0 ;
-    background-color: var(--bg);
-    color: var(--text);
-    transition: all 0.4s;
 }
 
 h1 {

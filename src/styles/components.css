@@ -90,15 +90,16 @@ section {
 
 .projectLibrary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 24px;
     max-width: 1200px;
     margin: auto;
     padding: 32px;
 }
 
-.projectLibrary .project {
+.project {
     width: 100%;
+    cursor: pointer;
 }
 
 .titlebox {
@@ -1149,26 +1150,6 @@ input[type=submit] {
     display: none;
     gap: 16px;
     margin: auto;
-}
-
-/* slideshow */
-.project{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    margin-inline:auto;
-    width: 400px;
-    justify-content:space-evenly;
-    align-items: center;
-    gap: 0px 32px;
-}
-
-.projectContainer {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    width: 100%;
-    position: relative;
 }
 
 @keyframes blink {
