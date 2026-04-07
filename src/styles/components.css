@@ -88,6 +88,14 @@ section {
     }
 }
 
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    padding: 32px;
+}
+
 .projectLibrary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -100,6 +108,10 @@ section {
 .project {
     width: 100%;
     cursor: pointer;
+}
+
+.project p {
+    max-width: 400px;;
 }
 
 .titlebox {
