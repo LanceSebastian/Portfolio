@@ -827,6 +827,7 @@ body:not(.dark) .service:hover{
     border-radius: 16px;
     cursor: pointer;
     transition: all 0.2s ease;
+    border: var(--bg-dark) solid 1px;
 }
 
 .processStep * {
