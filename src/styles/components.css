@@ -594,18 +594,13 @@ body:not(.dark) .toggle:hover {
     top: 0;
     width: 100%;
     z-index: 1000;
-    animation: navSolidify linear both;
-    animation-timeline: scroll();
-    animation-range: 0px 200px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes navSolidify {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: var(--bg);
-    }
+.navBarContainer.solid {
+    background-color: var(--bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navBar {
@@ -1238,4 +1233,40 @@ input[type=submit] {
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* dropdown menu */
+
+.menu-item {
+    position: relative;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left:0;
+    min-width: 160px;
+    padding: 6px;
+    list-style: none;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+nav.solid .dropdown {
+    background-color: var(--bg);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.dropItem {
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
 }
