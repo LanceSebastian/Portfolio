@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Pricing | Lance Sebastian">
-        <meta property="og:description" content="Transparent and straightforward pricing for my web design services. No hidden fees, just clear packages to suit your needs.">
+        <meta property="og:description" content="Clear and honest pricing for my web design services. No hidden fees, just clear packages to suit your needs.">
         <meta property="og:url" content="https://lancesebastian.co.uk/pricing/">
         <meta property="og:type" content="website">
         <link rel="canonical" href="https://lancesebastian.co.uk/pricing/">
@@ -40,7 +40,7 @@
 
                 <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
                     <li class="navItem " data-link="home"><a href="/">Home</a></li>
-                    <li class="navItem menu-item selected">
+                    <li class="navItem menu-item">
                         <a>About Us <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="dropdown">
                             <li class="dropItem" ><a href="/about">About Us</a></li>
@@ -48,7 +48,7 @@
                             <li class="dropItem" ><a href="/faq">FAQ</a></li>
                         </ul>
                     </li>
-                    <li class="navItem " data-link="pricing"><a href="/pricing">Pricing</a></li>
+                    <li class="navItem selected" data-link="pricing"><a href="/pricing">Pricing</a></li>
                     <li class="navItem " data-link="contactMe"><a href="/contact">Contact</a></li>
                 </ul>
 
@@ -68,47 +68,97 @@
         <main>
             <div class="behind min-vh-20 belt headerContainer" style="margin-top: 128px;">
                 <div class = "center">
-                    <h1>The <div class = "lancify">FAQ</div></h1>
-                    <pre class="subheader">Some Common Questions.</pre>
+                    <h1><div class = "lancify">Pricing</div></h1>
                 </div>  
             </div>
     
-            <!-- FAQ -->
-            <section id="faq">
-                <div class="autoMargin pad-h-32 pad-w-16 gap-32 center">
-                    <div class="center">
-                        <span class="eyebrow">Got Questions?</span>
-                        <h2>Here are some answers</h2>
-                        <p class="muted textbox">Everything you need to know before getting started — from how the process works to what's included in each plan.</p>
+            <section id="pricing">
+                <div class="autoMargin pad-w-16 pad-h-32  gap-32 center">
+                    <div class="titlebox pad-w-16">
+                        <span class="eyebrow">Packages</span>
+                        <h2>Clear, Honest Pricing</h2>
+                        <p class="muted textbox p-8">No hidden fees, no surprise invoices. Pick a plan that fits your budget and I'll handle everything from design to launch.</p>
                     </div>
-    
-                    <div class="tab">
-                        <button class="tabLinks active" onclick="openfaq(event,'websitesfaq')">Websites</button>
-                        <button class="tabLinks" onclick="openfaq(event,'pricingfaq')">Pricing</button>
-                        <button class="tabLinks" onclick="openfaq(event,'plansfaq')">Plans</button>
-                        <button class="tabLinks" onclick="openfaq(event,'seofaq')">SEO</button>
-                    </div>
-    
-                    <template id="faqTemplate">
-                        <div class="faqContainer">
-                            <div class="questionContainer">
-                                <span class="question"></span>
-                                <i class="i-24 fa-solid fa-angle-down"></i>
+                    <div class="packageContainer">
+                        <div class="package">
+                            <h3 class="packageTitle">Lump Sum</h3>
+                            <ul class="offers">
+                                <li>Up to 5 Pages</li>
+                                <li>Design & Development</li>
+                                <li>+£10/mo Hosting</li>
+                                <li>+£20/mo Unlimited Edits & Support</li>
+                                <li>Full Ownership</li>
+                                <li>Built to Google Standards</li>
+                                <li class="loss">24/7 Support</li>
+                                <li class="loss">Lifetime Updates</li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£400<span class=""> +£10/mo Hosting</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
                             </div>
-                            <div class="answer"></div>
                         </div>
-                    </template>
-    
-                    <div id="websitesfaq" class="tabContent" style="display:grid;"></div>
-    
-                    <div id="pricingfaq" class="tabContent"></div>
-    
-                    <div id="plansfaq" class="tabContent"></div>
-    
-                    <div id="seofaq" class="tabContent"></div>
-    
+                        <div class="recommend package">
+                            <h3 class="packageTitle">Monthly</h3>
+                            <ul class="offers">
+                                <li>Up to 5 Pages</li>
+                                <li>Design & Development</li>
+                                <li>Includes Hosting</li>
+                                <li>Includes Domain</li>
+                                <li>Unlimited Edits</li>
+                                <li>24/7 Support</li>
+                                <li>Lifetime Updates</li>
+                                <li>Built to Google Standards</li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£50<span class=""> Per Month</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="package">
+                            <h3 class="packageTitle">ECommerce</h3>
+                            <ul class="offers">
+                                <li>Woocommerce Store</li>
+                                <li>Up to 9 pages</li>
+                                <li>Integrated Basic Shipping</li>
+                                <li>Fully Editable In WordPress CMS</li>
+                                <li>Payment Gateway Integrated</li>
+                                <li>SSL Included</li>
+                                <li>Systems Tutorial Walkthrough</li>
+                                <li class="loss">Unlimited Edits</li>
+                                <li class="loss">24/7 Support</li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="price">£1200<span class=""> Starting</span></div>
+                                <a class=" bigButton" href="#contactMe">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <details class="addons">
+                        <summary>View Add-ons <i class="fa-solid fa-chevron-down"></i></summary>
+                        <ul class="addonList">
+                            <li>
+                                <span>Extra Pages</span>
+                                <span class="addonPrice">+£50/page</span>
+                            </li>
+                            <li>
+                                <span>Blog Integration</span>
+                                <span class="addonPrice">+£200</span>
+                            </li>
+                            <li>
+                                <span>Google Business Profile Setup</span>
+                                <span class="addonPrice">+£75</span>
+                            </li>
+                            <li>
+                                <span>Booking System Integration</span>
+                                <span class="addonPrice">+£75</span>
+                            </li>
+                            <li>
+                                <span>Basic Ecommerce Setup</span>
+                                <span class="addonPrice">+£50 per month</span>
+                            </li>
+                        </ul>
+                    </details>
                 </div>
-                
             </section>
                 
         </main>
