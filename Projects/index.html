@@ -28,18 +28,41 @@
         </script>
     </head>
     <body>
-        <nav class="navBarContainer">
-            <ul class="navBar">
-                <li class="navItem grow hover">
-                    <a style="position: relative;" href="/" aria-label="Back to home">
-                        <i class="i-64 fa-solid fa-arrow-left"></i>
+        <nav class="navBarContainer solid">
+            <div class="navBar">
+                <div class="navItem hover">
+                    <a href="/" aria-label="Home">
+                        <img class="pfp" src="/src/images/logo-wide2.svg" alt="Lance Sebastian">
                     </a>
-                </li>
-                <button id="darkModeToggle" class="toggle" aria-label="Toggle dark mode">
-                    <i class="i-24 fa-regular fa-moon"></i>
-                    <i class="i-24 fa-regular fa-sun"></i>
-                </button>
-            </ul>
+                </div>
+                
+                <input type="checkbox" id="check" aria-label="Toggle mobile menu">
+
+                <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
+                    <li class="navItem " data-link="home"><a href="/">Home</a></li>
+                    <li class="navItem menu-item selected">
+                        <a>About Us <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li class="dropItem" ><a href="/Author">About Us</a></li>
+                            <li class="dropItem" ><a href="/Projects">Projects</a></li>
+                            <li class="dropItem" ><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem " data-link="pricing"><a href="#pricing">Pricing</a></li>
+                    <li class="navItem " data-link="contactMe"><a href="#contactMe">Contact</a></li>
+                </ul>
+
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <a class="ctaButton" href="#contactMe">Get Started</a>
+                    <label for="check" class="checkbtn" aria-label="Open navigation menu">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <button id="darkModeToggle" class="toggle" aria-label="Toggle dark mode">
+                        <i class="i-24 fa-regular fa-moon"></i>
+                        <i class="i-24 fa-regular fa-sun"></i>
+                    </button>
+                </div>
+            </div>
         </nav>
         
         <main>
