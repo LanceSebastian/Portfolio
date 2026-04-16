@@ -5,6 +5,13 @@ const testimonials = [
         The service offers excellent value for money while delivering high-quality work.`,
         name: "Melinda",
         business: "BoSface"
+    },
+    {
+        text: `I’m really impressed with the page Lance made for me. It functions very well and I love 
+        the visual layout to portray my creative character. Lance produced it in good time and was very 
+        helpful throughout the whole process - I highly recommend his services!`,
+        name: "Lada",
+        business: "Freelance Illustrator"
     }
 ];
 
