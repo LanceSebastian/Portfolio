@@ -663,13 +663,13 @@ ul.links li {
 margin-right: 20px;
 }
 
-ul.links li a {
+ul.links > li > a {
 color: var(--text);
 text-decoration: none;
 transition: color 0.3s;
 }
 
-ul.links li a:hover {
+ul.links > li > a:hover {
 color: var(--primary);
 }
 
@@ -757,7 +757,7 @@ body:not(.dark) .service:hover{
 }
 
 .small-h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .service:hover .small-h3, .service:hover i{
@@ -1237,6 +1237,10 @@ input[type=submit] {
 
 /* dropdown menu */
 
+.navItem.menu-item {
+    cursor: default;
+}
+
 .menu-item {
     position: relative;
 }
@@ -1248,9 +1252,7 @@ input[type=submit] {
     top: 100%;
     left:0;
     min-width: 160px;
-    padding: 6px;
     list-style: none;
-    border-radius: 16px;
     transition: all 0.3s ease;
 }
 
@@ -1260,10 +1262,23 @@ nav.solid .dropdown {
 }
 
 .dropItem {
-    padding: 8px;
-    border-radius: 8px;
+    display: block;
+    width: 100%;
     color: var(--text);
     transition: all 0.3s ease;
+}
+
+
+.dropItem a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.dropItem a:hover {
+    background-color: var(--primary);
+    color: var(--bg);
 }
 
 .menu-item:hover .dropdown {
