@@ -351,23 +351,25 @@ body:not(.dark) .toggle:hover {
     display: block;
 }
 
+#quickLinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: start;
+}
+
+#quickLinks .break {
+    height: 100%;
+    width: 0;
+}
+
+
 .footerLinks{
     list-style-type: none;
     text-decoration: none;
     padding: 0;
     justify-content: center;
-}
-
-#quickLinks {
-    columns: 2;
-}
-
-#quickLinks.footerLinks > :nth-child(-n+5){
-    text-align: end;
-}
-
-#quickLinks.footerLinks > :nth-child(n+6){
-    text-align: start;
 }
 
 .footerLinks li {
