@@ -99,8 +99,8 @@ section {
 .projectLibrary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    gap: 24px;
-    max-width: 1200px;
+    gap: max(24px, 4vw);
+    max-width: 1400px;
     margin: auto;
     padding: 32px;
 }
