@@ -537,6 +537,10 @@ body:not(.dark) .toggle:hover {
     left: 10%;
 }
 
+.header.text{
+    top: 70%;
+}
+
 #header h1 .lancify {
     display: block;
 }
