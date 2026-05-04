@@ -617,7 +617,7 @@ body:not(.dark) .toggle:hover {
     margin-right: auto;
 }
 
-.navItem.selected {
+.navItem.selected > a{
   font-weight: 700;
   border-bottom: 2px solid var(--primary);
 }
