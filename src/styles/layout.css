@@ -138,6 +138,8 @@
     padding: 8px;
 }
 
+
+
 .pad-w-16 {
     padding-left: 16px ;
     padding-right: 16px ;
@@ -149,6 +151,11 @@
 
 .pad-w-64 {
     padding:0px 32px ;
+}
+
+.pad-h-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .pad-h-16 {
