@@ -485,6 +485,9 @@ body:not(.dark) .toggle:hover {
     gap: 8px;
     margin: 8px;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0); /* remove text shadow */
+}
+
+.buttons.full{
     width: 100%;
 }
 
@@ -520,6 +523,7 @@ body:not(.dark) .toggle:hover {
 .media.macbook {
     aspect-ratio: 16/9;
     max-width: 650px;
+    width: 100%;
 }
 
 .headerContainer {
@@ -1315,7 +1319,7 @@ nav.solid .dropdown {
     list-style: none;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 8px;
     text-align: start;
     font-size: 1.25rem;
