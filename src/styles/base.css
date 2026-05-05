@@ -60,6 +60,10 @@ h4 {
     margin-top: 16px;
 }
 
+b {
+    color: var(--text);
+}
+
 li > h3 {
     margin: 0;
     padding: 0;
