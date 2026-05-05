@@ -1,7 +1,7 @@
 :root {
     --bg-light: oklch(1 0 0);
     --bg: oklch(0.97 0 0);     
-    --bg-dark: oklch(0.92 0 0);     
+    --bg-dark: oklch(0.94 0 0);     
     --highlight: oklch(1 0 45);
     --border: oklch(0.6 0 45);
     --border-muted: oklch(0.7 0 45);
