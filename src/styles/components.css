@@ -205,7 +205,7 @@ section {
     justify-content: space-between;
 }
 
-.offers li::after {
+.offers li::before {
     content: "✓";
     margin-left: 1rem;
     font-weight: 700;
@@ -502,7 +502,7 @@ body:not(.dark) .toggle:hover {
 
 .media {
     aspect-ratio: 4/3;
-    max-width: 300px;
+    max-width: 350px;
     object-fit: cover;
     border-radius: 32px;
 }
@@ -1290,4 +1290,14 @@ nav.solid .dropdown {
 .menu-item:hover .dropdown {
     visibility: visible;
     opacity: 1;
+}
+
+.offer-features {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    text-align: start;
+    font-size: 1.25rem;
 }
