@@ -122,6 +122,11 @@ section {
     text-align: center;
 }
 
+.titlebox.start {
+    align-items: start;
+    text-align: start;
+}
+
 .textbox {
     max-width: 600px;
     font-size: 1.25rem;
@@ -501,11 +506,20 @@ body:not(.dark) .toggle:hover {
     align-items: center;
 }
 
+.mediaContent.reverse {
+    flex-direction: row-reverse;
+}  
+
 .media {
     aspect-ratio: 4/3;
     max-width: 350px;
     object-fit: cover;
     border-radius: 32px;
+}
+
+.media.macbook {
+    aspect-ratio: 16/9;
+    max-width: 650px;
 }
 
 .headerContainer {
@@ -1232,6 +1246,10 @@ input[type=submit] {
     flex-direction: column;
     font-size: 1rem;
     transform: translateY(-8px);
+}
+
+.detail.start {
+    text-align: start;
 }
 
 .link {
