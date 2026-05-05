@@ -82,7 +82,7 @@
                 <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
                     <li class="navItem selected" data-link="home"><a href="/">Home</a></li>
                     <li class="navItem menu-item">
-                        <a>About <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="dropdown">
                             <li class="dropItem" ><a href="/about">About</a></li>
                             <li class="dropItem" ><a href="/projects">Projects</a></li>
@@ -282,6 +282,39 @@
                 </div>
                 </div>
             </section>
+
+            <!-- Testimonials -->
+            <section id="testimonials">
+                <div class="autoMargin pad-h-32 pad-w-16 center squeeze">
+                    <div class="center">
+                        <span class="eyebrow">Testimonials</span>
+                        <h2>What Clients Say</h2>
+                    </div>
+                    <template id="testimonialTemplate">
+                        <div class="testimonialCard">
+                            <i class="fa-solid fa-quote-left testimonialQuote"></i>
+                            <p class="testimonialText"></p>
+                            <div class="testimonialAuthor">
+                                <div style="display:flex; flex-direction: column;">
+                                    <span class="testimonialName"></span>
+                                    <span class="testimonialBusiness muted"></span>
+                                </div>
+                                <div class="testimonialStars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <div class="testimonialsContainer">
+                        <div id="testimonials-list" style="display: contents;"></div>
+                        <div class="testimonialCard testimonialGhost"></div>
+                    </div>
+                </div>
+            </section>
     
             <!-- Contact Me --> 
     
@@ -420,7 +453,7 @@
                 <pre>This page was last updated: <span id = "date"></span></pre>
             </div>
         </footer>
-
+        
         <script>
             document.getElementById("date").innerHTML = document.lastModified;
         </script>
@@ -430,6 +463,7 @@
         <script src="./src/scripts/typewriter.js"></script>
         <script src="./src/scripts/wid.js"></script>
         <script src="./src/scripts/tabScript.js"></script>
+        <script src= "/src/scripts/testimonials.js"></script>
 
     </body>
 
