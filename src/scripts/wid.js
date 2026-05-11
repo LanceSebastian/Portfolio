@@ -3,19 +3,19 @@ const content = [
     icon: "fa-paintbrush",
     title: "Custom Websites",
     text: `Hand-coded from scratch, tailored to your brand. 
-    Just a site built specifically for your business and your customers.`
+    A unique site for your business and customers..`
   },
   {
     icon: "fa-mobile-screen",
     title: "Fully Responsive",
-    text: `Your website will adapt seamlessly to all screen sizes, from 
-    mobile phones to large desktop displays.`
+    text: `Your website will be fully responsive, ensuring 
+    a seamless experience on any device for all your visitors.`
   },
   {
     icon: "fa-magnifying-glass",
     title: "SEO Integrated",
-    text: `Built for search engines. Fast websites and strategic signposting 
-    to help you rank higher and attract more visitors.`
+    text: `Optimized for search engines. Fast performance 
+    and clear navigation to attract more visitors.`
   },
 ];
 
