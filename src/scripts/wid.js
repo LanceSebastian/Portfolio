@@ -3,7 +3,7 @@ const content = [
     icon: "fa-paintbrush",
     title: "Custom Websites",
     text: `Hand-coded from scratch, tailored to your brand. 
-    A unique site for your business and customers..`
+    A unique site for your business and customers.`
   },
   {
     icon: "fa-mobile-screen",
