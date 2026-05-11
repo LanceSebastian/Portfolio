@@ -520,10 +520,24 @@ body:not(.dark) .toggle:hover {
     border-radius: 32px;
 }
 
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 32px;
+}
+
 .media.macbook {
     aspect-ratio: 16/9;
     max-width: 650px;
     width: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+@media (min-width: 400px) {
+    .macbook:hover {
+        transform: scale(1.3);
+        box-shadow: 12px 12px 20px -12px var(--text-muted);
+    }
 }
 
 .headerContainer {
