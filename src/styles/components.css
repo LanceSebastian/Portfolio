@@ -768,48 +768,55 @@ color: var(--primary);
     flex-direction: column;
     aspect-ratio: 1;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 16px;
-    border-radius: 16px;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 8px;
     border: var(--bg-light) solid 2px;
     background-color: var(--bg-dark);
     transition: all 0.2s ease;
 }
 
 .service * {
+    border: red solid 1px;
     transition: all 0.2s ease;
 }
 
-.dark .service:hover{
-    border: white solid 2px;
-    box-shadow: 1px 1px 8px 3px var(--secondary);
+@media (min-width: 400px) {
+    .dark .service:hover{
+        border: white solid 2px;
+        box-shadow: 1px 1px 8px 3px var(--secondary);
+    }
+
+    body:not(.dark) .service:hover{
+        transform: translate(-8px, -8px);
+        box-shadow: 12px 12px 20px -12px var(--text-muted);
+    }
+
+    .service:hover p{
+        color: var(--text);
+    }
+
+    .service:hover .small-h3, .service:hover i{
+        transform: scale(1.2);
+    }
+
+    .service:hover i{
+        animation: wiggle 0.5s ease-in-out;
+    }
+
+    .service:hover .small-h3{
+        color: var(--primary);
+    }
 }
 
-body:not(.dark) .service:hover{
-    transform: translate(-8px, -8px);
-    box-shadow: 12px 12px 20px -12px var(--text-muted);
-}
 
-.service:hover p{
-    color: var(--text);
-}
 
 .small-h3{
     font-size: 1.25rem;
 }
 
-.service:hover .small-h3, .service:hover i{
-    transform: scale(1.2);
-}
 
-.service:hover i{
-    animation: wiggle 0.5s ease-in-out;
-}
-
-.service:hover .small-h3{
-    color: var(--primary);
-}
 
 @keyframes wiggle {
     0% {rotate: 0deg;}
@@ -827,7 +834,7 @@ body:not(.dark) .service:hover{
 
 .servicesContainer {
     width: 100vw;
-    max-width: 1200px;
+    max-width: 1000px;
     display: grid;
     padding: 16px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
