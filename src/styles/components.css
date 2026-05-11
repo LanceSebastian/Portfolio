@@ -770,7 +770,7 @@ color: var(--primary);
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 8px;
+    padding: 16px;
     border-radius: 8px;
     border: var(--bg-light) solid 2px;
     background-color: var(--bg-dark);
