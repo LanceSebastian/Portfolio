@@ -778,7 +778,6 @@ color: var(--primary);
 }
 
 .service * {
-    border: red solid 1px;
     transition: all 0.2s ease;
 }
 
