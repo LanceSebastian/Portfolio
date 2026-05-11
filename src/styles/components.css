@@ -210,7 +210,7 @@ section {
     justify-content: space-between;
 }
 
-.offers li::before {
+.offers li::after {
     content: "✓";
     margin-left: 1rem;
     font-weight: 700;
